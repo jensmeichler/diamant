@@ -1,12 +1,12 @@
 import {Routes} from '@angular/router';
+import {HomeComponent} from "src/app/pages/home/home.component";
+import {ContactComponent} from "src/app/pages/contact/contact.component";
 
 export const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    loadComponent: () =>
-      import('./pages/home/home.component')
-        .then(x => x.HomeComponent)
+    component: HomeComponent
   },
   {
     path: 'behandlungen',
@@ -28,8 +28,6 @@ export const routes: Routes = [
   },
   {
     path: 'kontakt',
-    loadComponent: () =>
-      import('./pages/contact/contact.component')
-        .then(x => x.ContactComponent)
+    component: ContactComponent
   },
 ];
