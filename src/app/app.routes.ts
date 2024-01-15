@@ -1,5 +1,9 @@
 import {Routes} from '@angular/router';
 import {HomeComponent} from "src/app/pages/home/home.component";
+import {TreatmentsComponent} from "src/app/pages/treatments/treatments.component";
+import {ProductsComponent} from "src/app/pages/products/products.component";
+import {ConsultingComponent} from "src/app/pages/consulting/consulting.component";
+import {ContactComponent} from "src/app/pages/contact/contact.component";
 
 export const routes: Routes = [
   {
@@ -9,26 +13,18 @@ export const routes: Routes = [
   },
   {
     path: 'behandlungen',
-    loadComponent: () =>
-      import('./pages/treatments/treatments.component')
-        .then(x => x.TreatmentsComponent)
+    component: TreatmentsComponent
   },
   {
     path: 'produkte',
-    loadComponent: () =>
-      import('./pages/products/products.component')
-        .then(x => x.ProductsComponent)
+    component: ProductsComponent
   },
   {
     path: 'beratung',
-    loadComponent: () =>
-      import('./pages/consulting/consulting.component')
-        .then(x => x.ConsultingComponent)
+    component: ConsultingComponent
   },
   {
     path: 'kontakt',
-    loadComponent: () =>
-      import('./pages/contact/contact.component')
-        .then(x => x.ContactComponent)
+    component: ContactComponent
   },
 ];
