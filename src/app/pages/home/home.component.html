@@ -7,7 +7,7 @@
       HydraBeauty Gesichtsbehandlung (75 Min)
     </p>
   </span>
-  <span class="monthly-offer__body">
+  <span class="monthly-offer__body" *ngIf="$desktop | async; else mobile">
     <p>
       Die apparative Reinigung wird Ihre Haut optimal
       vorbereiten, um die wertvollen Wirkstoffe aufzunehmen! Nach der Augenbrauenkorrektur wird je nach Hauttyp der
@@ -17,6 +17,22 @@
       Lifting-Effekt.
     </p>
   </span>
+  <ng-template #mobile>
+    <span class="monthly-offer__body">
+      <p [ngClass]="{hidden: readMore}">
+        Die apparative Reinigung wird Ihre Haut optimal
+        vorbereiten, um die wertvollen Wirkstoffe aufzunehmen! Nach der... <a class="continue-read" (click)="readMore = !readMore">weiter lesen</a>
+      </p>
+      <p [ngClass]="{hidden: !readMore}">
+        Die apparative Reinigung wird Ihre Haut optimal
+        vorbereiten, um die wertvollen Wirkstoffe aufzunehmen! Nach der Augenbrauenkorrektur wird je nach Hauttyp der
+        passende Wirkstoff auf die Haut aufgetragen. Sofort Effekt mit Langzeitwirkung und ein
+        strahlendes Hautbild.<br> Hinzu kommt eine Maske, die sowohl auf das Gesicht als
+        auch auf das Dekolleté einmassiert wird. Ihre Haut bekommt ein jugendliches Erscheinungsbild mit
+        Lifting-Effekt.
+      </p>
+    </span>
+  </ng-template>
   <span class="monthly-offer__price">
     <p>69,99 €</p>
   </span>
