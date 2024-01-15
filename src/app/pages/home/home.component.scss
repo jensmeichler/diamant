@@ -1,0 +1,137 @@
+.home-title {
+  margin-top: 2rem;
+}
+
+.grid-group {
+  @media screen {
+    @media (max-width: 849px) {
+      display: block;
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+    @media (min-width: 850px) {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-rows: 2fr 1fr;
+      gap: 1rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+
+    &--link {
+      cursor: pointer;
+    }
+  }
+
+  margin-bottom: 1rem;
+}
+
+.monthly-offer {
+  &__title {
+    display: block;
+    background: var(--color-secondary);
+    color: var(--color-primary-contrast);
+
+    p {
+      padding: .5rem 0;
+      margin: 0 1rem;
+    }
+
+    @media screen {
+      @media (max-width: 649px) {
+        width: 100%;
+        margin-top: -5px;
+      }
+
+      @media (min-width: 650px) and (max-width: 849px) {
+        width: 12rem;
+        position: absolute;
+        top: 40vw;
+        left: 0;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+      }
+
+      @media (min-width: 850px) {
+        width: 12rem;
+        position: absolute;
+        top: 10rem;
+        left: 15vw;
+        border-radius: 1rem;
+      }
+    }
+  }
+
+  &__price {
+    display: block;
+    background: var(--color-secondary);
+    color: var(--color-primary-contrast);
+
+    p {
+      padding: 1rem 0;
+      margin: 0 1rem;
+    }
+
+    @media screen {
+      @media (max-width: 649px) {
+        width: 100%;
+        margin-top: -5px;
+      }
+
+      @media (min-width: 650px) and (max-width: 849px) {
+        position: absolute;
+        top: calc(20vw - 20px);
+        right: 0;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+      }
+
+      @media (min-width: 850px) {
+        position: absolute;
+        top: calc(20vw - 20px);
+        right: 22vw;
+        border-radius: 1rem;
+      }
+    }
+  }
+
+  &__img {
+    @media screen {
+      @media (max-width: 849px) {
+        width: 100%;
+        margin-top: -50px;
+        margin-bottom: -100px;
+        clip-path: inset(50px 0px 100px 0px)
+      }
+      @media (min-width: 850px) {
+        width: 50vw;
+        margin-left: 25vw;
+        margin-top: -25px;
+        margin-bottom: -75px;
+        clip-path: inset(50px 0px 100px 0px round 1rem)
+      }
+    }
+  }
+
+  &__body {
+    margin-top: -5px;
+    display: block;
+    width: 100%;
+    background: var(--color-secondary);
+    color: var(--color-primary-contrast);
+    p {
+      padding: 1rem;
+    }
+
+    @media screen {
+      @media (min-width: 850px) {
+        text-align: center;
+      }
+    }
+  }
+}

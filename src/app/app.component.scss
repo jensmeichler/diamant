@@ -1,0 +1,26 @@
+.header {
+  height: 4rem;
+}
+
+.main {
+}
+
+.footer {
+  width: 100%;
+  background-color: var(--color-primary);
+  color: var(--color-primary-contrast);
+
+  p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    @media screen {
+      @media (min-width: 850px) {
+        margin-left: 4rem;
+        margin-right: 4rem;
+      }
+    }
+  }
+}
