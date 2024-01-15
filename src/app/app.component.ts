@@ -11,10 +11,4 @@ import {HeaderComponent} from "src/app/components/header/header.component";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  footerHtml = `
-    Impressum:<br>
-    Marina Gruszka, Adolfstraße 65, 38102 Braunschweig<br>
-    E-Mail: marina@diamant-kosmetikstudio.de<br>
-    Kosmetikstudio Diamant Fotos: istockphoto.com
-  `;
 }

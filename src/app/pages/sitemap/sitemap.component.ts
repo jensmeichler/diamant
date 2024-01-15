@@ -4,8 +4,7 @@ import {Component} from '@angular/core';
   selector: 'app-sitemap',
   standalone: true,
   imports: [],
-  templateUrl: './sitemap.component.html',
-  styleUrls: ['./sitemap.component.scss']
+  templateUrl: './sitemap.component.html'
 })
 export class SitemapComponent {
 }

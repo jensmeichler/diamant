@@ -4,6 +4,7 @@ import {TreatmentsComponent} from "src/app/pages/treatments/treatments.component
 import {ProductsComponent} from "src/app/pages/products/products.component";
 import {ConsultingComponent} from "src/app/pages/consulting/consulting.component";
 import {ContactComponent} from "src/app/pages/contact/contact.component";
+import {SitemapComponent} from "src/app/pages/sitemap/sitemap.component";
 
 export const routes: Routes = [
   {
@@ -26,6 +27,10 @@ export const routes: Routes = [
   {
     path: 'kontakt',
     component: ContactComponent
+  },
+  {
+    path: 'sitemap',
+    component: SitemapComponent
   },
   {
     path: '**',
