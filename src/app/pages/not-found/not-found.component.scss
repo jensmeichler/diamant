@@ -1,0 +1,30 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem;
+
+  .dino {
+    width: 65vw;
+    height: 46vw;
+  }
+
+  .button-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .button {
+    cursor: pointer;
+    font-size: 1.5em;
+    background: var(--color-secondary);
+    color: var(--color-secondary-contrast);
+    text-decoration: none;
+    padding: .5em 1em;
+    border-radius: .5rem;
+  }
+}

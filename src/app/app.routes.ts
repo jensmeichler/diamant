@@ -11,10 +11,10 @@ export const routes: Routes = [
     pathMatch: 'full',
     component: HomeComponent
   },
-  {
-    path: 'behandlungen',
-    component: TreatmentsComponent
-  },
+  // {
+  //   path: 'behandlungen',
+  //   component: TreatmentsComponent
+  // },
   {
     path: 'produkte',
     component: ProductsComponent
@@ -27,4 +27,10 @@ export const routes: Routes = [
     path: 'kontakt',
     component: ContactComponent
   },
+  {
+    path: '**',
+    loadComponent: () =>
+      import('src/app/pages/not-found/not-found.component')
+        .then(m => m.NotFoundComponent),
+  }
 ];
