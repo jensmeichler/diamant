@@ -15,12 +15,12 @@ export const routes: Routes = [
       import('src/app/pages/treatments/treatments.component')
         .then(m => m.TreatmentsComponent),
   },
-  // {
-  //   path: 'behandlungen/gesichtsbehandlung',
-  //   loadComponent: () =>
-  //     import('src/app/pages/treatments-face/treatments-face.component')
-  //       .then(m => m.TreatmentsFaceComponent),
-  // },
+  {
+    path: 'behandlungen/gesichtsbehandlung',
+    loadComponent: () =>
+      import('src/app/pages/treatments-face/treatments-face.component')
+        .then(m => m.TreatmentsFaceComponent),
+  },
   // {
   //   path: 'behandlungen/massagen',
   //   loadComponent: () =>
