@@ -1,12 +1,11 @@
 import {Routes} from '@angular/router';
+import {HomeComponent} from "src/app/pages/home/home.component";
 
 export const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    loadComponent: () =>
-      import('./pages/home/home.component')
-        .then(x => x.HomeComponent)
+    component: HomeComponent
   },
   {
     path: 'behandlungen',
