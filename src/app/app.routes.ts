@@ -1,8 +1,5 @@
 import {Routes} from '@angular/router';
 import {HomeComponent} from "src/app/pages/home/home.component";
-import {TreatmentsComponent} from "src/app/pages/treatments/treatments.component";
-import {ProductsComponent} from "src/app/pages/products/products.component";
-import {ConsultingComponent} from "src/app/pages/consulting/consulting.component";
 import {ContactComponent} from "src/app/pages/contact/contact.component";
 import {SitemapComponent} from "src/app/pages/sitemap/sitemap.component";
 
@@ -12,17 +9,41 @@ export const routes: Routes = [
     pathMatch: 'full',
     component: HomeComponent
   },
+  {
+    path: 'behandlungen',
+    loadComponent: () =>
+      import('src/app/pages/treatments/treatments.component')
+        .then(m => m.TreatmentsComponent),
+  },
   // {
-  //   path: 'behandlungen',
-  //   component: TreatmentsComponent
+  //   path: 'behandlungen/gesichtsbehandlung',
+  //   loadComponent: () =>
+  //     import('src/app/pages/treatments-face/treatments-face.component')
+  //       .then(m => m.TreatmentsFaceComponent),
+  // },
+  // {
+  //   path: 'behandlungen/massagen',
+  //   loadComponent: () =>
+  //     import('src/app/pages/treatments-massage/treatments-massage.component')
+  //       .then(m => m.TreatmentsMassageComponent),
+  // },
+  // {
+  //   path: 'behandlungen/wellnesspakete',
+  //   loadComponent: () =>
+  //     import('src/app/pages/treatments-wellness/treatments-wellness.component')
+  //       .then(m => m.TreatmentsWellnessComponent),
   // },
   {
     path: 'produkte',
-    component: ProductsComponent
+    loadComponent: () =>
+      import('src/app/pages/products/products.component')
+        .then(m => m.ProductsComponent),
   },
   {
     path: 'beratung',
-    component: ConsultingComponent
+    loadComponent: () =>
+      import('src/app/pages/consulting/consulting.component')
+        .then(m => m.ConsultingComponent),
   },
   {
     path: 'kontakt',

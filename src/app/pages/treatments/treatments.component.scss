@@ -1,0 +1,44 @@
+.grid-group {
+  gap: 1rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    border-radius: 1rem;
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &__text {
+      background: var(--color-secondary);
+      color: var(--color-secondary-contrast);
+      font-size: larger;
+      padding: .5rem 1rem;
+      border-radius: 1rem;
+      position: relative;
+      bottom: 1rem;
+      left: 1rem;
+    }
+  }
+
+  &--treatments {
+    img {
+      max-height: 200px;
+    }
+
+    @media screen {
+      @media (max-width: 649px) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media (min-width: 650px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+      }
+    }
+  }
+}
