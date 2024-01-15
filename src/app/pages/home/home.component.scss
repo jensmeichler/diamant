@@ -35,7 +35,7 @@
   &__title {
     display: block;
     background: var(--color-secondary);
-    color: var(--color-primary-contrast);
+    color: var(--color-secondary-contrast);
 
     p {
       padding: .5rem 0;
@@ -70,7 +70,7 @@
   &__price {
     display: block;
     background: var(--color-secondary);
-    color: var(--color-primary-contrast);
+    color: var(--color-secondary-contrast);
 
     p {
       padding: 1rem 0;
@@ -126,7 +126,7 @@
     display: block;
     width: 100%;
     background: var(--color-secondary);
-    color: var(--color-primary-contrast);
+    color: var(--color-secondary-contrast);
     p {
       padding: 1rem;
     }
