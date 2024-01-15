@@ -10,6 +10,14 @@
     height: 46vw;
   }
 
+  .four-o-four {
+    font-size: calc(10vw);
+    position: absolute;
+    top: 8rem;
+    left: 28vw;
+    transform: rotate(-9deg);
+  }
+
   .button-group {
     display: flex;
     align-items: center;
