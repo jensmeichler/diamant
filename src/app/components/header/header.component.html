@@ -1,11 +1,11 @@
 <nav class="nav-bar" [class.nav-bar--mobile]="opt.mobile" *ngIf="{mobile: $mobile | async} as opt">
   <a class="nav-bar__item nav-bar__item--home" routerLink="/">
-    <img src="assets/ico/diamond.svg" width="24" height="24">
+    <img src="assets/ico/diamond.svg" width="24" height="24" alt="Diamant">
     <span class="nav-bar__item__logo">Diamant</span>
   </a>
   <ng-container *ngIf="opt.mobile; else desktop">
     <a class="nav-bar__item nav-bar__item--menu" (click)="toggleMenu()">
-      <img src="assets/ico/burger.svg" width="24" height="24">
+      <img src="assets/ico/burger.svg" width="24" height="24" alt="Menü">
     </a>
     <div class="burger-menu" *ngIf="menuOpen">
       <a class="burger-menu__item" routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="burger-menu--active">Home</a>
