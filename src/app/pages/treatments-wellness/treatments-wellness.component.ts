@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {Component} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
 @Component({
   selector: 'app-treatments-wellness',
@@ -9,5 +9,4 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./treatments-wellness.component.scss']
 })
 export class TreatmentsWellnessComponent {
-
 }

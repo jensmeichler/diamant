@@ -21,18 +21,18 @@ export const routes: Routes = [
       import('src/app/pages/treatments-face/treatments-face.component')
         .then(m => m.TreatmentsFaceComponent),
   },
-  // {
-  //   path: 'behandlungen/massagen',
-  //   loadComponent: () =>
-  //     import('src/app/pages/treatments-massage/treatments-massage.component')
-  //       .then(m => m.TreatmentsMassageComponent),
-  // },
-  // {
-  //   path: 'behandlungen/wellnesspakete',
-  //   loadComponent: () =>
-  //     import('src/app/pages/treatments-wellness/treatments-wellness.component')
-  //       .then(m => m.TreatmentsWellnessComponent),
-  // },
+  {
+    path: 'behandlungen/massagen',
+    loadComponent: () =>
+      import('src/app/pages/treatments-massage/treatments-massage.component')
+        .then(m => m.TreatmentsMassageComponent),
+  },
+  {
+    path: 'behandlungen/wellnesspakete',
+    loadComponent: () =>
+      import('src/app/pages/treatments-wellness/treatments-wellness.component')
+        .then(m => m.TreatmentsWellnessComponent),
+  },
   {
     path: 'produkte',
     loadComponent: () =>
