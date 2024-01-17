@@ -21,6 +21,10 @@
         margin-left: 4rem;
         margin-right: 4rem;
       }
+      @media (min-width: calc(1300px + 8rem)) {
+        max-width: 1300px;
+        margin: 0 auto;
+      }
     }
   }
 }
