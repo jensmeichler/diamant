@@ -1,0 +1,17 @@
+p {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  @media screen {
+    @media (min-width: 850px) {
+      margin-left: 4rem;
+      margin-right: 4rem;
+    }
+    @media (min-width: calc(1300px + 8rem)) {
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+  }
+}
