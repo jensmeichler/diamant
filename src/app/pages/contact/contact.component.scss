@@ -4,11 +4,11 @@
   gap: 1rem;
 
   &__link {
-    font-size: 1.5em;
-    background: var(--color-primary);
-    color: var(--color-primary-contrast);
+    font-size: 1.25em;
+    background: var(--color-secondary);
+    color: var(--color-secondary-contrast);
     text-decoration: none;
-    padding: .125em .25em;
+    padding: .25em .5em;
     border-radius: .75rem;
   }
 }
