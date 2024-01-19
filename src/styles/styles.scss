@@ -19,7 +19,9 @@ ul {
 img {
   object-fit: cover;
   object-position: 50%;
-  border-radius: 2rem;
+  &:not([src$=".svg"]) {
+    border-radius: 2rem;
+  }
 }
 
 @media screen {
