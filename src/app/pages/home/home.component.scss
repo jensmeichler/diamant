@@ -21,7 +21,7 @@
   &__img {
     width: 100%;
     height: 100%;
-    border-radius: 1rem;
+    border-radius: 2rem;
 
     &--link {
       cursor: pointer;
@@ -32,6 +32,8 @@
 }
 
 .monthly-offer {
+  text-align: center;
+
   &__title {
     display: block;
     background: var(--color-secondary);
@@ -61,7 +63,7 @@
         width: 12rem;
         position: absolute;
         top: 10rem;
-        left: 15vw;
+        left: calc(25vw - 8rem);
         border-radius: 1rem;
       }
     }
@@ -93,14 +95,21 @@
 
       @media (min-width: 850px) {
         position: absolute;
-        top: calc(20vw - 20px);
-        right: 22vw;
+        top: calc(20vw - 2rem);
+        right: calc(25vw - 3rem);
         border-radius: 1rem;
+      }
+
+
+      @media (min-width: 1900px) {
+        top: 350px;
       }
     }
   }
 
   &__img {
+    max-width: 1300px;
+
     @media screen {
       @media (max-width: 849px) {
         width: 100%;
@@ -112,10 +121,9 @@
       @media (min-width: 850px) {
         width: 50vw;
         height: 40vw;
-        margin-left: 25vw;
         margin-top: -25px;
         margin-bottom: -75px;
-        clip-path: inset(50px 0px 100px 0px round 1rem)
+        clip-path: inset(50px 0px 100px 0px round 2rem)
       }
       @media (min-width: calc(1300px + 8rem)) {
         height: 572px;
