@@ -1,4 +1,4 @@
-:host {
+.footer__section {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -7,6 +7,7 @@
   padding-bottom: 3rem;
   margin-left: 1rem;
   margin-right: 1rem;
+
   @media screen {
     @media (min-width: 850px) {
       margin-left: 4rem;
@@ -18,4 +19,3 @@
     }
   }
 }
-

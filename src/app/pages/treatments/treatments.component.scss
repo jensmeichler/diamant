@@ -9,6 +9,20 @@
 
   &__link {
     text-decoration: none;
+    &__text, img {
+      transition: all .16s ease-in-out;
+    }
+
+    &:hover {
+      img {
+        box-shadow: var(--box-shadow-strong);
+      }
+      .grid-group__link__text {
+        background: var(--color-secondary-active);
+        color: var(--color-secondary-active-contrast);
+        box-shadow: var(--box-shadow-light);
+      }
+    }
 
     &__text {
       background: var(--color-secondary);

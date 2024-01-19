@@ -10,6 +10,13 @@
     text-decoration: none;
     padding: .25em .5em;
     border-radius: .75rem;
+    transition: all .16s ease-in-out;
+
+    &:hover {
+      background: var(--color-secondary-active);
+      color: var(--color-secondary-active-contrast);
+      box-shadow: var(--box-shadow-light);
+    }
   }
 }
 

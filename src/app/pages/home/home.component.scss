@@ -29,6 +29,10 @@
 
     &--link {
       cursor: pointer;
+      transition: box-shadow .16s ease-in-out;
+      &:hover {
+        box-shadow: var(--box-shadow-strong);
+      }
     }
   }
 
@@ -67,7 +71,7 @@
         width: 12rem;
         position: absolute;
         top: 10rem;
-        left: calc(25vw - 8rem);
+        right: calc(75vw - 8rem);
         border-radius: 1rem;
       }
     }
@@ -100,7 +104,7 @@
       @media (min-width: 850px) {
         position: absolute;
         top: calc(20vw - 2rem);
-        right: calc(25vw - 3rem);
+        left: calc(75vw - 3rem);
         border-radius: 1rem;
       }
 
@@ -142,7 +146,8 @@
     background: var(--color-secondary);
     color: var(--color-secondary-contrast);
     p {
-      padding: 1rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
     }
 
     @media screen {

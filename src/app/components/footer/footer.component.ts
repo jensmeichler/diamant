@@ -10,4 +10,7 @@ import {RouterLink} from "@angular/router";
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
+  scrollToTop(): void {
+    window.scrollTo(0, 0);
+  }
 }
