@@ -1,17 +1,20 @@
-.header {
-  position: sticky;
-  top: 0;
-  height: 4rem;
-  z-index: 100;
-  box-shadow: var(--box-shadow-header);
-}
-
 .main {
+  &__header {
+    position: sticky;
+    top: 0;
+    height: 4rem;
+    z-index: 100;
+    box-shadow: var(--box-shadow-header);
+  }
+
+  &__content {
+    padding-bottom: 4rem;
+    background: var(--color-background);
+  }
 }
 
 .footer {
   width: 100%;
-  margin-top: 2rem;
   background-color: var(--color-primary);
   color: var(--color-primary-contrast);
 }

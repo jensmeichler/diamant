@@ -7,7 +7,7 @@
     <a class="nav-bar__item nav-bar__item--menu" (click)="toggleMenu()">
       <img src="assets/ico/burger.svg" width="24" height="24" alt="Menü">
     </a>
-    <div class="burger-menu" *ngIf="menuOpen">
+    <div class="burger-menu burger-menu--open" *ngIf="menuOpen">
       <a class="burger-menu__item" routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="burger-menu--active">Home</a>
       <a class="burger-menu__item" routerLink="/behandlungen" routerLinkActive="burger-menu--active">Behandlungen</a>
       <a class="burger-menu__item" routerLink="/produkte" routerLinkActive="burger-menu--active">Produkte</a>
