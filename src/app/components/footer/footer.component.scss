@@ -8,6 +8,10 @@
   margin-left: 1rem;
   margin-right: 1rem;
 
+  a {
+    color: currentColor;
+  }
+
   @media screen {
     @media (min-width: 850px) {
       margin-left: 4rem;
