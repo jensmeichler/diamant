@@ -9,11 +9,13 @@
 
   &__link {
     text-decoration: none;
+    transition: all .16s ease-in-out;
     &__text, img {
       transition: all .16s ease-in-out;
     }
 
     &:hover {
+      transform: scale(1.01);
       img {
         box-shadow: var(--box-shadow-strong);
       }
