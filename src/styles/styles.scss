@@ -64,6 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 :root:has(.burger-menu--open) {
   .main__content, .footer {
     overflow: hidden;
+    pointer-events: none;
     filter: brightness(0.5);
     transition: all .16s ease-in-out;
   }
