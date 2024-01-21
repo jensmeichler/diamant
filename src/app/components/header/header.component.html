@@ -8,18 +8,18 @@
       <img src="assets/ico/burger.svg" width="24" height="24" alt="Menü">
     </a>
     <div class="burger-menu burger-menu--open" *ngIf="menuOpen">
-      <a class="burger-menu__item" routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="burger-menu--active">Home</a>
-      <a class="burger-menu__item" routerLink="/behandlungen" routerLinkActive="burger-menu--active">Behandlungen</a>
-      <a class="burger-menu__item" routerLink="/produkte" routerLinkActive="burger-menu--active">Produkte</a>
-      <a class="burger-menu__item" routerLink="/beratung" routerLinkActive="burger-menu--active">Beratung</a>
-      <a class="burger-menu__item" routerLink="/kontakt" routerLinkActive="burger-menu--active">Kontakt</a>
+      <a class="burger-menu__item" (click)="linkClick()" routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="burger-menu--active">Home</a>
+      <a class="burger-menu__item" (click)="linkClick()" routerLink="/behandlungen" routerLinkActive="burger-menu--active">Behandlungen</a>
+      <a class="burger-menu__item" (click)="linkClick()" routerLink="/produkte" routerLinkActive="burger-menu--active">Produkte</a>
+      <a class="burger-menu__item" (click)="linkClick()" routerLink="/beratung" routerLinkActive="burger-menu--active">Beratung</a>
+      <a class="burger-menu__item" (click)="linkClick()" routerLink="/kontakt" routerLinkActive="burger-menu--active">Kontakt</a>
     </div>
   </ng-container>
   <ng-template #desktop>
-    <a class="nav-bar__item" routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="nav-bar__item--active">Home</a>
-    <a class="nav-bar__item" routerLink="/behandlungen" routerLinkActive="nav-bar__item--active">Behandlungen</a>
-    <a class="nav-bar__item" routerLink="/produkte" routerLinkActive="nav-bar__item--active">Produkte</a>
-    <a class="nav-bar__item" routerLink="/beratung" routerLinkActive="nav-bar__item--active">Beratung</a>
-    <a class="nav-bar__item" routerLink="/kontakt" routerLinkActive="nav-bar__item--active">Kontakt</a>
+    <a class="nav-bar__item" (click)="linkClick()" routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="nav-bar__item--active">Home</a>
+    <a class="nav-bar__item" (click)="linkClick()" routerLink="/behandlungen" routerLinkActive="nav-bar__item--active">Behandlungen</a>
+    <a class="nav-bar__item" (click)="linkClick()" routerLink="/produkte" routerLinkActive="nav-bar__item--active">Produkte</a>
+    <a class="nav-bar__item" (click)="linkClick()" routerLink="/beratung" routerLinkActive="nav-bar__item--active">Beratung</a>
+    <a class="nav-bar__item" (click)="linkClick()" routerLink="/kontakt" routerLinkActive="nav-bar__item--active">Kontakt</a>
   </ng-template>
 </nav>

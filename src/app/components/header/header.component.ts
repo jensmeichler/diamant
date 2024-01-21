@@ -15,7 +15,7 @@ export class HeaderComponent {
   $mobile = fromEvent(window, 'resize')
     .pipe(startWith(undefined), map(() => window.innerWidth < 650));
 
-  toggleMenu() {
+  toggleMenu(): void {
     if (!this.menuOpen) {
       this.openMenu();
     } else {
@@ -23,7 +23,11 @@ export class HeaderComponent {
     }
   }
 
-  private openMenu = () => {
+  linkClick(): void {
+    window.scroll({top: 0});
+  }
+
+  private openMenu = (): void => {
     this.menuOpen = true;
     setTimeout(() =>
       document.addEventListener('click', this.closeMenu)
