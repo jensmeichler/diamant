@@ -45,6 +45,10 @@
     .nav-bar__item {
       margin: 1rem;
       font-size: 2rem;
+
+      &--menu {
+        opacity: 1;
+      }
     }
   }
 

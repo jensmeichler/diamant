@@ -4,9 +4,9 @@
     <span class="nav-bar__item__logo">Diamant</span>
   </a>
   <ng-container *ngIf="opt.mobile; else desktop">
-    <a class="nav-bar__item nav-bar__item--menu" (click)="toggleMenu()">
+    <button class="nav-bar__item nav-bar__item--menu" (click)="toggleMenu()">
       <img src="assets/svg/burger.svg" width="24" height="24" alt="Menü">
-    </a>
+    </button>
     <div class="burger-menu burger-menu--open" *ngIf="menuOpen">
       <div class="burger-menu__group">
         <a class="burger-menu__group__item" (click)="linkClick()" routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="burger-menu--active">Home</a>
