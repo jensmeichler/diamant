@@ -12,6 +12,7 @@
     top: 4rem;
     right: 0;
     height: calc(100vh - 6rem);
+    min-width: 70vw;
     padding: 1rem;
     background: var(--color-secondary);
     box-shadow: -5px 5px 15px 0px rgba(0,0,0,0.5);
@@ -19,22 +20,22 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
-    &__group {
-      display: flex;
-      flex-direction: column;
+    &__item {
+      margin: 1rem;
+      font-size: 1.25rem;
+      text-decoration: none;
+      color: var(--color-primary-contrast);
 
-      &__item {
+      &--splitter {
+        width: calc(100% - 2rem);
         margin: 1rem;
-        font-size: 1.5rem;
-        text-decoration: none;
-        color: var(--color-primary-contrast);
+        border-color: var(--color-primary-contrast);
+      }
 
-        &--button {
-          display: flex;
-          gap: 1rem;
-        }
+      &--button {
+        display: flex;
+        gap: 1rem;
       }
     }
   }
@@ -94,9 +95,9 @@
 
 @keyframes burger-menu-animation {
   from {
-    transform: translateX(100%);
+    transform: translateX(50%) scaleX(0);
   }
   to {
-    transform: translateX(0);
+    transform: translateX(0) scaleX(1);
   }
 }
