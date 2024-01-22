@@ -23,6 +23,7 @@ ul {
 
 button {
   all: unset;
+  cursor: pointer;
   opacity: .7;
   &:hover {
     opacity: 1;
