@@ -22,9 +22,11 @@ ul {
 }
 
 button {
-  border: none;
-  outline: none;
-  background: none;
+  all: unset;
+  opacity: .7;
+  &:hover {
+    opacity: 1;
+  }
 }
 
 img {
