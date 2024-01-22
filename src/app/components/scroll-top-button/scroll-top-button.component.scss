@@ -11,7 +11,7 @@
   line-height: 3rem;
   font-size: 1.5rem;
   box-shadow: var(--box-shadow-slim-strong);
-  transition: all .16s ease-in-out;
+  transition: var(--transition-default);
   animation: scroll-top-button-animation 160ms ease-in-out;
 
   &:hover {

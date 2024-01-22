@@ -10,7 +10,7 @@
     text-decoration: none;
     padding: .25em .5em;
     border-radius: .75rem;
-    transition: all .16s ease-in-out;
+    transition: var(--transition-default);
 
     &:hover {
       background: var(--color-secondary-active);

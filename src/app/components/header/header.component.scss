@@ -49,6 +49,19 @@
 
       &--menu {
         opacity: 1;
+
+        &--open .nav-bar__item--menu__svg-line {
+          transition: var(--transition-default);
+          &--top {
+            transform: translate(20%, 5%) rotate(45deg);
+          }
+          &--middle {
+            transform: translateX(50%) scaleX(0);
+          }
+          &--bottom {
+            transform: translate(-40%, 25%) rotate(-45deg);
+          }
+        }
       }
     }
   }
@@ -80,7 +93,7 @@
       display: block;
       width: 0;
       height: 2px;
-      transition: all 160ms ease-in-out;
+      transition: var(--transition-default);
     }
 
     &:not(&--home, &--menu):hover,

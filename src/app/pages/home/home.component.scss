@@ -29,7 +29,7 @@
 
     &--link {
       cursor: pointer;
-      transition: box-shadow .16s ease-in-out;
+      transition: box-shadow var(--transition-default-behaviour);
       &:hover {
         box-shadow: var(--box-shadow-strong);
       }

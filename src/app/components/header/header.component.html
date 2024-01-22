@@ -4,8 +4,12 @@
     <span class="nav-bar__item__logo">Diamant</span>
   </a>
   <ng-container *ngIf="opt.mobile; else desktop">
-    <button class="nav-bar__item nav-bar__item--menu" (click)="toggleMenu()">
-      <img src="assets/svg/burger.svg" width="24" height="24" alt="Menü">
+    <button class="nav-bar__item nav-bar__item--menu" [class.nav-bar__item--menu--open]="menuOpen" (click)="toggleMenu()">
+      <svg width="24" height="24" viewBox="0 0 448 383" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect class="nav-bar__item--menu__svg-line nav-bar__item--menu__svg-line--top" width="448" height="63" rx="30" fill="#fff"/>
+        <rect class="nav-bar__item--menu__svg-line nav-bar__item--menu__svg-line--middle" width="448" height="63" rx="30" fill="#fff" y="160"/>
+        <rect class="nav-bar__item--menu__svg-line nav-bar__item--menu__svg-line--bottom" width="448" height="63" rx="30" fill="#fff" y="320"/>
+      </svg>
     </button>
     <div class="burger-menu burger-menu--open" *ngIf="menuOpen">
       <a class="burger-menu__item" (click)="linkClick()" routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="burger-menu--active">Home</a>

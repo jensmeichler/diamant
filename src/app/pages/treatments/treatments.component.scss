@@ -9,9 +9,9 @@
 
   &__link {
     text-decoration: none;
-    transition: all .16s ease-in-out;
+    transition: var(--transition-default);
     &__text, img {
-      transition: all .16s ease-in-out;
+      transition: var(--transition-default);
     }
 
     &:hover {

@@ -74,7 +74,8 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     pointer-events: none;
     filter: brightness(0.5);
-    transition: all .16s ease-in-out;
+    transition: var(--transition-default);
+    touch-action: none;
   }
 }
 
