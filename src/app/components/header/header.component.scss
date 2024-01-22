@@ -53,13 +53,13 @@
         &--open .nav-bar__item--menu__svg-line {
           transition: var(--transition-default);
           &--top {
-            transform: translate(20%, 5%) rotate(45deg);
+            transform: translate(20%, 3%) rotate(45deg);
           }
           &--middle {
             transform: translateX(50%) scaleX(0);
           }
           &--bottom {
-            transform: translate(-40%, 25%) rotate(-45deg);
+            transform: translate(-40%, 27%) rotate(-45deg);
           }
         }
       }
