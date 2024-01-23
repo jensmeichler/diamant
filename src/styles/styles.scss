@@ -4,6 +4,10 @@ body {
   scroll-behavior: smooth;
 }
 
+html {
+  background: var(--color-primary);
+}
+
 body {
   margin: 0;
   font-family: 'Red Hat Display', "Helvetica Neue", sans-serif;
