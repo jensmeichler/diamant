@@ -1,107 +1,109 @@
-<div class="monthly-offer">
-  <img class="monthly-offer__img" src="assets/img/home/aqua-splash.min.webp" width="830" height="580" alt="Angebot">
-  <span class="monthly-offer__title">
-    <p>
-      <strong>Monatsangebot:</strong>
-      <br>
-      HydraBeauty Gesichtsbehandlung (75 Min)
-    </p>
-  </span>
-  <span class="monthly-offer__body" *ngIf="$desktop | async; else mobile">
-    <p class="content align-center">
-      Die apparative Reinigung wird Ihre Haut optimal
-      vorbereiten, um die wertvollen Wirkstoffe aufzunehmen! Nach der Augenbrauenkorrektur wird je nach Hauttyp der
-      passende Wirkstoff auf die Haut aufgetragen. Sofort Effekt mit Langzeitwirkung und ein
-      strahlendes Hautbild.<br>
-      Hinzu kommt eine Maske, die sowohl auf das Gesicht als
-      auch auf das Dekolleté einmassiert wird. Ihre Haut bekommt ein jugendliches Erscheinungsbild mit
-      Lifting-Effekt.
-    </p>
-  </span>
-  <ng-template #mobile>
-    <span class="monthly-offer__body">
-      <p [ngClass]="{hidden: readMore}">
-        Die apparative Reinigung wird Ihre Haut optimal
-        vorbereiten, um die wertvollen Wirkstoffe aufzunehmen! Nach der... <button (click)="readMore = !readMore">weiter lesen</button>
+<ng-container *ngIf="{isMobile: $mobile | async} as view">
+  <div class="monthly-offer">
+    <img class="monthly-offer__img" [src]="view.isMobile ? 'assets/img/home/aqua-splash.min.webp' : 'assets/img/home/aqua-splash.webp'" width="830" height="580" alt="Angebot">
+    <span class="monthly-offer__title">
+      <p>
+        <strong>Monatsangebot:</strong>
+        <br>
+        HydraBeauty Gesichtsbehandlung (75 Min)
       </p>
-      <p [ngClass]="{hidden: !readMore}">
+    </span>
+    <span class="monthly-offer__body" *ngIf="view.isMobile; else mobile">
+      <p class="content align-center">
         Die apparative Reinigung wird Ihre Haut optimal
         vorbereiten, um die wertvollen Wirkstoffe aufzunehmen! Nach der Augenbrauenkorrektur wird je nach Hauttyp der
         passende Wirkstoff auf die Haut aufgetragen. Sofort Effekt mit Langzeitwirkung und ein
-        strahlendes Hautbild.<br> Hinzu kommt eine Maske, die sowohl auf das Gesicht als
+        strahlendes Hautbild.<br>
+        Hinzu kommt eine Maske, die sowohl auf das Gesicht als
         auch auf das Dekolleté einmassiert wird. Ihre Haut bekommt ein jugendliches Erscheinungsbild mit
         Lifting-Effekt.
       </p>
     </span>
-  </ng-template>
-  <span class="monthly-offer__price">
-    <p>69,99 €</p>
-  </span>
-</div>
-
-<div class="content">
-  <h1 class="home-title align-center">Ihr Kosmetikstudio in Braunschweig für professionelle Gesichtspflege</h1>
-  <div class="grid-group">
-    <img class="grid-group__img" src="assets/img/home/marina.min.webp" width="888" height="667" alt="Marina Gruszka">
-    <p class="grid-group__text">
-      Pflegeprodukte und Kosmetik aus der Natur. Erfahrung seit 20 Jahren und seit 10 in Braunschweigs
-      Kosmetikstudio - Schönheit neu erleben!
-    </p>
-    <img class="grid-group__img" src="assets/img/home/facial-treatments.min.webp" width="900" height="676" alt="Mesoporation">
-    <p class="grid-group__text">
-      Das Kosmetikgeheimnis der Hollywoodstars: Mesoporation - sensationelle Ergebnisse in kurzer Zeit.
-      Jetzt in ihrem Kosmetikstudio in Braunschweig.
-    </p>
-    <img class="grid-group__img grid-group__img--link" src="assets/img/home/consulting.min.webp" width="900" height="671" alt="Beratung" routerLink="/beratung">
-    <p class="grid-group__text">
-      <strong>Beratung:</strong><br>
-      Machen Sie sich das Leben leicht: Wir beraten Sie in allen Fragen der Schönheit und empfehlen Ihnen
-      individuell die passende Kosmetik, um Ihr Leben in Braunschweig leichter und angenehmer zu
-      machen.
-    </p>
+    <ng-template #mobile>
+      <span class="monthly-offer__body">
+        <p [ngClass]="{hidden: readMore}">
+          Die apparative Reinigung wird Ihre Haut optimal
+          vorbereiten, um die wertvollen Wirkstoffe aufzunehmen! Nach der... <button (click)="readMore = !readMore">weiter lesen</button>
+        </p>
+        <p [ngClass]="{hidden: !readMore}">
+          Die apparative Reinigung wird Ihre Haut optimal
+          vorbereiten, um die wertvollen Wirkstoffe aufzunehmen! Nach der Augenbrauenkorrektur wird je nach Hauttyp der
+          passende Wirkstoff auf die Haut aufgetragen. Sofort Effekt mit Langzeitwirkung und ein
+          strahlendes Hautbild.<br> Hinzu kommt eine Maske, die sowohl auf das Gesicht als
+          auch auf das Dekolleté einmassiert wird. Ihre Haut bekommt ein jugendliches Erscheinungsbild mit
+          Lifting-Effekt.
+        </p>
+      </span>
+    </ng-template>
+    <span class="monthly-offer__price">
+      <p>69,99 €</p>
+    </span>
   </div>
-</div>
 
-<article class="content">
-  <h2>Diamant Kosmetik Ihr anti-aging Kosmetikstudio in Braunschweig</h2>
-  <p>
-    Wollen Sie erfahren, was sich gerade Neues tut in Sachen Schönheit und Kosmetik? Wollen sie wissen, wie die
-    neue Technik die Kosmetikstudios unterstützt und was es Neues für die Haut in
-    Braunschweig gibt? Ihr freundliches Kosmetikstudio zeigt Ihnen einfache Wege. Es ist wirklich easy! Diamant
-    Kosmetik in Braunschweig bringt es auf den Punkt. Gesichtsbehandlung mit Mikrodermabrasion
-    wird in unserem Kosmetikstudio praktiziert - eine effektive Methode, um die richtigen Wirkstoffe in die tiefsten
-    Hautschichten zu transportieren. Mesoporation - das Neueste in der apparativen
-    Hautkosmetik. Diamant Kosmetik - Ihr Kosmetikstudio steht Ihnen mit Rat und Tat zur Verfügung! Probieren Sie es
-    aus und Sie werden begeistert sein.
-  </p>
-  <p>
-    Natürlich schön sein! Ihr freundliches Kosmetikstudio in Braunschweig hat die Naturprodukte und Kosmetik, die Sie
-    haben wollen. Klicken Sie auf Produkte und wählen Sie das für Sie Passende aus.
-    Schauen Sie sich den Film ARTISTRY YOUTH XTEND an und Sie werden sehen, wie die Wirkstoffe aus dem Lebensbaum dazu
-    dienen, Ihrer Haut ein jüngeres Aussehen zu verleihen.
-  </p>
-  <p>
-    Diamant Kosmetik - Schönheit neu erleben, Ihr freundliches Kosmetikstudio in Braunschweig ist auch immer mit den
-    aktuellen Make-up-Trends für Sie präsent. Ob im Job oder am Abend, wir bieten Looks
-    für jede Gelegenheit. Wir haben die aktuellen Nuancen für Sie ausgesucht: Gold und rosa oder pink und rot? Diamant
-    Kosmetik in Braunschweig macht es möglich und Sie fühlen sich wohl in Ihrer
-    Haut!
-  </p>
-  <p>
-    Nach neuesten Erkenntnissen kann die Umwelt die Haut krank machen. Das bestätigt eine Studie eines bekannten
-    Kosmetikherstellers. Betroffen sind vor allem Städte, weil Feinstaub durch Autos und
-    Industrie entsteht. Diamant Kosmetik, Ihr Kosmetikstudio in Braunschweig, weiß Rat. Wir können Sie beraten.
-    Beauty-News und Beauty-Trends, das bietet Ihnen Ihr Kosmetikstudio in Braunschweig. In der
-    Rubrik Gesichtsbehandlungen finden Sie auf unserer Homepage dekorative Kosmetik, Luxusbehandlungen,
-    Hochzeitsmakeup und vieles mehr. Diamant Kosmetikstudio ist besonders spezialisiert und erfahren in
-    Anti-Aging, für Hautverjüngung, zur Prävention von Hautalterung, Straffung und Aufpolsterung der Haut.
-  </p>
-  <p>
-    Was die Kunden sagen:
-  </p>
-  <p>
-    Alles in allem liebe ich es in mein Kosmetikstudio Diamant zu gehen und bin jedes Mal total glücklich mit dem
-    Ergebnis. Aus diesem Grund kann ich es nur jedem ans Herz legen, dem Kosmetikstudio
-    Diamant in Braunschweig einen Besuch abzustatten.
-  </p>
-</article>
+  <div class="content">
+    <h1 class="home-title align-center">Ihr Kosmetikstudio in Braunschweig für professionelle Gesichtspflege</h1>
+    <div class="grid-group">
+      <img class="grid-group__img" [src]="view.isMobile ? 'assets/img/home/marina.min.webp' : 'assets/img/home/marina.webp'" width="888" height="667" alt="Marina Gruszka">
+      <p class="grid-group__text">
+        Pflegeprodukte und Kosmetik aus der Natur. Erfahrung seit 20 Jahren und seit 10 in Braunschweigs
+        Kosmetikstudio - Schönheit neu erleben!
+      </p>
+      <img class="grid-group__img" [src]="view.isMobile ? 'assets/img/home/facial-treatments.min.webp' : 'assets/img/home/facial-treatments.webp'" width="900" height="676" alt="Mesoporation">
+      <p class="grid-group__text">
+        Das Kosmetikgeheimnis der Hollywoodstars: Mesoporation - sensationelle Ergebnisse in kurzer Zeit.
+        Jetzt in ihrem Kosmetikstudio in Braunschweig.
+      </p>
+      <img class="grid-group__img grid-group__img--link" [src]="view.isMobile ? 'assets/img/home/consulting.min.webp' : 'assets/img/home/consulting.webp'" width="900" height="671" alt="Beratung" routerLink="/beratung">
+      <p class="grid-group__text">
+        <strong>Beratung:</strong><br>
+        Machen Sie sich das Leben leicht: Wir beraten Sie in allen Fragen der Schönheit und empfehlen Ihnen
+        individuell die passende Kosmetik, um Ihr Leben in Braunschweig leichter und angenehmer zu
+        machen.
+      </p>
+    </div>
+  </div>
+
+  <article class="content">
+    <h2>Diamant Kosmetik Ihr anti-aging Kosmetikstudio in Braunschweig</h2>
+    <p>
+      Wollen Sie erfahren, was sich gerade Neues tut in Sachen Schönheit und Kosmetik? Wollen sie wissen, wie die
+      neue Technik die Kosmetikstudios unterstützt und was es Neues für die Haut in
+      Braunschweig gibt? Ihr freundliches Kosmetikstudio zeigt Ihnen einfache Wege. Es ist wirklich easy! Diamant
+      Kosmetik in Braunschweig bringt es auf den Punkt. Gesichtsbehandlung mit Mikrodermabrasion
+      wird in unserem Kosmetikstudio praktiziert - eine effektive Methode, um die richtigen Wirkstoffe in die tiefsten
+      Hautschichten zu transportieren. Mesoporation - das Neueste in der apparativen
+      Hautkosmetik. Diamant Kosmetik - Ihr Kosmetikstudio steht Ihnen mit Rat und Tat zur Verfügung! Probieren Sie es
+      aus und Sie werden begeistert sein.
+    </p>
+    <p>
+      Natürlich schön sein! Ihr freundliches Kosmetikstudio in Braunschweig hat die Naturprodukte und Kosmetik, die Sie
+      haben wollen. Klicken Sie auf Produkte und wählen Sie das für Sie Passende aus.
+      Schauen Sie sich den Film ARTISTRY YOUTH XTEND an und Sie werden sehen, wie die Wirkstoffe aus dem Lebensbaum dazu
+      dienen, Ihrer Haut ein jüngeres Aussehen zu verleihen.
+    </p>
+    <p>
+      Diamant Kosmetik - Schönheit neu erleben, Ihr freundliches Kosmetikstudio in Braunschweig ist auch immer mit den
+      aktuellen Make-up-Trends für Sie präsent. Ob im Job oder am Abend, wir bieten Looks
+      für jede Gelegenheit. Wir haben die aktuellen Nuancen für Sie ausgesucht: Gold und rosa oder pink und rot? Diamant
+      Kosmetik in Braunschweig macht es möglich und Sie fühlen sich wohl in Ihrer
+      Haut!
+    </p>
+    <p>
+      Nach neuesten Erkenntnissen kann die Umwelt die Haut krank machen. Das bestätigt eine Studie eines bekannten
+      Kosmetikherstellers. Betroffen sind vor allem Städte, weil Feinstaub durch Autos und
+      Industrie entsteht. Diamant Kosmetik, Ihr Kosmetikstudio in Braunschweig, weiß Rat. Wir können Sie beraten.
+      Beauty-News und Beauty-Trends, das bietet Ihnen Ihr Kosmetikstudio in Braunschweig. In der
+      Rubrik Gesichtsbehandlungen finden Sie auf unserer Homepage dekorative Kosmetik, Luxusbehandlungen,
+      Hochzeitsmakeup und vieles mehr. Diamant Kosmetikstudio ist besonders spezialisiert und erfahren in
+      Anti-Aging, für Hautverjüngung, zur Prävention von Hautalterung, Straffung und Aufpolsterung der Haut.
+    </p>
+    <p>
+      Was die Kunden sagen:
+    </p>
+    <p>
+      Alles in allem liebe ich es in mein Kosmetikstudio Diamant zu gehen und bin jedes Mal total glücklich mit dem
+      Ergebnis. Aus diesem Grund kann ich es nur jedem ans Herz legen, dem Kosmetikstudio
+      Diamant in Braunschweig einen Besuch abzustatten.
+    </p>
+  </article>
+</ng-container>

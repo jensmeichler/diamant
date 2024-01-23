@@ -11,8 +11,8 @@ import {fromEvent, map, startWith} from "rxjs";
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  $desktop = fromEvent(window, 'resize')
-    .pipe(startWith(undefined), map(() => window.innerWidth >= 650));
+  $mobile = fromEvent(window, 'resize')
+    .pipe(startWith(undefined), map(() => window.innerWidth < 650));
 
   readMore = false;
 }
