@@ -57,6 +57,11 @@ img {
 h1, h2, h3, h4, h5, h6 {
   color: var(--color-primary);
   text-align: left;
+  font-weight: 500;
+}
+
+strong {
+  font-weight: 500;
 }
 
 .content {
