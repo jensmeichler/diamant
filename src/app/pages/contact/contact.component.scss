@@ -21,7 +21,7 @@
 }
 
 .photo {
-  width: 33%;
+  width: calc(50% - .5rem);
   float: left;
   margin: 0 1rem .25rem 0;
 
