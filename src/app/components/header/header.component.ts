@@ -28,10 +28,6 @@ export class HeaderComponent {
     }
   }
 
-  linkClick(): void {
-    window.scroll({top: 0});
-  }
-
   private openMenu = (): void => {
     this.menuOpen = true;
     setTimeout(() =>

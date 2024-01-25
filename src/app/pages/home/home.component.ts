@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {RouterLink} from "@angular/router";
 import {AsyncPipe, NgClass, NgIf} from "@angular/common";
 import {fromEvent, map, startWith} from "rxjs";
@@ -10,9 +10,13 @@ import {fromEvent, map, startWith} from "rxjs";
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
   $mobile = fromEvent(window, 'resize')
     .pipe(startWith(undefined), map(() => window.innerWidth < 650));
 
   readMore = false;
+
+  ngOnInit(): void {
+    window.scroll({top: 0, behavior: 'instant'});
+  }
 }

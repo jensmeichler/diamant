@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {RouterLink} from "@angular/router";
 
 @Component({
@@ -10,5 +10,8 @@ import {RouterLink} from "@angular/router";
   templateUrl: './treatments.component.html',
   styleUrls: ['./treatments.component.scss']
 })
-export class TreatmentsComponent {
+export class TreatmentsComponent implements OnInit {
+  ngOnInit(): void {
+    window.scroll({top: 0, behavior: 'instant'});
+  }
 }

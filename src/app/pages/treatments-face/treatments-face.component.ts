@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-treatments-face',
@@ -7,5 +7,8 @@ import {Component} from '@angular/core';
   templateUrl: './treatments-face.component.html',
   styleUrls: ['./treatments-face.component.scss']
 })
-export class TreatmentsFaceComponent {
+export class TreatmentsFaceComponent implements OnInit {
+  ngOnInit(): void {
+    window.scroll({top: 0, behavior: 'instant'});
+  }
 }

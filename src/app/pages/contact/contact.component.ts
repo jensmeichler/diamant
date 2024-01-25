@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {MapComponent} from "src/app/components/map/map.component";
 
 @Component({
@@ -8,5 +8,8 @@ import {MapComponent} from "src/app/components/map/map.component";
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
+  ngOnInit(): void {
+    window.scroll({top: 0, behavior: 'instant'});
+  }
 }

@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-consulting',
@@ -7,5 +7,8 @@ import {Component} from '@angular/core';
   templateUrl: './consulting.component.html',
   styleUrls: ['./consulting.component.scss']
 })
-export class ConsultingComponent {
+export class ConsultingComponent implements OnInit {
+  ngOnInit(): void {
+    window.scroll({top: 0, behavior: 'instant'});
+  }
 }
