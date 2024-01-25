@@ -1,0 +1,22 @@
+:host::before {
+  display: block;
+  height: 8rem;
+  margin-top: 6rem;
+  padding-top: 5rem;
+  margin-bottom: -17rem;
+  content: " ";
+  background: var(--color-primary);
+}
+
+.info-message {
+  margin-top: 1rem;
+  padding: 10px;
+  border-radius: 1rem;
+  background-color: var(--color-secondary);
+  color: var(--color-secondary-contrast);
+
+  * {
+    text-align: center;
+    color: var(--color-secondary-contrast);
+  }
+}

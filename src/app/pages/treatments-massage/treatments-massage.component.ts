@@ -1,9 +1,12 @@
 import {Component, OnInit} from '@angular/core';
+import {InfoBoxCouponComponent} from "src/app/components/info-box-coupon/info-box-coupon.component";
 
 @Component({
   selector: 'app-treatments-massage',
   standalone: true,
-  imports: [],
+  imports: [
+    InfoBoxCouponComponent
+  ],
   templateUrl: './treatments-massage.component.html',
   styleUrls: ['./treatments-massage.component.scss']
 })
