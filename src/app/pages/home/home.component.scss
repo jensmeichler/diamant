@@ -82,6 +82,8 @@
     display: block;
     background: var(--color-secondary);
     color: var(--color-secondary-contrast);
+    font-size: larger;
+    min-width: 6rem;
 
     p {
       padding: 1rem 0;
