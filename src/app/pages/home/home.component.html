@@ -49,6 +49,10 @@
           Pflegeprodukte und Kosmetik aus der Natur. Erfahrung seit 20 Jahren und seit 10 in Braunschweigs
           Kosmetikstudio - Schönheit neu erleben!
         </p>
+        <div class="card__link-group">
+          <a routerLink="/produkte" class="card__link-group__link">Zu unseren Produkten</a>
+          <a routerLink="/beratung" class="card__link-group__link">Über mich</a>
+        </div>
       </div>
 
       <div class="card">
@@ -57,9 +61,12 @@
           Das Kosmetikgeheimnis der Hollywoodstars: Mesoporation - sensationelle Ergebnisse in kurzer Zeit.
           Jetzt in ihrem Kosmetikstudio in Braunschweig.
         </p>
+        <div class="card__link-group">
+          <a routerLink="/behandlungen" class="card__link-group__link">Zu unseren Behandlungen</a>
+        </div>
       </div>
 
-      <div class="card card--link" routerLink="/beratung">
+      <div class="card card--link" routerLink="/beratung" [queryParams]="{showAdvice: true}">
         <img class="card__img" [src]="view.isMobile ? 'assets/img/home/consulting.min.webp' : 'assets/img/home/consulting.webp'" width="900" height="671" alt="Beratung">
         <p class="card__text">
           <strong>Beratung:</strong><br>

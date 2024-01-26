@@ -16,6 +16,29 @@
     border-radius: 1rem 1rem 0 0;
   }
 
+  &__link-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0 1rem 1rem 1rem;
+
+    &__link {
+      text-decoration: none;
+      background: var(--color-secondary);
+      color: var(--color-secondary-contrast);
+      padding: .75rem 1rem;
+      border-radius: 1rem;
+      flex: auto;
+      text-align: center;
+
+      transition: var(--transition-default);
+      &:hover {
+        background: var(--color-secondary-active);
+        box-shadow: var(--box-shadow-strong);
+      }
+    }
+  }
+
   &--link {
     cursor: pointer;
     transition: box-shadow var(--transition-default-behaviour);

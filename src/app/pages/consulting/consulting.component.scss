@@ -1,3 +1,22 @@
+.advice {
+  background: var(--color-secondary);
+  color: var(--color-secondary-contrast);
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+
+  h2, .phone {
+    color: var(--color-secondary-contrast);
+    text-align: center;
+    justify-content: center;
+  }
+
+  .phone__link {
+    background: var(--color-primary);
+    color: var(--color-primary-contrast);
+  }
+}
+
 .phone {
   display: flex;
   align-items: center;

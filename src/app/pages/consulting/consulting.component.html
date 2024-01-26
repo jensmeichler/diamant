@@ -2,6 +2,14 @@
   <h1 class="align-center">Ihr freundliches Kosmetik & Wellness Studio in Braunschweig</h1>
   <hr>
   <br>
+
+  <ng-container *ngIf="showAdvice">
+    <div class="advice">
+      <ng-container *ngTemplateOutlet="callAdvice"></ng-container>
+    </div>
+    <br>
+  </ng-container>
+
   <div class="grid-group">
     <article>
       <h2>Über mich</h2>
@@ -77,10 +85,15 @@
     in der Sie entspannt den Alltagsstress vergessen können.
   </p>
 
-  <br>
-  <hr>
-  <br>
+  <ng-container *ngIf="!showAdvice">
+    <br>
+    <hr>
+    <br>
+    <ng-container *ngTemplateOutlet="callAdvice"></ng-container>
+  </ng-container>
+</div>
 
+<ng-template #callAdvice>
   <h2>Sie wünschen eine individuelle Behandlung?</h2>
   <br>
   <p>
@@ -89,4 +102,4 @@
     <br>
     <span class="phone">Rufen Sie einfach an unter:<a class="phone__link" href="tel: 017676893292">0176&nbsp;76893292</a></span>
   </p>
-</div>
+</ng-template>
