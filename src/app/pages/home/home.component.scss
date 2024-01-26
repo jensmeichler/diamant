@@ -76,7 +76,6 @@
 }
 
 .monthly-offer {
-  text-align: center;
   margin-top: -1rem;
 
   &__title {
@@ -170,7 +169,6 @@
 
     @media screen {
       @media (min-width: 850px) {
-        text-align: center;
         background: var(--color-light);
       }
     }

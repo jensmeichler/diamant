@@ -1,5 +1,5 @@
 <ng-container *ngIf="{isMobile: $mobile | async} as view">
-  <div class="monthly-offer">
+  <div class="monthly-offer align-center">
     <img class="monthly-offer__img" ngSrc="assets/img/home/aqua-splash.webp" width="830" height="580" alt="Angebot" priority="1">
     <span class="monthly-offer__title secondary">
       <p class="m">
@@ -8,7 +8,7 @@
         Diamant Microdermabrasion (90 Min)
       </p>
     </span>
-    <span class="monthly-offer__body secondary" *ngIf="!view.isMobile; else mobile">
+    <span class="monthly-offer__body secondary align-center" *ngIf="!view.isMobile; else mobile">
       <p class="content align-center m">
         Die apparative Reinigung wird Ihre Haut optimal
         vorbereiten, um die wertvollen Wirkstoffe aufzunehmen! Nach der Augenbrauenkorrektur wird je nach Hauttyp der
