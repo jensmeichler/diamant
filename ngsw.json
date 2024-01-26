@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1706286450861,
+  "timestamp": 1706287406834,
   "index": "https://jensmeichler.github.io/diamant/index.html",
   "assetGroups": [
     {
@@ -11,20 +11,20 @@
         "ignoreVary": true
       },
       "urls": [
-        "https://jensmeichler.github.io/diamant/108.2377a832c50a19d6.js",
+        "https://jensmeichler.github.io/diamant/108.7161e9d60cb1f0ef.js",
         "https://jensmeichler.github.io/diamant/445.878419c13d014f97.js",
         "https://jensmeichler.github.io/diamant/466.7671320dfc2ead8f.js",
         "https://jensmeichler.github.io/diamant/530.b04c4011d5a91767.js",
         "https://jensmeichler.github.io/diamant/705.f98588ad925b70a9.js",
         "https://jensmeichler.github.io/diamant/763.cecc8fbf4ae4cbbb.js",
         "https://jensmeichler.github.io/diamant/99.b2e8c187259f4bb8.js",
-        "https://jensmeichler.github.io/diamant/common.74ad9b5e7b65df0a.js",
+        "https://jensmeichler.github.io/diamant/common.cb8fff1324d47acf.js",
         "https://jensmeichler.github.io/diamant/index.html",
-        "https://jensmeichler.github.io/diamant/main.2fb7ff47b2054992.js",
+        "https://jensmeichler.github.io/diamant/main.a950c0d5fc93f842.js",
         "https://jensmeichler.github.io/diamant/manifest.webmanifest",
         "https://jensmeichler.github.io/diamant/polyfills.8e92ed086ea0e2c2.js",
-        "https://jensmeichler.github.io/diamant/runtime.8f3cdcc24c961fa6.js",
-        "https://jensmeichler.github.io/diamant/styles.3365ac7395d7c8f6.css"
+        "https://jensmeichler.github.io/diamant/runtime.6b47496eaf73e195.js",
+        "https://jensmeichler.github.io/diamant/styles.815e5da02d28deb9.css"
       ],
       "patterns": []
     },
@@ -64,7 +64,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "https://jensmeichler.github.io/diamant/108.2377a832c50a19d6.js": "939700307328358f1c7923e6f602fcc0ef2ce0c6",
+    "https://jensmeichler.github.io/diamant/108.7161e9d60cb1f0ef.js": "47d38ec10c154ff2de80b7eaf70e88e60edad4c2",
     "https://jensmeichler.github.io/diamant/445.878419c13d014f97.js": "64aaa93ec22a216821944b302d66811c0dcd9564",
     "https://jensmeichler.github.io/diamant/466.7671320dfc2ead8f.js": "94ed014eb1d6d4cf32e3bd25c8c8b532d76fb78d",
     "https://jensmeichler.github.io/diamant/530.b04c4011d5a91767.js": "f9c48f3cce837a06f014217ed57a2e5f8ce33316",
@@ -92,14 +92,14 @@
     "https://jensmeichler.github.io/diamant/assets/img/treatments/cnc-treatment.webp": "25577045b0dc3a1d94f1b0554736f69974a908f5",
     "https://jensmeichler.github.io/diamant/assets/svg/location-dot.svg": "bb6ab5e8e175a4aaccb358daec639bd536cb92d3",
     "https://jensmeichler.github.io/diamant/assets/svg/phone.svg": "3bf4d2f634917640ae0d0e3dfb868d99cbaca994",
-    "https://jensmeichler.github.io/diamant/common.74ad9b5e7b65df0a.js": "9b2147b5feebe663b6a63242333f030e04d802bf",
+    "https://jensmeichler.github.io/diamant/common.cb8fff1324d47acf.js": "7deb8bd16b5fa6c153b26e7e568d907a8d9e1b2d",
     "https://jensmeichler.github.io/diamant/favicon.svg": "bf1e07827af75e54816b49ca3d84f6c97b2e0217",
-    "https://jensmeichler.github.io/diamant/index.html": "98feaf136d3f1874713a90715b3154db5caac034",
-    "https://jensmeichler.github.io/diamant/main.2fb7ff47b2054992.js": "c820d27b40c5d789172f08cb305be3f4c204ece1",
+    "https://jensmeichler.github.io/diamant/index.html": "41aba6c05c15f5ef33ef605387705632e87f9372",
+    "https://jensmeichler.github.io/diamant/main.a950c0d5fc93f842.js": "6e7fe7b7ddeb3478f16994515143ab44180cc19f",
     "https://jensmeichler.github.io/diamant/manifest.webmanifest": "3fbbda13ae7e1c5ab50897bf99133eaf767013d9",
     "https://jensmeichler.github.io/diamant/polyfills.8e92ed086ea0e2c2.js": "d884820dc3cf3d82d9b9d26625b31bebbcd0c4d8",
-    "https://jensmeichler.github.io/diamant/runtime.8f3cdcc24c961fa6.js": "649ab143a7fe368341c34e004326366ac2e2b18b",
-    "https://jensmeichler.github.io/diamant/styles.3365ac7395d7c8f6.css": "ef607856c163e8ecf1373b0d9a7618f9af7ac310"
+    "https://jensmeichler.github.io/diamant/runtime.6b47496eaf73e195.js": "018f5e2a5546c4c0c55de2f5ee481c4db1a4314c",
+    "https://jensmeichler.github.io/diamant/styles.815e5da02d28deb9.css": "38983778d7e67e7db688680f4226ccb53eb37c9f"
   },
   "navigationUrls": [
     {
