@@ -2,41 +2,45 @@
   margin-top: 2rem;
 }
 
-.grid-group {
-  @media screen {
-    @media (max-width: 649px) {
-      p {
-        margin-bottom: 1rem;
-      }
-    }
-    @media (min-width: 650px) {
-      display: grid;
-      grid-auto-flow: column;
-      grid-template-rows: 1fr 1fr;
-      gap: 1rem;
-    }
-    @media (min-width: 950px) {
-      grid-template-rows: 3fr 2fr;
-    }
-    @media (min-width: 1200px) {
-      grid-template-rows: 2fr 1fr;
-    }
+.card {
+  background: var(--color-light);
+  border-radius: 1rem;
+
+  &__text {
+    padding: 1rem;
   }
 
   &__img {
     width: 100%;
-    height: 100%;
+    height: 300px;
+    border-radius: 1rem 1rem 0 0;
+  }
 
-    &--link {
-      cursor: pointer;
-      transition: box-shadow var(--transition-default-behaviour);
-      &:hover {
-        box-shadow: var(--box-shadow-strong);
-      }
+  &--link {
+    cursor: pointer;
+    transition: box-shadow var(--transition-default-behaviour);
+    &:hover {
+      box-shadow: var(--box-shadow-strong);
     }
   }
 
   margin-bottom: 1rem;
+}
+
+.grid-group {
+  @media screen {
+    @media (max-width: 649px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media (min-width: 650px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 1rem;
+    }
+  }
 }
 
 .monthly-offer {
