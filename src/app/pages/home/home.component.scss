@@ -103,6 +103,10 @@
         right: calc(75vw - 8rem);
         border-radius: 1rem;
       }
+
+      @media (min-width: 2600px) {
+        right: calc(50vw + 523px);
+      }
     }
   }
 
@@ -131,9 +135,12 @@
         border-radius: 1rem;
       }
 
-
       @media (min-width: 1900px) {
         top: 350px;
+      }
+
+      @media (min-width: 2600px) {
+        left: calc(50vw + 602px);
       }
     }
   }
@@ -141,6 +148,7 @@
   &__img {
     max-width: 1300px;
 
+    transition: var(--transition-default);
     @media screen {
       @media (max-width: 849px) {
         width: 100%;
@@ -167,6 +175,7 @@
     display: block;
     width: 100%;
 
+    transition: var(--transition-default);
     @media screen {
       @media (min-width: 850px) {
         background: var(--color-light);
