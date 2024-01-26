@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1706282783846,
+  "timestamp": 1706283587941,
   "index": "https://jensmeichler.github.io/diamant/index.html",
   "assetGroups": [
     {
@@ -20,10 +20,10 @@
         "https://jensmeichler.github.io/diamant/99.b2e8c187259f4bb8.js",
         "https://jensmeichler.github.io/diamant/common.99cd368e85aee1c5.js",
         "https://jensmeichler.github.io/diamant/index.html",
-        "https://jensmeichler.github.io/diamant/main.8863cbe6bdb21336.js",
+        "https://jensmeichler.github.io/diamant/main.30a3116670130660.js",
         "https://jensmeichler.github.io/diamant/manifest.webmanifest",
         "https://jensmeichler.github.io/diamant/polyfills.8e92ed086ea0e2c2.js",
-        "https://jensmeichler.github.io/diamant/runtime.bc583f0c8923c384.js",
+        "https://jensmeichler.github.io/diamant/runtime.bd39c05a78c0d749.js",
         "https://jensmeichler.github.io/diamant/styles.89e9fccf66c959ed.css"
       ],
       "patterns": []
@@ -48,13 +48,9 @@
         "https://jensmeichler.github.io/diamant/assets/img/404/dino.svg",
         "https://jensmeichler.github.io/diamant/assets/img/consulting/marina.webp",
         "https://jensmeichler.github.io/diamant/assets/img/contact/studio.webp",
-        "https://jensmeichler.github.io/diamant/assets/img/home/aqua-splash.min.webp",
         "https://jensmeichler.github.io/diamant/assets/img/home/aqua-splash.webp",
-        "https://jensmeichler.github.io/diamant/assets/img/home/consulting.min.webp",
         "https://jensmeichler.github.io/diamant/assets/img/home/consulting.webp",
-        "https://jensmeichler.github.io/diamant/assets/img/home/facial-treatments.min.webp",
         "https://jensmeichler.github.io/diamant/assets/img/home/facial-treatments.webp",
-        "https://jensmeichler.github.io/diamant/assets/img/home/marina.min.webp",
         "https://jensmeichler.github.io/diamant/assets/img/home/marina.webp",
         "https://jensmeichler.github.io/diamant/assets/img/products/products.webp",
         "https://jensmeichler.github.io/diamant/assets/img/treatments/2464117202.webp",
@@ -87,13 +83,9 @@
     "https://jensmeichler.github.io/diamant/assets/img/404/dino.svg": "538913f9c923d5de4d609d8758c299142a2a07a4",
     "https://jensmeichler.github.io/diamant/assets/img/consulting/marina.webp": "1755cced8cf548771bbbd7527bfc2b054fcd1df3",
     "https://jensmeichler.github.io/diamant/assets/img/contact/studio.webp": "02ff1e611aea6fa4a5f104447601da7600de8f20",
-    "https://jensmeichler.github.io/diamant/assets/img/home/aqua-splash.min.webp": "39bf8455c67c530618f76f388cfbbce10eb243af",
     "https://jensmeichler.github.io/diamant/assets/img/home/aqua-splash.webp": "db40516a30d2f1b5aac9c00fc4cf3aa736667579",
-    "https://jensmeichler.github.io/diamant/assets/img/home/consulting.min.webp": "76f57ba5670b9553aec5e7152c5f61fd9a338872",
     "https://jensmeichler.github.io/diamant/assets/img/home/consulting.webp": "20ef2650337e95162b666d2d8b013c2bb3abafc1",
-    "https://jensmeichler.github.io/diamant/assets/img/home/facial-treatments.min.webp": "19e29b60a8fe1cbdd0ea7ea0bebc31dbee2ec416",
     "https://jensmeichler.github.io/diamant/assets/img/home/facial-treatments.webp": "7190a02790a482def7dea93379d06423bad9d646",
-    "https://jensmeichler.github.io/diamant/assets/img/home/marina.min.webp": "09dad1c351e8ab33fded268a60b66052bbd6fb46",
     "https://jensmeichler.github.io/diamant/assets/img/home/marina.webp": "61b569f36ae5aad7a7be3613d34403cc59e4abaf",
     "https://jensmeichler.github.io/diamant/assets/img/products/products.webp": "f6b12c967903bf0cc91a6cb75c1b5ed771e3c6d7",
     "https://jensmeichler.github.io/diamant/assets/img/treatments/2464117202.webp": "ed18889f7a0493e720881e07e356aececbfa496f",
@@ -102,11 +94,11 @@
     "https://jensmeichler.github.io/diamant/assets/svg/phone.svg": "3bf4d2f634917640ae0d0e3dfb868d99cbaca994",
     "https://jensmeichler.github.io/diamant/common.99cd368e85aee1c5.js": "94da455800f6fdaf8dcdb737d7f94c10020ca34f",
     "https://jensmeichler.github.io/diamant/favicon.svg": "bf1e07827af75e54816b49ca3d84f6c97b2e0217",
-    "https://jensmeichler.github.io/diamant/index.html": "507ea2d97e430725a72c559c5bb4646491d8c840",
-    "https://jensmeichler.github.io/diamant/main.8863cbe6bdb21336.js": "92e3e27116aa12f1ef3878e78cc60edd960b6cb2",
+    "https://jensmeichler.github.io/diamant/index.html": "512b0db071f9ca24fd9a3adb3649dfcbf875d1f4",
+    "https://jensmeichler.github.io/diamant/main.30a3116670130660.js": "759ea67d4443e08d02df1a2ea5233e8517a8cc4d",
     "https://jensmeichler.github.io/diamant/manifest.webmanifest": "3fbbda13ae7e1c5ab50897bf99133eaf767013d9",
     "https://jensmeichler.github.io/diamant/polyfills.8e92ed086ea0e2c2.js": "d884820dc3cf3d82d9b9d26625b31bebbcd0c4d8",
-    "https://jensmeichler.github.io/diamant/runtime.bc583f0c8923c384.js": "08c72c1c4533df94a530639c5e98f161e1e47406",
+    "https://jensmeichler.github.io/diamant/runtime.bd39c05a78c0d749.js": "8d567491f4ba5eb624d6a8b6b07e63c944e92ed4",
     "https://jensmeichler.github.io/diamant/styles.89e9fccf66c959ed.css": "6231de2bc8f0d14857ad4c74d1f6e5ee674998b0"
   },
   "navigationUrls": [
