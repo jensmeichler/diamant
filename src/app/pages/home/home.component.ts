@@ -1,13 +1,13 @@
 import {Component, inject, OnInit} from '@angular/core';
 import {RouterLink} from "@angular/router";
-import {AsyncPipe, NgClass, NgIf} from "@angular/common";
+import {AsyncPipe, NgClass, NgIf, NgOptimizedImage} from "@angular/common";
 import {fromEvent, map, startWith} from "rxjs";
 import {SeoService} from "src/app/services/seo.service";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterLink, NgIf, AsyncPipe, NgClass],
+  imports: [RouterLink, NgIf, AsyncPipe, NgClass, NgOptimizedImage],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })

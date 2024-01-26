@@ -79,6 +79,24 @@ strong {
   }
 }
 
+.primary {
+  background: var(--color-primary);
+  color: var(--color-primary-contrast);
+}
+
+.secondary {
+  background: var(--color-secondary);
+  color: var(--color-secondary-contrast);
+
+  &.hover {
+    transition: var(--transition-default);
+    &:hover {
+      background: var(--color-secondary-active);
+      box-shadow: var(--box-shadow-strong);
+    }
+  }
+}
+
 :root:has(.burger-menu--open) {
   .main__content, .footer {
     overflow: hidden;

@@ -1,6 +1,4 @@
 .advice {
-  background: var(--color-secondary);
-  color: var(--color-secondary-contrast);
   border-radius: 1rem;
   padding: 1rem;
   text-align: center;
@@ -24,8 +22,6 @@
 
   &__link {
     font-size: 1.25em;
-    background: var(--color-secondary);
-    color: var(--color-secondary-contrast);
     text-decoration: none;
     padding: .25em .5em;
     border-radius: .75rem;

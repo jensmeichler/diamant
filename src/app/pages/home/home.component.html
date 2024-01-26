@@ -1,15 +1,15 @@
 <ng-container *ngIf="{isMobile: $mobile | async} as view">
   <div class="monthly-offer">
-    <img class="monthly-offer__img" [src]="view.isMobile ? 'assets/img/home/aqua-splash.min.webp' : 'assets/img/home/aqua-splash.webp'" width="830" height="580" alt="Angebot">
-    <span class="monthly-offer__title">
-      <p>
+    <img class="monthly-offer__img" ngSrc="assets/img/home/aqua-splash.webp" width="830" height="580" alt="Angebot" priority="1">
+    <span class="monthly-offer__title secondary">
+      <p class="m">
         <strong>Sonderangebot:</strong>
         <br>
         Diamant Microdermabrasion (90 Min)
       </p>
     </span>
-    <span class="monthly-offer__body" *ngIf="!view.isMobile; else mobile">
-      <p class="content align-center">
+    <span class="monthly-offer__body secondary" *ngIf="!view.isMobile; else mobile">
+      <p class="content align-center m">
         Die apparative Reinigung wird Ihre Haut optimal
         vorbereiten, um die wertvollen Wirkstoffe aufzunehmen! Nach der Augenbrauenkorrektur wird je nach Hauttyp der
         passende Wirkstoff auf die Haut aufgetragen. Sofort Effekt mit Langzeitwirkung und ein
@@ -20,12 +20,12 @@
       </p>
     </span>
     <ng-template #mobile>
-      <span class="monthly-offer__body">
-        <p [ngClass]="{hidden: readMore}">
+      <span class="monthly-offer__body secondary">
+        <p [class.hidden]="readMore" class="m">
           Die apparative Reinigung wird Ihre Haut optimal
           vorbereiten, um die wertvollen Wirkstoffe aufzunehmen! Nach der... <button (click)="readMore = !readMore">weiter lesen</button>
         </p>
-        <p [ngClass]="{hidden: !readMore}">
+        <p [class.hidden]="!readMore" class="m">
           Die apparative Reinigung wird Ihre Haut optimal
           vorbereiten, um die wertvollen Wirkstoffe aufzunehmen! Nach der Augenbrauenkorrektur wird je nach Hauttyp der
           passende Wirkstoff auf die Haut aufgetragen. Sofort Effekt mit Langzeitwirkung und ein
@@ -35,8 +35,8 @@
         </p>
       </span>
     </ng-template>
-    <span class="monthly-offer__price">
-      <p>75,00 €</p>
+    <span class="monthly-offer__price secondary">
+      <p class="m">75,00 €</p>
     </span>
   </div>
 
@@ -44,30 +44,30 @@
     <h1 class="home-title align-center">Ihr Kosmetikstudio in Braunschweig für professionelle Gesichtspflege</h1>
     <div class="grid-group">
       <div class="card">
-        <img class="card__img" [src]="view.isMobile ? 'assets/img/home/marina.min.webp' : 'assets/img/home/marina.webp'" width="400" height="300" alt="Marina Gruszka">
+        <img class="card__img" ngSrc="assets/img/home/marina.webp" width="399" height="300" alt="Marina Gruszka" priority="2">
         <p class="card__text">
           Pflegeprodukte und Kosmetik aus der Natur. Erfahrung seit 20 Jahren und seit 10 in Braunschweigs
           Kosmetikstudio - Schönheit neu erleben!
         </p>
         <div class="card__link-group">
-          <a routerLink="/produkte" class="card__link-group__link">Zu unseren Produkten</a>
-          <a routerLink="/beratung" class="card__link-group__link">Über mich</a>
+          <a routerLink="/produkte" class="card__link-group__link secondary hover">Zu unseren Produkten</a>
+          <a routerLink="/beratung" class="card__link-group__link secondary hover">Über mich</a>
         </div>
       </div>
 
       <div class="card">
-        <img class="card__img" [src]="view.isMobile ? 'assets/img/home/facial-treatments.min.webp' : 'assets/img/home/facial-treatments.webp'" width="400" height="300" alt="Mesoporation">
+        <img class="card__img" ngSrc="assets/img/home/facial-treatments.webp" width="399" height="300" alt="Mesoporation">
         <p class="card__text">
           Das Kosmetikgeheimnis der Hollywoodstars: Mesoporation - sensationelle Ergebnisse in kurzer Zeit.
           Jetzt in ihrem Kosmetikstudio in Braunschweig.
         </p>
         <div class="card__link-group">
-          <a routerLink="/behandlungen" class="card__link-group__link">Zu unseren Behandlungen</a>
+          <a routerLink="/behandlungen" class="card__link-group__link secondary hover">Zu unseren Behandlungen</a>
         </div>
       </div>
 
       <div class="card card--link" routerLink="/beratung" [queryParams]="{showAdvice: true}">
-        <img class="card__img" [src]="view.isMobile ? 'assets/img/home/consulting.min.webp' : 'assets/img/home/consulting.webp'" width="400" height="300" alt="Beratung">
+        <img class="card__img" ngSrc="assets/img/home/consulting.webp" width="399" height="300" alt="Beratung">
         <p class="card__text">
           <strong>Beratung:</strong><br>
           Machen Sie sich das Leben leicht: Wir beraten Sie in allen Fragen der Schönheit und empfehlen Ihnen
@@ -127,7 +127,7 @@
 
   <div class="content">
     <section class="grid-group">
-      <a routerLink="/kontakt" class="contact-link align-center" [class.contact-link--mobile]="view.isMobile">
+      <a routerLink="/kontakt" class="contact-link align-center secondary hover" [class.contact-link--mobile]="view.isMobile">
         Kommen Sie doch einfach mal vorbei!
       </a>
     </section>
