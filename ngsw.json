@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1706264971609,
+  "timestamp": 1706272677644,
   "index": "https://jensmeichler.github.io/diamant/index.html",
   "assetGroups": [
     {
@@ -12,18 +12,18 @@
       },
       "urls": [
         "https://jensmeichler.github.io/diamant/108.098fac50f182f2b2.js",
-        "https://jensmeichler.github.io/diamant/445.787475e1ae864e23.js",
+        "https://jensmeichler.github.io/diamant/445.3bc042197f1b69c5.js",
         "https://jensmeichler.github.io/diamant/466.7671320dfc2ead8f.js",
         "https://jensmeichler.github.io/diamant/530.b04c4011d5a91767.js",
         "https://jensmeichler.github.io/diamant/705.f98588ad925b70a9.js",
         "https://jensmeichler.github.io/diamant/763.cecc8fbf4ae4cbbb.js",
         "https://jensmeichler.github.io/diamant/99.b2e8c187259f4bb8.js",
-        "https://jensmeichler.github.io/diamant/common.c916bd9c92fb1a53.js",
+        "https://jensmeichler.github.io/diamant/common.99cd368e85aee1c5.js",
         "https://jensmeichler.github.io/diamant/index.html",
-        "https://jensmeichler.github.io/diamant/main.5ab90cb716c6746d.js",
+        "https://jensmeichler.github.io/diamant/main.dd18a8024f0eb1cd.js",
         "https://jensmeichler.github.io/diamant/manifest.webmanifest",
         "https://jensmeichler.github.io/diamant/polyfills.8e92ed086ea0e2c2.js",
-        "https://jensmeichler.github.io/diamant/runtime.613cc62ed288b77a.js",
+        "https://jensmeichler.github.io/diamant/runtime.bc583f0c8923c384.js",
         "https://jensmeichler.github.io/diamant/styles.89e9fccf66c959ed.css"
       ],
       "patterns": []
@@ -69,7 +69,7 @@
   "dataGroups": [],
   "hashTable": {
     "https://jensmeichler.github.io/diamant/108.098fac50f182f2b2.js": "3f97aae66fc6caa0c92ec067c84b8fd62f87a28f",
-    "https://jensmeichler.github.io/diamant/445.787475e1ae864e23.js": "c62b5b29269f4af8cb1bf950102c54203f1652ef",
+    "https://jensmeichler.github.io/diamant/445.3bc042197f1b69c5.js": "029bac8f38af2cb83ea5de91057a859c95b640cd",
     "https://jensmeichler.github.io/diamant/466.7671320dfc2ead8f.js": "94ed014eb1d6d4cf32e3bd25c8c8b532d76fb78d",
     "https://jensmeichler.github.io/diamant/530.b04c4011d5a91767.js": "f9c48f3cce837a06f014217ed57a2e5f8ce33316",
     "https://jensmeichler.github.io/diamant/705.f98588ad925b70a9.js": "b3583e403a1742e8c2af657bb0092564fbc0f221",
@@ -100,13 +100,13 @@
     "https://jensmeichler.github.io/diamant/assets/img/treatments/cnc-treatment.webp": "25577045b0dc3a1d94f1b0554736f69974a908f5",
     "https://jensmeichler.github.io/diamant/assets/svg/location-dot.svg": "bb6ab5e8e175a4aaccb358daec639bd536cb92d3",
     "https://jensmeichler.github.io/diamant/assets/svg/phone.svg": "3bf4d2f634917640ae0d0e3dfb868d99cbaca994",
-    "https://jensmeichler.github.io/diamant/common.c916bd9c92fb1a53.js": "f89b6923a1fdddf5ad1ed9b1af89d893cf2601b1",
+    "https://jensmeichler.github.io/diamant/common.99cd368e85aee1c5.js": "94da455800f6fdaf8dcdb737d7f94c10020ca34f",
     "https://jensmeichler.github.io/diamant/favicon.svg": "bf1e07827af75e54816b49ca3d84f6c97b2e0217",
-    "https://jensmeichler.github.io/diamant/index.html": "b3b49e638ce4dc40f9cafa0034b628fc5a67b370",
-    "https://jensmeichler.github.io/diamant/main.5ab90cb716c6746d.js": "3c366d29b8950b26ac6fbb8f2d0a72baaf84d32a",
+    "https://jensmeichler.github.io/diamant/index.html": "05b139975862d33062ec1464a1a315d1fe9eb420",
+    "https://jensmeichler.github.io/diamant/main.dd18a8024f0eb1cd.js": "c8d4b53bcd09cd360027c374d518d0fdcb7a610b",
     "https://jensmeichler.github.io/diamant/manifest.webmanifest": "3fbbda13ae7e1c5ab50897bf99133eaf767013d9",
     "https://jensmeichler.github.io/diamant/polyfills.8e92ed086ea0e2c2.js": "d884820dc3cf3d82d9b9d26625b31bebbcd0c4d8",
-    "https://jensmeichler.github.io/diamant/runtime.613cc62ed288b77a.js": "0ad56986da4899625331d86c0c0c759b3a443932",
+    "https://jensmeichler.github.io/diamant/runtime.bc583f0c8923c384.js": "08c72c1c4533df94a530639c5e98f161e1e47406",
     "https://jensmeichler.github.io/diamant/styles.89e9fccf66c959ed.css": "6231de2bc8f0d14857ad4c74d1f6e5ee674998b0"
   },
   "navigationUrls": [
