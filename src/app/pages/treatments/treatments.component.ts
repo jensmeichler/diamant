@@ -1,11 +1,12 @@
 import {Component, inject, OnInit} from '@angular/core';
 import {RouterLink} from "@angular/router";
 import {SeoService} from "src/app/services/seo.service";
+import {NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-treatments',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, NgOptimizedImage],
   templateUrl: './treatments.component.html',
   styleUrls: ['./treatments.component.scss']
 })
