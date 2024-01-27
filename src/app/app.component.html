@@ -1,15 +1,17 @@
 <main class="main">
+  <app-banner [geoLink]="geoLink"/>
+
   <header class="main__header">
-    <app-header></app-header>
+    <app-header [geoLink]="geoLink"/>
   </header>
 
   <div class="main__content">
-    <router-outlet></router-outlet>
+    <router-outlet/>
   </div>
 </main>
 
 <footer class="footer primary">
-  <app-footer></app-footer>
+  <app-footer/>
 </footer>
 
-<app-scroll-top-button></app-scroll-top-button>
+<app-scroll-top-button/>

@@ -1,0 +1,31 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  background: var(--color-light);
+
+  &__link {
+    display: flex;
+    gap: .25rem;
+    align-items: center;
+    padding: 0 2vw;
+    height: 2rem;
+
+    transition: text-decoration-color var(--transition-default-behaviour);
+    text-decoration-color: transparent;
+    &:hover {
+      text-decoration-color: black;
+    }
+
+    &__text {
+      font-size: .75rem;
+      color: black;
+    }
+
+    &__img {
+      filter: invert(1);
+      transform: scale(.5);
+    }
+  }
+}

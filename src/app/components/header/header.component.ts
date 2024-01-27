@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {RouterLink, RouterLinkActive} from "@angular/router";
 import {fromEvent, map, startWith} from "rxjs";
 import {AsyncPipe, NgClass, NgIf} from "@angular/common";
@@ -11,12 +11,10 @@ import {AsyncPipe, NgClass, NgIf} from "@angular/common";
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  @Input({required: true})
+  geoLink!: string;
+
   menuOpen = false;
-  geoLink = ((navigator.platform.indexOf("iPhone") != -1) ||
-    (navigator.platform.indexOf("iPad") != -1) ||
-    (navigator.platform.indexOf("iPod") != -1))
-    ? "maps://maps.google.com/maps?daddr=52.261748,10.534947&amp;q=Adolfstraße+65&amp;ll="
-    : "https://maps.google.com/maps?daddr=52.261748,10.534947&amp;q=Adolfstraße+65&amp;ll=";
   $mobile = fromEvent(window, 'resize')
     .pipe(startWith(undefined), map(() => window.innerWidth < 650));
 
