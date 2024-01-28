@@ -12,6 +12,7 @@
     color: currentColor;
   }
 
+  transition: margin var(--transition-default-behaviour);
   @media screen {
     @media (min-width: 850px) {
       margin-left: 4rem;
