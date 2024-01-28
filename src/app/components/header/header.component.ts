@@ -1,7 +1,7 @@
-import {Component, Input} from '@angular/core';
+import {Component, inject, Input} from '@angular/core';
 import {RouterLink, RouterLinkActive} from "@angular/router";
-import {fromEvent, map, startWith} from "rxjs";
 import {AsyncPipe, NgClass, NgIf} from "@angular/common";
+import {ViewService} from "src/app/services/view.service";
 
 @Component({
   selector: 'app-header',
@@ -11,12 +11,9 @@ import {AsyncPipe, NgClass, NgIf} from "@angular/common";
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  @Input({required: true})
-  geoLink!: string;
-
+  @Input({required: true}) geoLink!: string;
+  mobile$ = inject(ViewService).mobile$;
   menuOpen = false;
-  $mobile = fromEvent(window, 'resize')
-    .pipe(startWith(undefined), map(() => window.innerWidth < 650));
 
   toggleMenu(): void {
     if (!this.menuOpen) {

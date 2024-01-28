@@ -4,9 +4,7 @@ import {InfoBoxCouponComponent} from "src/app/components/info-box-coupon/info-bo
 @Component({
   selector: 'app-treatments-wellness',
   standalone: true,
-  imports: [
-    InfoBoxCouponComponent
-  ],
+  imports: [InfoBoxCouponComponent],
   templateUrl: './treatments-wellness.component.html',
   styleUrls: ['./treatments-wellness.component.scss']
 })

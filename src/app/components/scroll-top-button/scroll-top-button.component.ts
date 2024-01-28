@@ -11,7 +11,7 @@ import {AsyncPipe, NgIf} from "@angular/common";
 })
 export class ScrollTopButtonComponent {
   scrollPossible$ = fromEvent(window, 'scroll').pipe(
-    map(() => window.scrollY > 20),
+    map(() => window.scrollY >= 32),
     startWith(false),
   );
 

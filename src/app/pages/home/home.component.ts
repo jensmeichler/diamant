@@ -1,8 +1,8 @@
 import {Component, inject, OnInit} from '@angular/core';
 import {RouterLink} from "@angular/router";
 import {AsyncPipe, NgClass, NgIf, NgOptimizedImage} from "@angular/common";
-import {fromEvent, map, startWith} from "rxjs";
 import {SeoService} from "src/app/services/seo.service";
+import {ViewService} from "src/app/services/view.service";
 
 @Component({
   selector: 'app-home',
@@ -13,10 +13,7 @@ import {SeoService} from "src/app/services/seo.service";
 })
 export class HomeComponent implements OnInit {
   seo = inject(SeoService);
-
-  $mobile = fromEvent(window, 'resize')
-    .pipe(startWith(undefined), map(() => window.innerWidth < 650));
-
+  mobile$ = inject(ViewService).mobile$;
   readMore = false;
 
   ngOnInit(): void {

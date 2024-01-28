@@ -3,20 +3,33 @@
   <hr>
   <br>
 
-  <p>
-    Unser Gesicht ist der Spiegel der Seele.
-    <br>
-    Deshalb zielen unsere Behandlungen neben einer intensiven Pflege von Gesicht, Hals und Dekolleté, vor allem auf Ihr allgemeines Wohlbefinden ab.
-    <br>
-    Vor jeder Behandlung führen wir eine Analyse der Hautbeschaffenheit durch, damit Ihr Gesicht auch genau die Pflege erhält, die es für Anti-Aging benötigt.
-  </p>
-  <br>
-  <p>
-    Nach unserer Anti-Aging Behandlung müssen Sie Ihr Gesicht nicht verstecken.
-    <br>
-    Wir entlassen Sie auf Wunsch mit einem gratis Tages-Make-up, sodass Sie unmittelbar im Anschluss mit frischem,
-    strahlenden Teint direkt auf ein Konzert, zu einem geschäftlichen Anlass oder zu einem Abendessen gehen können.
-  </p>
+  <span *ngIf="mobile$ | async; else full">
+    <p *ngIf="!readMore">
+      Unser Gesicht ist der Spiegel der Seele.
+      <br>
+      Deshalb zielen unsere Behandlungen neben einer intensiven Pflege von Gesicht, Hals und Dekolleté, vor allem auf ...
+      <button (click)="readMore = !readMore">weiter lesen</button>
+    </p>
+    <p *ngIf="readMore">
+      <ng-container *ngTemplateOutlet="full"></ng-container>
+    </p>
+  </span>
+
+  <ng-template #full>
+    <p>
+      Unser Gesicht ist der Spiegel der Seele.
+      <br>
+      Deshalb zielen unsere Behandlungen neben einer intensiven Pflege von Gesicht, Hals und Dekolleté, vor allem auf Ihr allgemeines Wohlbefinden ab.
+      <br>
+      Vor jeder Behandlung führen wir eine Analyse der Hautbeschaffenheit durch, damit Ihr Gesicht auch genau die Pflege erhält, die es für Anti-Aging benötigt.
+      <br>
+      <br>
+      Nach unserer Anti-Aging Behandlung müssen Sie Ihr Gesicht nicht verstecken.
+      <br>
+      Wir entlassen Sie auf Wunsch mit einem gratis Tages-Make-up, sodass Sie unmittelbar im Anschluss mit frischem,
+      strahlenden Teint direkt auf ein Konzert, zu einem geschäftlichen Anlass oder zu einem Abendessen gehen können.
+    </p>
+  </ng-template>
 
   <br>
 
@@ -27,11 +40,11 @@
       <span class="grid-group__link__text">Gesichtsbehandlungen</span>
     </a>
     <a class="grid-group__link" routerLink="/behandlungen/massagen">
-      <img ngSrc="assets/img/treatments/massage.webp" width="3872" height="2592" alt="">
+      <img ngSrc="assets/img/treatments/massage.webp" width="639" height="428" alt="">
       <span class="grid-group__link__text">Massage</span>
     </a>
     <a class="grid-group__link" routerLink="/behandlungen/wellnesspakete">
-      <img ngSrc="assets/img/treatments/wellness.webp" width="5472" height="3648" alt="">
+      <img ngSrc="assets/img/treatments/wellness.webp" width="640" height="427" alt="">
       <span class="grid-group__link__text">Wellness</span>
     </a>
   </div>

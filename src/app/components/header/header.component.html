@@ -1,4 +1,4 @@
-<nav class="nav-bar" [class.nav-bar--mobile]="opt.mobile" *ngIf="{mobile: $mobile | async} as opt">
+<nav class="nav-bar" [class.nav-bar--mobile]="opt.mobile" *ngIf="{mobile: mobile$ | async} as opt">
   <a class="nav-bar__item nav-bar__item--home" routerLink="/">
     <img src="favicon.svg" width="29" height="24" alt="Kosmetik">
     <span class="nav-bar__item__logo">Diamant</span>

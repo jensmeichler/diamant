@@ -1,11 +1,12 @@
 import {Component, inject, OnInit} from '@angular/core';
 import {MapComponent} from "src/app/components/map/map.component";
 import {SeoService} from "src/app/services/seo.service";
+import {NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [MapComponent],
+  imports: [MapComponent, NgOptimizedImage],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })

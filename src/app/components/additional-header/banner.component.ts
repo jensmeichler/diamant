@@ -9,6 +9,5 @@ import {CommonModule} from '@angular/common';
   styleUrls: ['./banner.component.scss']
 })
 export class BannerComponent {
-  @Input({required: true})
-  geoLink!: string;
+  @Input({required: true}) geoLink!: string;
 }
