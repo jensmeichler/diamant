@@ -12,6 +12,7 @@
     padding: 0 2vw;
     height: 2rem;
 
+    text-decoration: underline;
     transition: text-decoration-color var(--transition-default-behaviour);
     text-decoration-color: transparent;
     &:hover {
@@ -20,7 +21,6 @@
 
     &__text {
       font-size: .75rem;
-      color: black;
     }
 
     &__img {
