@@ -44,7 +44,7 @@
     <h1 class="home-title align-center">Ihr Kosmetikstudio in Braunschweig für professionelle Gesichtspflege</h1>
     <div class="grid-group">
       <div class="card">
-        <img class="card__img" ngSrc="assets/img/home/marina.webp" width="399" height="300" alt="Marina Gruszka" priority="2">
+        <img routerLink="/beratung" class="card__img" ngSrc="assets/img/home/marina.webp" width="399" height="300" alt="Marina Gruszka" priority="2">
         <p class="card__text">
           Pflegeprodukte und Kosmetik aus der Natur. Erfahrung seit 20 Jahren und seit 10 in Braunschweigs
           Kosmetikstudio - Schönheit neu erleben!
@@ -56,7 +56,7 @@
       </div>
 
       <div class="card">
-        <img class="card__img" ngSrc="assets/img/home/facial-treatments.webp" width="399" height="300" alt="Mesoporation">
+        <img routerLink="/behandlungen" class="card__img" ngSrc="assets/img/home/facial-treatments.webp" width="399" height="300" alt="Mesoporation">
         <p class="card__text">
           Das Kosmetikgeheimnis der Hollywoodstars:<br>
           Mesoporation - sensationelle Ergebnisse in kurzer Zeit. Jetzt in Ihrem Kosmetikstudio in Braunschweig.
@@ -66,7 +66,7 @@
         </div>
       </div>
 
-      <div class="card card--link" routerLink="/beratung" [queryParams]="{showAdvice: true}">
+      <a class="card card--link" routerLink="/beratung" [queryParams]="{showAdvice: true}">
         <img class="card__img" ngSrc="assets/img/home/consulting.webp" width="399" height="300" alt="Beratung">
         <p class="card__text">
           <strong>Beratung:</strong><br>
@@ -74,7 +74,7 @@
           individuell die passende Kosmetik, um Ihr Leben in Braunschweig leichter und angenehmer zu
           machen.
         </p>
-      </div>
+      </a>
     </div>
   </div>
 

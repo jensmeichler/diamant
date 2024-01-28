@@ -13,6 +13,7 @@
 .card {
   background: var(--color-light);
   border-radius: 1rem;
+  overflow: hidden;
 
   &:has(&__link-group) {
     display: flex;
@@ -27,6 +28,12 @@
   &__img {
     width: 100%;
     border-radius: 1rem 1rem 0 0;
+    cursor: pointer;
+
+    transition: var(--transition-default);
+    &:hover {
+      transform: scale(1.02);
+    }
   }
 
   &__link-group {
