@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1706479652023,
+  "timestamp": 1706516995748,
   "index": "https://jensmeichler.github.io/diamant/index.html",
   "assetGroups": [
     {
@@ -17,14 +17,14 @@
         "https://jensmeichler.github.io/diamant/530.269264e972e34411.js",
         "https://jensmeichler.github.io/diamant/705.378ba3b9223b9c2d.js",
         "https://jensmeichler.github.io/diamant/763.4f8312cec0891b4c.js",
-        "https://jensmeichler.github.io/diamant/99.957cc43e141cce6f.js",
-        "https://jensmeichler.github.io/diamant/common.ac2a272caa55f90b.js",
+        "https://jensmeichler.github.io/diamant/99.3ba5bbad48aa070d.js",
+        "https://jensmeichler.github.io/diamant/common.7fce25d6278fc403.js",
         "https://jensmeichler.github.io/diamant/index.html",
         "https://jensmeichler.github.io/diamant/main.400f0983e397d218.js",
         "https://jensmeichler.github.io/diamant/manifest.webmanifest",
         "https://jensmeichler.github.io/diamant/polyfills.8e92ed086ea0e2c2.js",
-        "https://jensmeichler.github.io/diamant/runtime.7a514713c303a490.js",
-        "https://jensmeichler.github.io/diamant/styles.2f8f6e400c6b3282.css"
+        "https://jensmeichler.github.io/diamant/runtime.e5646378f09ad026.js",
+        "https://jensmeichler.github.io/diamant/styles.2ccf351806ab0e8e.css"
       ],
       "patterns": []
     },
@@ -72,7 +72,7 @@
     "https://jensmeichler.github.io/diamant/530.269264e972e34411.js": "8dfb32cf4d344b9b0d3730142c1c3fdadf1b881a",
     "https://jensmeichler.github.io/diamant/705.378ba3b9223b9c2d.js": "1e7de1f043584cdea73686bacf8f04f57a246694",
     "https://jensmeichler.github.io/diamant/763.4f8312cec0891b4c.js": "25bf4b26509648380854414580566db2cbab1cd1",
-    "https://jensmeichler.github.io/diamant/99.957cc43e141cce6f.js": "6ca7dbf17c295c35c480386aa58396882ace8db3",
+    "https://jensmeichler.github.io/diamant/99.3ba5bbad48aa070d.js": "875cde6b11138a121b37657858b14832bd0af60f",
     "https://jensmeichler.github.io/diamant/assets/icons/icon-128x128.png": "88edc8aa479275b6027db6576348c662920baea9",
     "https://jensmeichler.github.io/diamant/assets/icons/icon-144x144.png": "632a6d21a9b1d0ed659f10ea6aa1cd2696fbe129",
     "https://jensmeichler.github.io/diamant/assets/icons/icon-152x152.png": "11d33d87f9227999b155fc9c2b1120108206ffe0",
@@ -96,14 +96,14 @@
     "https://jensmeichler.github.io/diamant/assets/img/treatments/wellness.webp": "d123b63a53881ff2b60e1b5eb0d74f1d37a58d53",
     "https://jensmeichler.github.io/diamant/assets/svg/location-dot.svg": "bb6ab5e8e175a4aaccb358daec639bd536cb92d3",
     "https://jensmeichler.github.io/diamant/assets/svg/phone.svg": "3bf4d2f634917640ae0d0e3dfb868d99cbaca994",
-    "https://jensmeichler.github.io/diamant/common.ac2a272caa55f90b.js": "9ae12f0b117b894aec43dcd767028fd8934bdb02",
+    "https://jensmeichler.github.io/diamant/common.7fce25d6278fc403.js": "bf506fd8e44a3785dac490b8d84baa219ea14f1f",
     "https://jensmeichler.github.io/diamant/favicon.svg": "bf1e07827af75e54816b49ca3d84f6c97b2e0217",
-    "https://jensmeichler.github.io/diamant/index.html": "4bf0ad169db834f6c12f403f58f3bdb1b7d90602",
+    "https://jensmeichler.github.io/diamant/index.html": "03486c207c71f1bacf777f6ed7b7acfef92a4606",
     "https://jensmeichler.github.io/diamant/main.400f0983e397d218.js": "1c22922ed773be21d7f356a48c3cc40aa4cd5f3b",
     "https://jensmeichler.github.io/diamant/manifest.webmanifest": "3fbbda13ae7e1c5ab50897bf99133eaf767013d9",
     "https://jensmeichler.github.io/diamant/polyfills.8e92ed086ea0e2c2.js": "d884820dc3cf3d82d9b9d26625b31bebbcd0c4d8",
-    "https://jensmeichler.github.io/diamant/runtime.7a514713c303a490.js": "b3040946eafa9f93430b1255fca6577e3920bd79",
-    "https://jensmeichler.github.io/diamant/styles.2f8f6e400c6b3282.css": "0a6a82c6fdc1ec993bb4e31809d310d1111c7133"
+    "https://jensmeichler.github.io/diamant/runtime.e5646378f09ad026.js": "9f7a4d415440591bc499fc2d4c7456be4e13d986",
+    "https://jensmeichler.github.io/diamant/styles.2ccf351806ab0e8e.css": "b6142066b14584579833c7260e83496021008c84"
   },
   "navigationUrls": [
     {
