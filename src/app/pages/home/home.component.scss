@@ -153,6 +153,11 @@
   &__img {
     max-width: 1300px;
 
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.01);
+    }
+
     transition: var(--transition-default);
     @media screen {
       @media (max-width: 849px) {

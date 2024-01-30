@@ -1,10 +1,9 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-info-box-coupon',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './info-box-coupon.component.html',
   styleUrls: ['./info-box-coupon.component.scss']
 })

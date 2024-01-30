@@ -1,0 +1,27 @@
+.explanations {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  &__item {
+    &--highlight {
+      .explanations__item__title {
+        color: var(--color-secondary-contrast);
+      }
+
+      background: var(--color-secondary);
+      color: var(--color-secondary-contrast);
+      padding: 1rem;
+      border-radius: 1rem;
+    }
+  }
+}
+
+.button {
+  display: inline-block;
+  cursor: pointer;
+  background: var(--color-secondary);
+  color: var(--color-secondary-contrast);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+}

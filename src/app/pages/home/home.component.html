@@ -1,13 +1,13 @@
 <ng-container *ngIf="{isMobile: mobile$ | async} as view">
   <div class="monthly-offer align-center">
-    <img class="monthly-offer__img" ngSrc="assets/img/home/aqua-splash.webp" width="830" height="580" alt="Angebot" priority="1">
-    <span class="monthly-offer__title secondary">
+    <img routerLink="/behandlungen/erklaerung" [queryParams]="{behandlung: 'diamant-microdermabrasion'}" class="monthly-offer__img" ngSrc="assets/img/home/aqua-splash.webp" width="830" height="580" alt="Angebot" priority="1">
+    <a routerLink="/behandlungen/erklaerung" [queryParams]="{behandlung: 'diamant-microdermabrasion'}" class="monthly-offer__title secondary">
       <p class="m">
         <strong>Sonderangebot:</strong>
         <br>
         Diamant Microdermabrasion (90 Min)
       </p>
-    </span>
+    </a>
     <span class="monthly-offer__body secondary align-center" *ngIf="!view.isMobile; else mobile">
       <p class="content align-center m">
         Die apparative Reinigung wird Ihre Haut optimal
@@ -35,9 +35,9 @@
         </p>
       </span>
     </ng-template>
-    <span class="monthly-offer__price secondary">
+    <a routerLink="/behandlungen/erklaerung" [queryParams]="{behandlung: 'diamant-microdermabrasion'}" class="monthly-offer__price secondary">
       <p class="m">75,00 €</p>
-    </span>
+    </a>
   </div>
 
   <div class="content">
