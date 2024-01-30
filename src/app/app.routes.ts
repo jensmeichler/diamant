@@ -36,8 +36,8 @@ export const routes: Routes = [
   {
     path: 'behandlungen/erklaerung',
     loadComponent: () =>
-      import('src/app/pages/treatments-special/treatments-special.component')
-        .then(m => m.TreatmentsSpecialComponent),
+      import('src/app/pages/treatments-explanations/treatments-explanations.component')
+        .then(m => m.TreatmentsExplanationsComponent),
   },
   {
     path: 'produkte',

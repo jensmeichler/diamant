@@ -9,10 +9,10 @@ type Treatment = 'diamant-microdermabrasion' | 'micro-needling' | 'lymphdrainage
   selector: 'app-treatments-special',
   standalone: true,
   imports: [InfoBoxCouponComponent, NgOptimizedImage, RouterLink],
-  templateUrl: './treatments-special.component.html',
-  styleUrls: ['./treatments-special.component.scss']
+  templateUrl: './treatments-explanations.component.html',
+  styleUrls: ['./treatments-explanations.component.scss']
 })
-export class TreatmentsSpecialComponent implements OnInit {
+export class TreatmentsExplanationsComponent implements OnInit {
   @Input({alias: 'behandlung'}) treatment?: Treatment;
 
   ngOnInit(): void {
