@@ -27,12 +27,6 @@
   &__img {
     width: 100%;
     border-radius: 1rem 1rem 0 0;
-    cursor: pointer;
-
-    transition: var(--transition-default);
-    &:hover {
-      transform: scale(1.02);
-    }
   }
 
   &__link-group {
@@ -153,11 +147,6 @@
   &__img {
     max-width: 1300px;
 
-    cursor: pointer;
-    &:hover {
-      transform: scale(1.01);
-    }
-
     transition: var(--transition-default);
     @media screen {
       @media (max-width: 849px) {
@@ -165,14 +154,14 @@
         height: 70vw;
         margin-top: -50px;
         margin-bottom: -100px;
-        clip-path: inset(50px 0px 100px 0px)
+        clip-path: inset(0 0 100px 0)
       }
       @media (min-width: 850px) {
         width: 50vw;
         height: 40vw;
         margin-top: -25px;
         margin-bottom: -75px;
-        clip-path: inset(50px 0px 100px 0px round 2rem)
+        clip-path: inset(2.5rem 0 100px 0 round 2rem)
       }
       @media (min-width: calc(1300px + 8rem)) {
         height: 572px;

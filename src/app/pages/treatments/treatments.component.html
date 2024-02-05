@@ -36,15 +36,15 @@
   <h2 class="align-center h1">Folgende Behandlungen bieten wir an</h2>
   <div class="grid-group grid-group--treatments">
     <a class="grid-group__link" routerLink="/behandlungen/gesichtsbehandlung">
-      <img ngSrc="assets/img/treatments/facial-treatment.webp" width="499" height="461" alt="">
+      <app-img class="grid-group__link__img" src="assets/img/treatments/facial-treatment.webp" [width]="499" [height]="461" [hover]="true"/>
       <span class="grid-group__link__text">Gesichtsbehandlungen</span>
     </a>
     <a class="grid-group__link" routerLink="/behandlungen/massagen">
-      <img ngSrc="assets/img/treatments/massage.webp" width="639" height="428" alt="">
+      <app-img class="grid-group__link__img" src="assets/img/treatments/massage.webp" [width]="639" [height]="428" [hover]="true"/>
       <span class="grid-group__link__text">Massage</span>
     </a>
     <a class="grid-group__link" routerLink="/behandlungen/wellnesspakete">
-      <img ngSrc="assets/img/treatments/wellness.webp" width="640" height="427" alt="">
+      <app-img class="grid-group__link__img" src="assets/img/treatments/wellness.webp" [width]="640" [height]="427" [hover]="true"/>
       <span class="grid-group__link__text">Wellness</span>
     </a>
   </div>

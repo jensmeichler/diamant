@@ -1,13 +1,14 @@
 import {Component, inject, OnInit} from '@angular/core';
 import {RouterLink} from "@angular/router";
 import {SeoService} from "src/app/services/seo.service";
-import {AsyncPipe, NgIf, NgOptimizedImage, NgTemplateOutlet} from "@angular/common";
+import {AsyncPipe, NgIf, NgTemplateOutlet} from "@angular/common";
 import {ViewService} from "src/app/services/view.service";
+import {ImgComponent} from "src/app/components/img/img.component";
 
 @Component({
   selector: 'app-treatments',
   standalone: true,
-  imports: [RouterLink, NgOptimizedImage, NgIf, AsyncPipe, NgTemplateOutlet],
+  imports: [RouterLink, NgIf, AsyncPipe, NgTemplateOutlet, ImgComponent],
   templateUrl: './treatments.component.html',
   styleUrls: ['./treatments.component.scss']
 })

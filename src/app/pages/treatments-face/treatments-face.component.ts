@@ -1,11 +1,11 @@
 import {Component, OnInit} from '@angular/core';
 import {InfoBoxCouponComponent} from "src/app/components/info-box-coupon/info-box-coupon.component";
-import {NgOptimizedImage} from "@angular/common";
+import {ImgComponent} from "src/app/components/img/img.component";
 
 @Component({
   selector: 'app-treatments-face',
   standalone: true,
-  imports: [InfoBoxCouponComponent, NgOptimizedImage],
+  imports: [InfoBoxCouponComponent, ImgComponent],
   templateUrl: './treatments-face.component.html',
   styleUrls: ['./treatments-face.component.scss']
 })

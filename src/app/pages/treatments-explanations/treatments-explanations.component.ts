@@ -1,6 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {InfoBoxCouponComponent} from "src/app/components/info-box-coupon/info-box-coupon.component";
-import {NgOptimizedImage} from "@angular/common";
 import {RouterLink} from "@angular/router";
 
 type Treatment = 'diamant-microdermabrasion' | 'micro-needling' | 'lymphdrainage' | 'mesoporation';
@@ -8,7 +7,7 @@ type Treatment = 'diamant-microdermabrasion' | 'micro-needling' | 'lymphdrainage
 @Component({
   selector: 'app-treatments-special',
   standalone: true,
-  imports: [InfoBoxCouponComponent, NgOptimizedImage, RouterLink],
+  imports: [InfoBoxCouponComponent, RouterLink],
   templateUrl: './treatments-explanations.component.html',
   styleUrls: ['./treatments-explanations.component.scss']
 })

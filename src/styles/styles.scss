@@ -36,14 +36,6 @@ button {
   }
 }
 
-img {
-  object-fit: cover;
-  object-position: 50%;
-  &:not([src$=".svg"]) {
-    border-radius: 2rem;
-  }
-}
-
 @media screen {
   @media (max-width: 849px) {
     h1, .h1 { font-size: 1.25rem; margin: 1.25rem 0 1rem 0 }
@@ -93,7 +85,7 @@ strong {
   color: var(--color-secondary-contrast);
 
   &.hover {
-    transition: var(--transition-default);
+    transition: background var(--transition-default-behaviour), box-shadow var(--transition-default-behaviour);
     &:hover {
       background: var(--color-secondary-active);
       box-shadow: var(--box-shadow-strong);

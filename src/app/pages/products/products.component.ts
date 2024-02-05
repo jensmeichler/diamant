@@ -1,11 +1,11 @@
 import {Component, inject, OnInit} from '@angular/core';
 import {SeoService} from "src/app/services/seo.service";
-import {NgOptimizedImage} from "@angular/common";
+import {ImgComponent} from "src/app/components/img/img.component";
 
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [NgOptimizedImage],
+  imports: [ImgComponent],
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.scss']
 })

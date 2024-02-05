@@ -1,0 +1,14 @@
+<img
+  [ngClass]="{
+    image: true,
+    'image--hover': hover,
+    'image--bottom': objectPosition === 'bottom',
+    'image--center': objectPosition === 'center',
+    'image--top': objectPosition === 'top',
+  }"
+  [ngSrc]="src"
+  [alt]="alt"
+  [width]="width"
+  [height]="height"
+  [priority]="priority"
+>
