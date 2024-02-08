@@ -99,12 +99,14 @@ strong {
 }
 
 :root:has(.burger-menu--open) {
-  .main__content, .footer {
+  body {
     overflow: hidden;
+  }
+  .main__content, .footer {
     pointer-events: none;
-    filter: brightness(0.5);
-    transition: var(--transition-default);
     touch-action: none;
+    filter: brightness(.5);
+    transition: var(--transition-default);
   }
 }
 
