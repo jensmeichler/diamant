@@ -36,6 +36,11 @@ button {
   }
 }
 
+hr {
+  border: .5px solid var(--color-light);
+  border-radius: 4px;
+}
+
 @media screen {
   @media (max-width: 849px) {
     h1, .h1 { font-size: 1.25rem; margin: 1.25rem 0 1rem 0 }
