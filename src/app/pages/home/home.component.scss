@@ -26,7 +26,7 @@
 
   &__img {
     width: 100%;
-    border-radius: 1rem 1rem 0 0;
+    border-radius: 0;
   }
 
   &__link-group {
@@ -47,12 +47,15 @@
     }
   }
 
+  transition: box-shadow var(--transition-default-behaviour);
   &--link {
     cursor: pointer;
-    transition: box-shadow var(--transition-default-behaviour);
     &:hover {
       box-shadow: var(--box-shadow-strong);
     }
+  }
+  &:has(&__img:hover) {
+    box-shadow: var(--box-shadow-strong);
   }
 
   margin-bottom: 1rem;
