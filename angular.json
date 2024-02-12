@@ -36,7 +36,12 @@
               "src/favicon.svg",
               "src/favicon.png",
               "src/assets",
-              "src/manifest.webmanifest"
+              "src/manifest.webmanifest",
+              {
+                "glob": "**/*",
+                "input": "src/dist-partial",
+                "output": "./"
+              }
             ],
             "styles": [
               "src/styles/styles.scss",
@@ -104,7 +109,12 @@
               "src/favicon.svg",
               "src/favicon.png",
               "src/assets",
-              "src/manifest.webmanifest"
+              "src/manifest.webmanifest",
+              {
+                "glob": "**/*",
+                "input": "src/dist-partial",
+                "output": "./"
+              }
             ],
             "styles": [
               "src/styles.scss",
