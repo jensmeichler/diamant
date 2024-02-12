@@ -34,12 +34,6 @@ export const routes: Routes = [
         .then(m => m.TreatmentsWellnessComponent),
   },
   {
-    path: 'behandlungen/erklaerung',
-    loadComponent: () =>
-      import('src/app/pages/treatments-explanations/treatments-explanations.component')
-        .then(m => m.TreatmentsExplanationsComponent),
-  },
-  {
     path: 'produkte',
     loadComponent: () =>
       import('src/app/pages/products/products.component')

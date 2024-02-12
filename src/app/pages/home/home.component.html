@@ -1,7 +1,7 @@
 <ng-container *ngIf="{isMobile: mobile$ | async} as view">
   <div class="monthly-offer align-center">
-    <app-img routerLink="/behandlungen/erklaerung" [queryParams]="{behandlung: 'diamant-microdermabrasion'}" class="monthly-offer__img" src="assets/img/home/aqua-splash.webp" [width]="830" [height]="580" alt="Angebot" [hover]="true" [priority]="1"/>
-    <a routerLink="/behandlungen/erklaerung" [queryParams]="{behandlung: 'diamant-microdermabrasion'}" class="monthly-offer__title secondary hover">
+    <app-img (click)="treatments.scrollTo('diamant-microdermabrasion')" class="monthly-offer__img" src="assets/img/home/aqua-splash.webp" [width]="830" [height]="580" alt="Angebot" [hover]="true" [priority]="1"/>
+    <a (click)="treatments.scrollTo('diamant-microdermabrasion')" class="monthly-offer__title secondary hover">
       <p class="m">
         <strong>Sonderangebot:</strong>
         <br>
@@ -35,9 +35,9 @@
         </p>
       </span>
     </ng-template>
-    <a routerLink="/behandlungen/erklaerung" [queryParams]="{behandlung: 'diamant-microdermabrasion'}" class="monthly-offer__price secondary hover">
+    <div class="monthly-offer__price secondary">
       <p class="m">75,00 €</p>
-    </a>
+    </div>
   </div>
 
   <div class="content">
@@ -130,4 +130,8 @@
       </a>
     </section>
   </div>
+
+  <br>
+
+  <app-treatments-explanations #treatments/>
 </ng-container>
