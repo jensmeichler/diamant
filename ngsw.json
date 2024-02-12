@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1707746310131,
+  "timestamp": 1707747039674,
   "index": "https://diamant-kosmetikstudio.de/index.html",
   "assetGroups": [
     {
@@ -58,7 +58,6 @@
         "https://diamant-kosmetikstudio.de/assets/img/treatments/facial-treatment.webp",
         "https://diamant-kosmetikstudio.de/assets/img/treatments/massage.webp",
         "https://diamant-kosmetikstudio.de/assets/img/treatments/wellness.webp",
-        "https://diamant-kosmetikstudio.de/assets/sitemap.xml",
         "https://diamant-kosmetikstudio.de/assets/svg/location-dot.svg",
         "https://diamant-kosmetikstudio.de/assets/svg/phone.svg",
         "https://diamant-kosmetikstudio.de/favicon.svg"
@@ -97,7 +96,6 @@
     "https://diamant-kosmetikstudio.de/assets/img/treatments/facial-treatment.webp": "ed18889f7a0493e720881e07e356aececbfa496f",
     "https://diamant-kosmetikstudio.de/assets/img/treatments/massage.webp": "e8ea1c9a4f030d124271f31a5899ad9719d03bb2",
     "https://diamant-kosmetikstudio.de/assets/img/treatments/wellness.webp": "d123b63a53881ff2b60e1b5eb0d74f1d37a58d53",
-    "https://diamant-kosmetikstudio.de/assets/sitemap.xml": "b72783cea26291096a56256f5dae96800a1ed160",
     "https://diamant-kosmetikstudio.de/assets/svg/location-dot.svg": "bb6ab5e8e175a4aaccb358daec639bd536cb92d3",
     "https://diamant-kosmetikstudio.de/assets/svg/phone.svg": "3bf4d2f634917640ae0d0e3dfb868d99cbaca994",
     "https://diamant-kosmetikstudio.de/common.fc2724e9b0f25daf.js": "a4d5fdbbfbfc278d598cb330f57b8ff9cb9dd9bf",
