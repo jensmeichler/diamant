@@ -65,14 +65,11 @@ strong {
 }
 
 .content {
-  padding: 0 4rem 2rem 4rem;
+  padding: 0 var(--dynamic-padding) 2rem var(--dynamic-padding);
   text-align: justify;
 
   transition: padding var(--transition-default-behaviour), margin var(--transition-default-behaviour);
   @media screen {
-    @media (max-width: 849px) {
-      padding: 0 1rem 1rem 1rem;
-    }
     @media (min-width: 1300px) {
       max-width: 1300px;
       margin: 0 auto;

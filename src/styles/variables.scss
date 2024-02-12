@@ -12,4 +12,10 @@
   --box-shadow-slim-strong: #0000000f 0px 0px 0.25rem 0px, #0000001e 0px 0.25rem 0.25rem 0px;
   --transition-default-behaviour: 0.16s ease-in-out;
   --transition-default: all var(--transition-default-behaviour);
+  --dynamic-padding: 1rem;
+  @media screen {
+    @media (min-width: 850px) {
+      --dynamic-padding: 4rem;
+    }
+  }
 }
