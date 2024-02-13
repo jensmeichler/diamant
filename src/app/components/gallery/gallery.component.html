@@ -1,0 +1,14 @@
+<div class="carousel">
+  <button class="carousel__button align-center" (click)="prev()">←</button>
+  <app-img
+    *ngIf="selection$ | async as selection"
+    class="carousel__img"
+    [borderRadiusRem]="0"
+    [src]="selection.src"
+    [alt]="selection.alt"
+    [width]="selection.width"
+    [height]="selection.height"
+    [class.carousel__img--reverse]="reverse$ | async"
+  />
+  <button class="carousel__button align-center" (click)="next()">→</button>
+</div>

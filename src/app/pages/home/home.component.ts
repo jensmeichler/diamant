@@ -6,6 +6,7 @@ import {ViewService} from "src/app/services/view.service";
 import {ImgComponent} from "src/app/components/img/img.component";
 import {TreatmentsExplanationsComponent} from "src/app/pages/treatments-explanations/treatments-explanations.component";
 import {RatingComponent} from "src/app/components/rating/rating.component";
+import {GalleryComponent} from "src/app/components/gallery/gallery.component";
 
 @Component({
   selector: 'app-home',
@@ -17,7 +18,8 @@ import {RatingComponent} from "src/app/components/rating/rating.component";
     NgClass,
     ImgComponent,
     TreatmentsExplanationsComponent,
-    RatingComponent
+    RatingComponent,
+    GalleryComponent
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']

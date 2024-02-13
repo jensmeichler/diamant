@@ -9,6 +9,12 @@
   font-size: large;
 }
 
+.headline {
+  padding: 5rem 0;
+  margin: 1rem 0 0 0;
+  background: var(--color-light);
+}
+
 .card {
   background: var(--color-light);
   border-radius: 2rem;
@@ -149,6 +155,7 @@
 
   &__img {
     max-width: 1300px;
+    background: var(--color-light);
 
     transition: var(--transition-default);
     @media screen {

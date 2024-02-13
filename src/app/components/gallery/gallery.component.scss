@@ -1,0 +1,87 @@
+:host {
+  --gallery-button-width: 8rem;
+  @media screen {
+    @media (min-width: 650px) {
+      --gallery-button-width: 12rem;
+    }
+  }
+
+  display: block;
+  margin-bottom: 6rem;
+  height: 400px;
+  background: var(--color-light);
+
+  @media screen {
+    transition: margin var(--transition-default-behaviour);
+
+    @media (min-width: 650px) {
+      height: 60vw;
+      border-radius: 2rem;
+      overflow: hidden;
+      margin:
+        var(--dynamic-padding-2x)
+        var(--dynamic-padding)
+        calc(4rem + var(--dynamic-padding-2x))
+        var(--dynamic-padding);
+    }
+
+    @media (min-width: 1100px) {
+      height: 660px;
+    }
+
+    @media (min-width: calc(1300px + 8rem)) {
+      max-width: 1300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+
+    &__img {
+      height: 100%;
+      margin: 0 calc(var(--gallery-button-width) * -1) 0 calc(var(--gallery-button-width) * -1);
+
+      animation: from-right var(--transition-default-behaviour);
+      &--reverse {
+        animation: from-left var(--transition-default-behaviour);
+      }
+
+      ::ng-deep img {
+        width: calc(100vw - var(--dynamic-padding));
+      }
+    }
+
+    &__button {
+      height: 100%;
+      width: var(--gallery-button-width);
+      font-size: 2rem;
+      z-index: 1;
+
+      transition: background var(--transition-default-behaviour), color var(--transition-default-behaviour);
+      &:hover {
+        color: white;
+        background: #00000044;
+      }
+    }
+  }
+}
+
+@keyframes from-right {
+  from {
+    transform: translateX(8rem);
+    opacity: 0;
+  }
+}
+
+@keyframes from-left {
+  from {
+    transform: translateX(-8rem);
+    opacity: 0;
+  }
+}
