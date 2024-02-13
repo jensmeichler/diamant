@@ -54,19 +54,32 @@
 
       ::ng-deep img {
         width: calc(100vw - var(--dynamic-padding));
+        @media screen {
+          @media (max-width: 649px) {
+            width: 100vw;
+          }
+        }
       }
     }
 
     &__button {
       height: 100%;
       width: var(--gallery-button-width);
-      font-size: 2rem;
       z-index: 1;
 
-      transition: background var(--transition-default-behaviour), color var(--transition-default-behaviour);
-      &:hover {
-        color: white;
-        background: #00000044;
+      transition: background var(--transition-default-behaviour);
+      img {
+        transition: transform var(--transition-default-behaviour);
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          background: #00000044;
+
+          img {
+            transform: scale(1.25);
+          }
+        }
       }
     }
   }
