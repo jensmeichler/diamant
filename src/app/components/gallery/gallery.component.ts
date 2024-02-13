@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, HostBinding} from '@angular/core';
 import {ImgComponent} from "src/app/components/img/img.component";
 import {AsyncPipe, NgIf} from "@angular/common";
 import {BehaviorSubject} from "rxjs";
@@ -33,6 +33,8 @@ export class GalleryComponent {
     }
   ];
 
+  @HostBinding('class.touched')
+  touched = false;
   reverse$ = new BehaviorSubject(false);
   selection$: BehaviorSubject<Image | null> = new BehaviorSubject<Image | null>(this.images[0]);
 
@@ -67,6 +69,7 @@ export class GalleryComponent {
   }
 
   private select(image: Image, backwardsAnimation = false): void {
+    this.touched = true;
     this.reverse$.next(backwardsAnimation);
     this.selection$.next(null);
     setTimeout(() => this.selection$.next(image));

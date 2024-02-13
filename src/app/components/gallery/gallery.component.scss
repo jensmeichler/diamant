@@ -10,6 +10,9 @@
   margin-bottom: 6rem;
   height: 400px;
   background: var(--color-light);
+  &.touched {
+    background: #242424;
+  }
 
   @media screen {
     transition: margin var(--transition-default-behaviour);
