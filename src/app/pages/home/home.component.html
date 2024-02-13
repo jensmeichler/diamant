@@ -1,13 +1,13 @@
 <ng-container *ngIf="{isMobile: mobile$ | async} as view">
   <div class="monthly-offer align-center">
     <app-img (click)="treatments.scrollTo('diamant-microdermabrasion')" class="monthly-offer__img" src="assets/img/home/aqua-splash.webp" [width]="830" [height]="580" alt="Angebot" [hover]="true" [priority]="1"/>
-    <a (click)="treatments.scrollTo('diamant-microdermabrasion')" class="monthly-offer__title secondary hover">
-      <p class="m">
+    <p (click)="treatments.scrollTo('diamant-microdermabrasion')" class="monthly-offer__title secondary hover">
+      <span class="m">
         <strong>Sonderangebot:</strong>
         <br>
         Diamant Microdermabrasion (90 Min)
-      </p>
-    </a>
+      </span>
+    </p>
     <span class="monthly-offer__body secondary align-center" *ngIf="!view.isMobile; else mobile">
       <p class="content align-center m">
         Die apparative Reinigung wird Ihre Haut optimal
