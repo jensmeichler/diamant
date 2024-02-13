@@ -6,9 +6,7 @@ import {map} from "rxjs";
 @Component({
   selector: 'app-rating',
   standalone: true,
-  imports: [
-    AsyncPipe
-  ],
+  imports: [AsyncPipe],
   templateUrl: './rating.component.html',
   styleUrls: ['./rating.component.scss']
 })
