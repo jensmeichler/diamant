@@ -85,26 +85,24 @@ strong {
 .secondary {
   background: var(--color-secondary);
   color: var(--color-secondary-contrast);
-
-  &.hover {
-    transition: background var(--transition-default-behaviour), box-shadow var(--transition-default-behaviour);
-    &:hover {
-      background: var(--color-secondary-active);
-      box-shadow: var(--box-shadow-strong);
-    }
+  &.hover:hover {
+    background: var(--color-secondary-active);
   }
 }
 
 .highlight {
   background: var(--color-highlight);
   color: var(--color-highlight-contrast);
+  &.hover:hover {
+    background: var(--color-highlight-active);
+  }
+}
 
-  &.hover {
-    transition: background var(--transition-default-behaviour), box-shadow var(--transition-default-behaviour);
-    &:hover {
-      background: var(--color-highlight-active);
-      box-shadow: var(--box-shadow-strong);
-    }
+.hover {
+  cursor: pointer;
+  transition: background var(--transition-default-behaviour), box-shadow var(--transition-default-behaviour);
+  &:hover {
+    box-shadow: var(--box-shadow-strong);
   }
 }
 
