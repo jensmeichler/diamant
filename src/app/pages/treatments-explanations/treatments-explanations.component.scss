@@ -20,7 +20,7 @@
         background: var(--color-light);
         border-radius: 2rem;
         padding: 2rem;
-        height: 100px !important;
+        height: calc(300px - 4rem) !important;
 
         display: flex;
         flex-direction: column;
