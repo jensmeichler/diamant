@@ -11,7 +11,7 @@
 
 .card {
   background: var(--color-light);
-  border-radius: 1rem;
+  border-radius: 2rem;
   overflow: hidden;
 
   &:has(&__link-group) {
