@@ -15,6 +15,22 @@
       &--tall {
         height: 400px;
       }
+
+      &--button {
+        background: var(--color-light);
+        border-radius: 2rem;
+        padding: 2rem;
+        height: 100px !important;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        transition: box-shadow var(--transition-default-behaviour);
+        &:hover {
+          box-shadow: var(--box-shadow-strong);
+        }
+      }
     }
 
     @media screen {
@@ -32,7 +48,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
-        gap: 4rem;
+        gap: 2rem;
 
         &:nth-child(even) {
           :nth-child(1) {
@@ -43,6 +59,11 @@
             grid-column: 1;
           }
         }
+      }
+
+
+      @media (min-width: 850px) {
+        gap: 4rem;
       }
     }
   }

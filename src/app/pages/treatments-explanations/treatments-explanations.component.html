@@ -13,7 +13,8 @@
           Narben, Pigmentflecken sowie auch feine Fältchen werden weniger sichtbar.
         </p>
       </div>
-      <app-img class="explanations__item__img" src="assets/img/treatments/facial-treatment.webp" [width]="499" [height]="461"/>
+
+      <app-img class="explanations__item__img" src="assets/img/home/aqua-splash.webp" [width]="830" [height]="580"/>
     </div>
 
     <div class="explanations__item">
@@ -38,7 +39,7 @@
         </p>
       </div>
 
-      <div class="explanations__item__img explanations__item__img--tall"></div>
+      <app-img class="explanations__item__img explanations__item__img--tall" src="assets/img/treatments/facial-treatment.webp" [width]="499" [height]="461"/>
     </div>
 
     <div class="explanations__item">
@@ -60,7 +61,7 @@
         </p>
       </div>
 
-      <div class="explanations__item__img explanations__item__img--tall"></div>
+      <app-img class="explanations__item__img explanations__item__img--tall" src="assets/img/treatments/wellness.webp" [width]="640" [height]="427"/>
     </div>
 
     <div class="explanations__item">
@@ -75,12 +76,9 @@
         </p>
       </div>
 
-      <div class="explanations__item__img"></div>
-    </div>
-
-    <div class="grid-group">
-      <a routerLink="/behandlungen" class="button align-center secondary hover">
-        Andere Behandlungen
+      <a class="explanations__item__img explanations__item__img--button align-center" routerLink="/behandlungen">
+        <h4 class="h3 align-center">Nicht das richtige dabei?</h4>
+        <p>Sehen Sie sich <span style="text-decoration: underline">hier</span> unsere all unsere Behandlungen an.</p>
       </a>
     </div>
   </article>
