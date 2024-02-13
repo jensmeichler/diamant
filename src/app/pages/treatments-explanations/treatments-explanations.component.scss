@@ -20,7 +20,12 @@
         background: var(--color-light);
         border-radius: 2rem;
         padding: 2rem;
-        height: calc(300px - 4rem) !important;
+
+        @media screen {
+          @media (min-width: 650px) {
+            height: calc(300px - 4rem);
+          }
+        }
 
         display: flex;
         flex-direction: column;
@@ -37,6 +42,9 @@
       @media (max-width: 649px) {
         &__img {
           height: 220px;
+          &--button {
+            height: calc(220px - 4rem);
+          }
         }
 
         display: flex;
