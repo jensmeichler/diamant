@@ -1,0 +1,30 @@
+.rating {
+  padding: 1rem;
+
+  &__button {
+    width: fit-content;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    color: var(--color-highlight-active-contrast);
+
+    &__text {
+      transition: color var(--transition-default-behaviour);
+    }
+    &__stars {
+      transition: color var(--transition-default-behaviour);
+    }
+    &:hover {
+      background: #555;
+      .rating__button__text {
+        color: white;
+      }
+      .rating__button__stars {
+        color: var(--color-highlight-active);
+      }
+    }
+  }
+}

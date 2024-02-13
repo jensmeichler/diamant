@@ -5,6 +5,7 @@ import {SeoService} from "src/app/services/seo.service";
 import {ViewService} from "src/app/services/view.service";
 import {ImgComponent} from "src/app/components/img/img.component";
 import {TreatmentsExplanationsComponent} from "src/app/pages/treatments-explanations/treatments-explanations.component";
+import {RatingComponent} from "src/app/components/rating/rating.component";
 
 @Component({
   selector: 'app-home',
@@ -15,7 +16,8 @@ import {TreatmentsExplanationsComponent} from "src/app/pages/treatments-explanat
     AsyncPipe,
     NgClass,
     ImgComponent,
-    TreatmentsExplanationsComponent
+    TreatmentsExplanationsComponent,
+    RatingComponent
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
