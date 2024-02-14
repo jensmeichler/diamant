@@ -8,3 +8,14 @@
   </p>
   <img src="favicon.svg" alt="Logo" height="80" width="98">
 </div>
+
+<div class="footer__signatures">
+  <a class="footer__signatures__badge" href="https://github.com/jensmeichler" target="_blank" rel="nofollow">
+    <p>
+      <ng-container *ngIf="narrow$ | async; else wide">Made with</ng-container>
+      <ng-template #wide>Website made with</ng-template>
+      <img class="footer__signatures__badge__heart" src="assets/svg/heart.svg" width="16" height="16" alt="Heart">
+      by Jens Meichler
+    </p>
+  </a>
+</div>
