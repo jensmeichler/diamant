@@ -17,11 +17,9 @@
   --transition-default-behaviour: 0.16s ease-in-out;
   --transition-default: all var(--transition-default-behaviour);
   --dynamic-padding: 1rem;
-  --dynamic-padding-2x: 2rem;
   @media screen {
     @media (min-width: 850px) {
       --dynamic-padding: 4rem;
-      --dynamic-padding-2x: 4rem;
     }
   }
 }
