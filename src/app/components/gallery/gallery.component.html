@@ -1,18 +1,31 @@
-<div class="carousel">
-  <button class="carousel__button align-center" (click)="prev()">
-    <img src="assets/svg/circle-chevron-left.svg" alt="Vorheriges Bild" width="48" height="48"/>
-  </button>
-  <app-img
-    *ngIf="selection$ | async as selection"
-    class="carousel__img"
-    [borderRadiusRem]="0"
-    [src]="selection.src"
-    [alt]="selection.alt"
-    [width]="selection.width"
-    [height]="selection.height"
-    [class.carousel__img--reverse]="reverse$ | async"
-  />
-  <button class="carousel__button align-center" (click)="next()">
-    <img src="assets/svg/circle-chevron-right.svg" alt="Nächstes Bild" width="48" height="48"/>
-  </button>
-</div>
+<section class="gallery" [class.touched]="touched">
+  <div class="gallery__carousel">
+    <button class="gallery__carousel__button align-center" (click)="prev()">
+      <img src="assets/svg/circle-chevron-left.svg" alt="Vorheriges Bild" width="48" height="48"/>
+    </button>
+    <app-img
+      *ngIf="selection$ | async as selection"
+      class="gallery__carousel__img"
+      [borderRadiusRem]="0"
+      [src]="selection.src"
+      [alt]="selection.alt"
+      [width]="selection.width"
+      [height]="selection.height"
+      [class.carousel__img--reverse]="reverse$ | async"
+    />
+    <button class="gallery__carousel__button align-center" (click)="next()">
+      <img src="assets/svg/circle-chevron-right.svg" alt="Nächstes Bild" width="48" height="48"/>
+    </button>
+  </div>
+</section>
+
+<ng-container *ngIf="selection$ | async as selection">
+  <a *ngIf="selection.link; else p" class="image-title align-center" [routerLink]="selection.link">
+    {{ selection.alt }}
+  </a>
+  <ng-template #p>
+    <p class="image-title align-center">
+      {{ selection.alt }}
+    </p>
+  </ng-template>
+</ng-container>

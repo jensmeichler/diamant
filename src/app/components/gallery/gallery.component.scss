@@ -1,5 +1,6 @@
 :host {
   --gallery-button-width: 8rem;
+
   @media screen {
     @media (min-width: 650px) {
       --gallery-button-width: 12rem;
@@ -7,7 +8,10 @@
   }
 
   display: block;
-  margin-bottom: 6rem;
+  margin-bottom: calc(4rem + var(--dynamic-padding-2x));
+}
+
+.gallery {
   height: 400px;
   background: var(--color-light);
   &.touched {
@@ -24,7 +28,7 @@
       margin:
         var(--dynamic-padding-2x)
         var(--dynamic-padding)
-        calc(4rem + var(--dynamic-padding-2x))
+        -.75rem
         var(--dynamic-padding);
     }
 
@@ -39,7 +43,7 @@
     }
   }
 
-  .carousel {
+  &__carousel {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,11 +84,30 @@
           background: #00000044;
 
           img {
-            transform: scale(1.25);
+            transform: scale(1.1);
           }
         }
       }
     }
+  }
+}
+
+.image-title {
+  display: block;
+  padding: .75rem 2rem;
+  border-radius: 2rem;
+  width: fit-content;
+  position: relative;
+  margin: -5rem auto 5rem;
+  opacity: .7;
+  background: white;
+  font-weight: 700;
+
+  transition: var(--transition-default);
+  &[href]:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    box-shadow: var(--box-shadow-strong);
   }
 }
 
