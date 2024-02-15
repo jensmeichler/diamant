@@ -38,7 +38,7 @@
     }
 
     @media (min-width: calc(1300px + 8rem)) {
-      max-width: 1300px;
+      width: 1300px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -61,10 +61,10 @@
       }
 
       ::ng-deep img {
-        width: calc(100vw - var(--dynamic-padding));
+        width: calc(100vw - var(--dynamic-padding) * 2);
         @media screen {
-          @media (max-width: 649px) {
-            width: 100vw;
+          @media (min-width: calc(1300px + 8rem)) {
+            width: 1300px;
           }
         }
       }
@@ -86,13 +86,14 @@
 }
 
 .image-title {
-  display: block;
-  padding: .75rem 2rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0.75rem 2rem;
   border-radius: 2rem;
   width: fit-content;
-  position: relative;
-  margin: -5rem auto 5rem;
-  opacity: .7;
+  margin: -5rem auto;
+  opacity: 0.7;
   background: white;
   font-weight: 700;
 
