@@ -75,18 +75,10 @@
       width: var(--gallery-button-width);
       z-index: 1;
 
-      transition: background var(--transition-default-behaviour);
-      img {
-        transition: transform var(--transition-default-behaviour);
-      }
-
       @media (hover: hover) {
+        transition: var(--transition-default);
         &:hover {
           background: #00000044;
-
-          img {
-            transform: scale(1.1);
-          }
         }
       }
     }
@@ -104,10 +96,9 @@
   background: white;
   font-weight: 700;
 
-  transition: var(--transition-default);
+  transition: opacity var(--transition-default-behaviour), box-shadow var(--transition-default-behaviour);
   &[href]:hover {
     opacity: 1;
-    transform: scale(1.05);
     box-shadow: var(--box-shadow-strong);
   }
 }
