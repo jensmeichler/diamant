@@ -12,8 +12,4 @@ import {ViewService} from "src/app/services/view.service";
 })
 export class FooterComponent {
   narrow$ = inject(ViewService).narrow$;
-
-  scrollToTop(): void {
-    window.scrollTo(0, 0);
-  }
 }
