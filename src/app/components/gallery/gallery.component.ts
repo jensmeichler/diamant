@@ -4,6 +4,8 @@ import {AsyncPipe, NgIf} from "@angular/common";
 import {BehaviorSubject} from "rxjs";
 import {RouterLink} from "@angular/router";
 
+type SelectionDirection = 'forward' | 'backward';
+
 interface Image {
   src: string;
   alt: string;
@@ -47,13 +49,7 @@ export class GalleryComponent {
       return;
     }
 
-    const selectionIndex = this.images.indexOf(selection);
-    if (selectionIndex === this.images.length - 1) {
-      this.select(this.images[0]);
-      return;
-    }
-
-    this.select(this.images[selectionIndex + 1]);
+    this.select(this.images[this.getNextIndex(selection)], 'forward');
   }
 
   prev(): void {
@@ -62,19 +58,34 @@ export class GalleryComponent {
       return;
     }
 
-    const selectionIndex = this.images.indexOf(selection);
-    if (selectionIndex === 0) {
-      this.select(this.images[this.images.length - 1], true);
-      return;
-    }
-
-    this.select(this.images[selectionIndex - 1], true);
+    this.select(this.images[this.getPrevIndex(selection)], 'backward');
   }
 
-  private select(image: Image, backwardsAnimation = false): void {
+  private getNextIndex(relativeTo: Image): number {
+    const selectionIndex = this.images.indexOf(relativeTo);
+    return selectionIndex === this.images.length - 1 ? 0 : selectionIndex + 1;
+  }
+
+  private getPrevIndex(relativeTo: Image): number {
+    const selectionIndex = this.images.indexOf(relativeTo);
+    return selectionIndex === 0 ? this.images.length - 1 : selectionIndex - 1;
+  }
+
+  private select(image: Image, direction: SelectionDirection): void {
     this.touched = true;
-    this.reverse$.next(backwardsAnimation);
+    this.reverse$.next(direction === 'backward');
     this.selection$.next(null);
-    setTimeout(() => this.selection$.next(image));
+    setTimeout(() => {
+      this.selection$.next(image);
+      this.preloadImage(direction === 'forward'
+        ? this.images[this.getNextIndex(image)]
+        : this.images[this.getPrevIndex(image)]
+      );
+    });
+  }
+
+  private preloadImage(target: Image): void {
+    const nextImage = new Image();
+    nextImage.src = target.src;
   }
 }
