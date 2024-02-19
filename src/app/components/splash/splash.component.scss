@@ -1,0 +1,83 @@
+:host {
+  --animation-duration: 2.6s;
+  --animation-behaviour: ease-out;
+
+  position: fixed;
+  inset: 0;
+
+  pointer-events: none;
+  touch-action: none;
+  z-index: 1000;
+
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: var(--color-primary);
+
+  opacity: 0;
+  animation: splash var(--animation-duration) var(--animation-behaviour);
+
+  .logo {
+    width: calc(20vh * 1.22142857);
+    height: 20vh;
+
+    opacity: 0;
+    animation-name: logo-splash;
+    animation-delay: calc(var(--animation-duration) * .2);
+    animation-duration: calc(var(--animation-duration) * .8);
+
+    &--sm {
+      animation-delay: calc(var(--animation-duration) * .25);
+      animation-duration: calc(var(--animation-duration) * .75);
+      margin-left: calc(10vw + 10rem);
+      width: calc(5vh * 1.22142857);
+      height: 5vh;
+    }
+    &--md {
+      opacity: 0;
+      animation-delay: calc(var(--animation-duration) * .3);
+      animation-duration: calc(var(--animation-duration) * .7);
+      margin-right: calc(10vw + 10rem);
+      width: calc(10vh * 1.22142857);
+      height: 10vh;
+    }
+  }
+}
+
+@keyframes splash {
+  0% {
+    pointer-events: all;
+    touch-action: auto;
+    opacity: 1;
+  }
+  72% {
+    pointer-events: all;
+    touch-action: auto;
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+}
+
+@keyframes logo-splash {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-6vh) scale(1.5);
+  }
+  80% {
+    opacity: 0;
+    transform: translateY(-6vh) scale(1.3);
+  }
+  100% {
+    opacity: 0;
+  }
+}

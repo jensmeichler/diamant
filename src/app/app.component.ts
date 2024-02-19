@@ -4,6 +4,7 @@ import {HeaderComponent} from "src/app/components/header/header.component";
 import {FooterComponent} from "src/app/components/footer/footer.component";
 import {ScrollTopButtonComponent} from "src/app/components/scroll-top-button/scroll-top-button.component";
 import {BannerComponent} from "src/app/components/additional-header/banner.component";
+import {SplashComponent} from "src/app/components/splash/splash.component";
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,8 @@ import {BannerComponent} from "src/app/components/additional-header/banner.compo
     RouterLink,
     FooterComponent,
     ScrollTopButtonComponent,
-    BannerComponent
+    BannerComponent,
+    SplashComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
