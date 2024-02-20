@@ -1,23 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="342" height="280">
-  <svg width="342" height="280" viewBox="0 0 342 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M172 272.155L334 77" stroke="#ffffff" stroke-width="15" stroke-linecap="round"></path>
-    <path d="M172 272.155L101 77" stroke="#ffffff" stroke-width="15" stroke-linecap="round"></path>
-    <path d="M172 8L101 77" stroke="#ffffff" stroke-width="15" stroke-linecap="round"></path>
-    <path d="M172 272.155L242 77" stroke="#ffffff" stroke-width="15" stroke-linecap="round"></path>
-    <path d="M172 8L242 77" stroke="#ffffff" stroke-width="15" stroke-linecap="round"></path>
-    <path d="M8 77L334 77" stroke="#ffffff" stroke-width="15" stroke-linecap="round"></path>
-    <path d="M291 8L334 77" stroke="#ffffff" stroke-width="15" stroke-linecap="round"></path>
-    <path d="M8 77L54 8" stroke="#ffffff" stroke-width="15" stroke-linecap="round"></path>
-    <path d="M101 77L54 8" stroke="#ffffff" stroke-width="15" stroke-linecap="round"></path>
-    <path d="M291 8L54 8" stroke="#ffffff" stroke-width="15" stroke-linecap="round"></path>
-    <path d="M291 8L242 77" stroke="#ffffff" stroke-width="15" stroke-linecap="round"></path>
-    <path d="M171.731 272.127L8 77" stroke="#ffffff" stroke-width="15" stroke-linecap="round"></path>
-</svg>
-  <style>
-    @media (prefers-color-scheme: light) {
-      :root {
-        filter: contrast(1) brightness(0.6);
-      }
-    }
-  </style>
+<svg width="342" height="280" viewBox="0 0 342 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M172 272.155L334 77" stroke="#fff" stroke-width="15" stroke-linecap="round"></path>
+  <path d="M172 272.155L101 77" stroke="#fff" stroke-width="15" stroke-linecap="round"></path>
+  <path d="M172 8L101 77" stroke="#fff" stroke-width="15" stroke-linecap="round"></path>
+  <path d="M172 272.155L242 77" stroke="#fff" stroke-width="15" stroke-linecap="round"></path>
+  <path d="M172 8L242 77" stroke="#fff" stroke-width="15" stroke-linecap="round"></path>
+  <path d="M8 77L334 77" stroke="#fff" stroke-width="15" stroke-linecap="round"></path>
+  <path d="M291 8L334 77" stroke="#fff" stroke-width="15" stroke-linecap="round"></path>
+  <path d="M8 77L54 8" stroke="#fff" stroke-width="15" stroke-linecap="round"></path>
+  <path d="M101 77L54 8" stroke="#fff" stroke-width="15" stroke-linecap="round"></path>
+  <path d="M291 8L54 8" stroke="#fff" stroke-width="15" stroke-linecap="round"></path>
+  <path d="M291 8L242 77" stroke="#fff" stroke-width="15" stroke-linecap="round"></path>
+  <path d="M171.731 272.127L8 77" stroke="#fff" stroke-width="15" stroke-linecap="round"></path>
 </svg>
