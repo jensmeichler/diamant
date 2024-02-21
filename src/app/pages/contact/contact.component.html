@@ -9,7 +9,7 @@
       <p>Adolfstraße 65</p>
       <p>38102 Braunschweig</p>
       <br>
-      <p class="phone">Telefon / Whatsapp:<a class="phone__link" href="tel: 017676893292">0176&nbsp;76893292</a></p>
+      <p class="phone">Telefon:<a class="phone__link" href="tel: 017676893292">0176&nbsp;76893292</a></p>
     </div>
     <app-map/>
   </div>
@@ -47,3 +47,7 @@
 
   <app-rating/>
 </div>
+
+<a *ngIf="mobile$ | async" class="floating-whatsapp-button" href="https://wa.me/17676893292" target="_blank" rel="nofollow">
+  <img src="assets/svg/whatsapp.svg" width="32" height="32" alt="Chat on Whatsapp">
+</a>
