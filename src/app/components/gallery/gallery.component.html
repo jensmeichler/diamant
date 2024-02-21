@@ -1,6 +1,6 @@
 <section class="gallery" [class.touched]="touched">
   <div class="gallery__carousel">
-    <button class="gallery__carousel__button align-center" (click)="prev()">
+    <button type="button" class="gallery__carousel__button align-center" (click)="prev()">
       <img src="assets/svg/circle-chevron-left.svg" alt="Vorheriges Bild" width="48" height="48"/>
     </button>
     <app-img
@@ -13,7 +13,7 @@
       [height]="selection.height"
       [class.gallery__carousel__img--reverse]="reverse$ | async"
     />
-    <button class="gallery__carousel__button align-center" (click)="next()">
+    <button type="button" class="gallery__carousel__button align-center" (click)="next()">
       <img src="assets/svg/circle-chevron-right.svg" alt="Nächstes Bild" width="48" height="48"/>
     </button>
   </div>
