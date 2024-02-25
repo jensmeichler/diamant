@@ -74,6 +74,9 @@
           individuell die passende Kosmetik, um Ihr Leben in Braunschweig leichter und angenehmer zu
           machen.
         </p>
+        <div *ngIf="view.isMobile" class="card__link-group">
+          <p class="card__link-group__link secondary hover">Unsere Beratungsmöglichkeiten</p>
+        </div>
       </a>
     </div>
   </div>
@@ -120,8 +123,6 @@
       </em>
     </p>
   </article>
-
-  <br>
 
   <div class="content">
     <section class="grid-group">
