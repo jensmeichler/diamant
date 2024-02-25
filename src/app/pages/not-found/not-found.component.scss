@@ -8,13 +8,16 @@
   .dino {
     width: 65vw;
     height: 46vw;
+
+    max-width: 665px;
+    max-height: 471px;
   }
 
   .four-o-four {
-    font-size: calc(10vw);
+    font-size: min(8vw, 12rem);
     position: absolute;
-    top: 8rem;
-    left: 28vw;
+    top: 10rem;
+    left: 30vw;
     transform: rotate(-9deg);
   }
 
