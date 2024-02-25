@@ -13,7 +13,7 @@ import {ImgComponent} from "src/app/components/img/img.component";
   styleUrls: ['./treatments.component.scss']
 })
 export class TreatmentsComponent implements OnInit {
-  seo = inject(SeoService);
+  private readonly seo = inject(SeoService);
   mobile$ = inject(ViewService).mobile$;
   readMore = false;
 

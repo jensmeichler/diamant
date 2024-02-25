@@ -25,7 +25,7 @@ import {GalleryComponent} from "src/app/components/gallery/gallery.component";
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  seo = inject(SeoService);
+  private readonly seo = inject(SeoService);
   mobile$ = inject(ViewService).mobile$;
   readMore = false;
 

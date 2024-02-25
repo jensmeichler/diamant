@@ -10,7 +10,7 @@ import {ImgComponent} from "src/app/components/img/img.component";
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent implements OnInit {
-  seo = inject(SeoService);
+  private readonly seo = inject(SeoService);
 
   ngOnInit(): void {
     window.scroll({top: 0, behavior: 'instant'});

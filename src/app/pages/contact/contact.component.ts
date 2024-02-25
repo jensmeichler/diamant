@@ -15,7 +15,7 @@ import {ViewService} from "src/app/services/view.service";
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-  seo = inject(SeoService);
+  private readonly seo = inject(SeoService);
   mobile$ = inject(ViewService).mobile$;
 
   ngOnInit(): void {

@@ -12,7 +12,7 @@ import {ImgComponent} from "src/app/components/img/img.component";
 })
 export class ConsultingComponent implements OnInit {
   @Input() showAdvice = false;
-  seo = inject(SeoService);
+  private readonly seo = inject(SeoService);
 
   ngOnInit(): void {
     window.scroll({top: 0, behavior: 'instant'});

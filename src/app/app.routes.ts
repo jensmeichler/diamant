@@ -1,7 +1,6 @@
 import {Routes} from '@angular/router';
 import {HomeComponent} from "src/app/pages/home/home.component";
 import {ContactComponent} from "src/app/pages/contact/contact.component";
-import {SitemapComponent} from "src/app/pages/sitemap/sitemap.component";
 
 export const routes: Routes = [
   {
@@ -51,7 +50,15 @@ export const routes: Routes = [
   },
   {
     path: 'sitemap',
-    component: SitemapComponent
+    loadComponent: () =>
+      import('src/app/pages/sitemap/sitemap.component')
+        .then(m => m.SitemapComponent),
+  },
+  {
+    path: 'impressum',
+    loadComponent: () =>
+      import('src/app/pages/imprint/imprint.component')
+        .then(m => m.ImprintComponent),
   },
   {
     path: '**',

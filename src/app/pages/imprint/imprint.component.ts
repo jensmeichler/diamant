@@ -1,15 +1,14 @@
 import {Component, inject, OnInit} from '@angular/core';
-import {RouterLink} from "@angular/router";
 import {SeoService} from "src/app/services/seo.service";
 
 @Component({
-  selector: 'app-sitemap',
+  selector: 'app-imprint',
   standalone: true,
-  imports: [RouterLink],
-  templateUrl: './sitemap.component.html',
-  styleUrls: ['./sitemap.component.scss']
+  imports: [],
+  templateUrl: './imprint.component.html',
+  styleUrls: ['./imprint.component.scss']
 })
-export class SitemapComponent implements OnInit {
+export class ImprintComponent implements OnInit {
   private readonly seo = inject(SeoService);
 
   ngOnInit(): void {
