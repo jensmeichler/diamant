@@ -3,7 +3,7 @@ import {MapComponent} from "src/app/components/map/map.component";
 import {SeoService} from "src/app/services/seo.service";
 import {ImgComponent} from "src/app/components/img/img.component";
 import {RatingComponent} from "src/app/components/rating/rating.component";
-import {TreatmentsExplanationsComponent} from "src/app/pages/treatments-explanations/treatments-explanations.component";
+import {TreatmentsExplanationsComponent} from "src/app/components/treatments-explanations/treatments-explanations.component";
 import {AsyncPipe, NgIf} from "@angular/common";
 import {ViewService} from "src/app/services/view.service";
 

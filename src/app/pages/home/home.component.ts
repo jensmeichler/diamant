@@ -4,7 +4,7 @@ import {AsyncPipe, NgClass, NgIf} from "@angular/common";
 import {SeoService} from "src/app/services/seo.service";
 import {ViewService} from "src/app/services/view.service";
 import {ImgComponent} from "src/app/components/img/img.component";
-import {TreatmentsExplanationsComponent} from "src/app/pages/treatments-explanations/treatments-explanations.component";
+import {TreatmentsExplanationsComponent} from "src/app/components/treatments-explanations/treatments-explanations.component";
 import {RatingComponent} from "src/app/components/rating/rating.component";
 import {GalleryComponent} from "src/app/components/gallery/gallery.component";
 
