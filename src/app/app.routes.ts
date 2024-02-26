@@ -11,37 +11,37 @@ export const routes: Routes = [
   {
     path: 'behandlungen',
     loadComponent: () =>
-      import('src/app/pages/treatments/treatments.component')
+      import(/* webpackChunkName: "chunk_treatments" */ 'src/app/pages/treatments/treatments.component')
         .then(m => m.TreatmentsComponent),
   },
   {
     path: 'behandlungen/gesichtsbehandlung',
     loadComponent: () =>
-      import('src/app/pages/treatments-face/treatments-face.component')
+      import(/* webpackChunkName: "chunk_treatments-face" */ 'src/app/pages/treatments-face/treatments-face.component')
         .then(m => m.TreatmentsFaceComponent),
   },
   {
     path: 'behandlungen/massagen',
     loadComponent: () =>
-      import('src/app/pages/treatments-massage/treatments-massage.component')
+      import(/* webpackChunkName: "chunk_treatments-massage" */ 'src/app/pages/treatments-massage/treatments-massage.component')
         .then(m => m.TreatmentsMassageComponent),
   },
   {
     path: 'behandlungen/wellnesspakete',
     loadComponent: () =>
-      import('src/app/pages/treatments-wellness/treatments-wellness.component')
+      import(/* webpackChunkName: "chunk_treatments-wellness" */ 'src/app/pages/treatments-wellness/treatments-wellness.component')
         .then(m => m.TreatmentsWellnessComponent),
   },
   {
     path: 'produkte',
     loadComponent: () =>
-      import('src/app/pages/products/products.component')
+      import(/* webpackChunkName: "chunk_products" */ 'src/app/pages/products/products.component')
         .then(m => m.ProductsComponent),
   },
   {
     path: 'beratung',
     loadComponent: () =>
-      import('src/app/pages/consulting/consulting.component')
+      import(/* webpackChunkName: "chunk_consulting" */ 'src/app/pages/consulting/consulting.component')
         .then(m => m.ConsultingComponent),
   },
   {
@@ -51,19 +51,19 @@ export const routes: Routes = [
   {
     path: 'sitemap',
     loadComponent: () =>
-      import('src/app/pages/sitemap/sitemap.component')
+      import(/* webpackChunkName: "chunk_sitemap" */ 'src/app/pages/sitemap/sitemap.component')
         .then(m => m.SitemapComponent),
   },
   {
     path: 'impressum',
     loadComponent: () =>
-      import('src/app/pages/imprint/imprint.component')
+      import(/* webpackChunkName: "chunk_imprint" */ 'src/app/pages/imprint/imprint.component')
         .then(m => m.ImprintComponent),
   },
   {
     path: '**',
     loadComponent: () =>
-      import('src/app/pages/not-found/not-found.component')
+      import(/* webpackChunkName: "chunk_not-found" */ 'src/app/pages/not-found/not-found.component')
         .then(m => m.NotFoundComponent),
   }
 ];
