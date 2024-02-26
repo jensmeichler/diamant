@@ -23,6 +23,9 @@
 
   --dynamic-padding: 1rem;
   @media screen {
+    @media (min-width: 700px) {
+      --dynamic-padding: 2rem;
+    }
     @media (min-width: 850px) {
       --dynamic-padding: 4rem;
     }
