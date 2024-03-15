@@ -5,8 +5,8 @@ import {fromEvent, map, startWith} from "rxjs";
   providedIn: 'root'
 })
 export class ViewService {
-  mobile$ = fromEvent(window, 'resize')
+  readonly mobile$ = fromEvent(window, 'resize')
     .pipe(startWith(undefined), map(() => window.innerWidth < 650));
-  narrow$ = fromEvent(window, 'resize')
+  readonly narrow$ = fromEvent(window, 'resize')
     .pipe(startWith(undefined), map(() => window.innerWidth < 420));
 }

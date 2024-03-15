@@ -11,5 +11,5 @@ import {ViewService} from "src/app/services/view.service";
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
-  narrow$ = inject(ViewService).narrow$;
+  readonly narrow$ = inject(ViewService).narrow$;
 }

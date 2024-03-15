@@ -20,7 +20,7 @@ import {BannerComponent} from "src/app/components/additional-header/banner.compo
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  geoLink = ((navigator.platform.indexOf("iPhone") != -1) ||
+  protected readonly geoLink = ((navigator.platform.indexOf("iPhone") != -1) ||
     (navigator.platform.indexOf("iPad") != -1) ||
     (navigator.platform.indexOf("iPod") != -1))
     ? "maps://maps.google.com/maps?daddr=52.261748,10.534947&amp;q=Adolfstraße+65&amp;ll="

@@ -10,7 +10,7 @@ import {AsyncPipe, NgIf} from "@angular/common";
   styleUrls: ['./scroll-top-button.component.scss']
 })
 export class ScrollTopButtonComponent {
-  scrollPossible$ = fromEvent(window, 'scroll').pipe(
+  protected readonly scrollPossible$ = fromEvent(window, 'scroll').pipe(
     map(() => window.scrollY >= 32),
     startWith(false),
   );

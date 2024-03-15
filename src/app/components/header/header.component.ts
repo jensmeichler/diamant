@@ -12,8 +12,8 @@ import {ViewService} from "src/app/services/view.service";
 })
 export class HeaderComponent {
   @Input({required: true}) geoLink!: string;
-  mobile$ = inject(ViewService).mobile$;
-  menuOpen = false;
+  protected readonly mobile$ = inject(ViewService).mobile$;
+  protected menuOpen = false;
 
   toggleMenu(): void {
     if (!this.menuOpen) {

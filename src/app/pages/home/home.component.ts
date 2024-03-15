@@ -26,8 +26,8 @@ import {GalleryComponent} from "src/app/components/gallery/gallery.component";
 })
 export class HomeComponent implements OnInit {
   private readonly seo = inject(SeoService);
-  mobile$ = inject(ViewService).mobile$;
-  readMore = false;
+  protected readonly mobile$ = inject(ViewService).mobile$;
+  protected readMore = false;
 
   ngOnInit(): void {
     window.scroll({top: 0, behavior: 'instant'});

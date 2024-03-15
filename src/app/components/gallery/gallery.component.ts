@@ -39,9 +39,9 @@ export class GalleryComponent {
     },
   ];
 
-  touched = false;
-  reverse$ = new BehaviorSubject(false);
-  selection$: BehaviorSubject<Image | null> = new BehaviorSubject<Image | null>(this.images[0]);
+  protected touched = false;
+  protected readonly reverse$ = new BehaviorSubject(false);
+  protected readonly selection$: BehaviorSubject<Image | null> = new BehaviorSubject<Image | null>(this.images[0]);
 
   next(): void {
     const selection = this.selection$.getValue();

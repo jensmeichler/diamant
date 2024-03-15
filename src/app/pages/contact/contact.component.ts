@@ -16,7 +16,7 @@ import {ViewService} from "src/app/services/view.service";
 })
 export class ContactComponent implements OnInit {
   private readonly seo = inject(SeoService);
-  mobile$ = inject(ViewService).mobile$;
+  protected readonly mobile$ = inject(ViewService).mobile$;
 
   ngOnInit(): void {
     window.scroll({top: 0, behavior: 'instant'});

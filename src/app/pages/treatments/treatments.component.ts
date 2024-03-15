@@ -14,8 +14,8 @@ import {ImgComponent} from "src/app/components/img/img.component";
 })
 export class TreatmentsComponent implements OnInit {
   private readonly seo = inject(SeoService);
-  mobile$ = inject(ViewService).mobile$;
-  readMore = false;
+  protected readonly mobile$ = inject(ViewService).mobile$;
+  protected readMore = false;
 
   ngOnInit(): void {
     window.scroll({top: 0, behavior: 'instant'});
