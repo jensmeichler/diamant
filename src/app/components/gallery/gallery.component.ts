@@ -37,6 +37,20 @@ export class GalleryComponent {
       width: 1079,
       height: 801
     },
+    {
+      src: 'assets/img/gallery/new-studio-2.webp',
+      alt: 'Unser Studio',
+      link: '/kontakt',
+      width: 1024,
+      height: 768
+    },
+    {
+      src: 'assets/img/gallery/new-studio.webp',
+      alt: 'Unser Studio',
+      link: '/kontakt',
+      width: 1024,
+      height: 768
+    }
   ];
 
   protected touched = false;
