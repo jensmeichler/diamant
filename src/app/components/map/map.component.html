@@ -1,4 +1,5 @@
 <iframe
+  *ngIf="consentGiven; else noConsent"
   class="iframe"
   height="300"
   frameborder="0"
@@ -7,3 +8,22 @@
   marginwidth="0"
   src="https://maps.google.com/maps?width=856&amp;height=300&amp;hl=en&amp;q=Adolfstra%C3%9Fe%2065%20Braunschweig+(Diamant%20-%20Sch%C3%B6nheit%20neu%20erleben)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
 ></iframe>
+
+<ng-template #noConsent>
+  <div class="give-consent-dialog">
+    <h3 class="give-consent-dialog__title padded padded--top">
+      <img src="assets/svg/map-blue.svg" alt="" height="16" width="16">
+      <span>Google Maps anzeigen</span>
+    </h3>
+    <hr style="border-color: white; margin: 0">
+    <p class="align-center padded">
+      Wir verwenden Google Maps, um Karten anzuzeigen.
+      Um die Karte zu sehen müssen Sie der Verwendung von Google Maps zustimmen.
+      Google Maps verwendet Cookies und sammelt Daten über Ihr Gerät und Ihr Verhalten.
+    </p>
+    <hr style="border-color: white; margin: 0">
+    <div class="align-right padded padded--bottom">
+      <button class="give-consent-dialog__button secondary hover" (click)="giveConsent()">Zustimmen</button>
+    </div>
+  </div>
+</ng-template>

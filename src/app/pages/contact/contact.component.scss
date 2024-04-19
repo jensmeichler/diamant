@@ -48,12 +48,13 @@
 
 .grid-group {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2rem;
 
   @media screen {
+    @media (min-width: 650px) {
+      grid-template-columns: 1fr 1fr;
+    }
     @media (min-width: 850px) {
-      display: grid;
       grid-template-columns: 1fr 2fr;
     }
   }

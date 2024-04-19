@@ -32,13 +32,17 @@ ul {
 button {
   all: unset;
   cursor: pointer;
-  opacity: .7;
-  &:hover {
-    opacity: 1;
+
+  &.low-opacity {
+    opacity: .7;
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
 hr {
+  width: 100%;
   border: .5px solid var(--color-light);
   border-radius: 4px;
 }
@@ -124,6 +128,12 @@ strong {
   text-align: center;
   text-align: -webkit-center;
   text-align: -moz-center;
+}
+
+.align-right {
+  text-align: right;
+  text-align: -webkit-right;
+  text-align: -moz-right;
 }
 
 .hidden {

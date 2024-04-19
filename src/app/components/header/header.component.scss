@@ -46,8 +46,6 @@
       font-size: 2rem;
 
       &--menu {
-        opacity: 1;
-
         &--open .nav-bar__item--menu__svg-line {
           transition: var(--transition-default);
           &--top {
