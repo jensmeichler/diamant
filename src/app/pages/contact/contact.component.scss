@@ -34,7 +34,6 @@
 
 .photo {
   width: calc(50% - .5rem);
-  height: 100%;
   float: left;
   margin: 0 1rem .25rem 0;
 
@@ -50,6 +49,7 @@
   display: grid;
   grid-gap: 2rem;
 
+  transition: grid-template-columns var(--transition-default-behaviour);
   @media screen {
     @media (min-width: 650px) {
       grid-template-columns: 1fr 1fr;
