@@ -11,6 +11,12 @@
 .give-consent-dialog {
   border-radius: 2rem;
   outline: 1rem solid white;
+  backdrop-filter: brightness(.86);
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   &::before {
     border-radius: 2rem;
@@ -28,12 +34,6 @@
 
     filter: blur(6px);
   }
-
-  height: 300px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 
   .padded {
     --padding: min(max(2vw, 1rem), 2rem);
