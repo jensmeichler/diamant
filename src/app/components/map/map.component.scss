@@ -9,11 +9,11 @@
 }
 
 .give-consent-dialog {
-  @extend .iframe;
+  border-radius: 2rem;
   outline: 1rem solid white;
 
   &::before {
-    @extend .iframe;
+    border-radius: 2rem;
 
     content: "";
     position: fixed;
@@ -59,6 +59,6 @@
 
   &__button {
     padding: 1rem 2rem;
-    border-radius: 0.75rem;
+    border-radius: 1rem;
   }
 }
