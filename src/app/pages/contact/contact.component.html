@@ -1,16 +1,17 @@
 <div class="content">
-  <h1 class="align-center">Diamant&nbsp;&nbsp;Schönheit neu erleben - ihr Kosmetikstudio in Braunschweig</h1>
+  <h1 class="align-center">Diamant&nbsp;&nbsp;{{'PAGES.CONTACT.TITLE' | translate}}</h1>
   <hr>
   <br>
 
   <div class="grid-group">
     <div>
-      <h2>Hier finden Sie uns:</h2>
+      <h2>{{'PAGES.CONTACT.ADDRESS_TITLE' | translate}}</h2>
       <p>Adolfstraße 65</p>
       <p>38102 Braunschweig</p>
       <br>
-      <p class="phone">Telefon:<a class="phone__link" href="tel: 017676893292">0176&nbsp;76893292</a></p>
+      <p class="phone">{{'PAGES.CONTACT.PHONE' | translate}}:<a class="phone__link" href="tel: 017676893292">0176&nbsp;76893292</a></p>
     </div>
+
     <app-map/>
   </div>
 
@@ -22,22 +23,9 @@
     <app-img class="photo" src="assets/img/contact/studio.webp" alt="Studio" [width]="1599" [height]="899"/>
 
     <h2>
-      Unser Kundenfeedback: Kosmetik im Kosmetikstudio Braunschweig
+      {{ 'PAGES.CONTACT.FEEDBACK_TITLE' | translate }}
     </h2>
-    <p>
-      Wichtig ist, dass man sich in seinem Kosmetikstudio wohl und gut aufgehoben fühlt.
-      Man sollte abschalten und sich entspannen können und seine kleine Auszeit mit Kosmetik genießen.
-      Ich gehe liebend gerne in mein Kosmetikstudio in Braunschweig und freue mich jedes Mal auf die freundlichen und kompetenten Mitarbeiter dort.
-      Wenn ich aus dem Komsetikstudio rausgehe, fühle ich mich wie neu geboren und wie ein vollkommen neuer Mensch.
-      Das Gefühl, sich super wohl in seiner Haut zu fühlen, ist ein ganz tolles.
-      Da ich jahrelang Akne hatte, bin ich umso glücklicher darüber, dass meine Haut durch die regelmäßigen Besuche im Kosmetikstudio so viel besser geworden ist.
-      Wichtig ist natürlich auch, dass man auf eine gesunde Ernährung achtet.
-      Kosmetik ist nicht alles!
-      Ich esse viel Obst und Gemüse und versuche so gut wie möglich auf Gluten zu verzichten, da sich dadurch meine Haut verschlechtert.
-      <br>
-      Alles in allem liebe ich es in mein Kosmetikstudio Diamant in Braunschweig zu gehen und bin jedes Mal total glücklich mit dem Ergebnis und mag die Begeisterung meiner Kunden.
-      Aus diesem Grund kann ich es nur jedem ans Herz legen, meinem Kosmetikstudio Diamant in Braunschweig einen Besuch abzustatten.
-    </p>
+    <p [innerHtml]="'PAGES.CONTACT.FEEDBACK_TEXT' | translate"></p>
   </section>
 
   <br>

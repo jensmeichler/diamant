@@ -26,28 +26,28 @@ export class GalleryComponent {
   private images: Image[] = [
     {
       src: 'assets/img/contact/studio.webp',
-      label: 'GALLERY.STUDIO',
+      label: 'COMPONENTS.GALLERY.STUDIO',
       link: '/kontakt',
       width: 1599,
       height: 899
     },
     {
       src: 'assets/img/products/products.webp',
-      label: 'GALLERY.PRODUCTS',
+      label: 'COMPONENTS.GALLERY.PRODUCTS',
       link: '/produkte',
       width: 1079,
       height: 801
     },
     {
       src: 'assets/img/gallery/new-studio-2.webp',
-      label: 'GALLERY.STUDIO',
+      label: 'COMPONENTS.GALLERY.STUDIO',
       link: '/kontakt',
       width: 1024,
       height: 768
     },
     {
       src: 'assets/img/gallery/new-studio.webp',
-      label: 'GALLERY.STUDIO',
+      label: 'COMPONENTS.GALLERY.STUDIO',
       link: '/kontakt',
       width: 1024,
       height: 768
