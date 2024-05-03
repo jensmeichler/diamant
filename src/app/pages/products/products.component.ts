@@ -1,11 +1,12 @@
 import {Component, inject, OnInit} from '@angular/core';
 import {SeoService} from "src/app/services/seo.service";
 import {ImgComponent} from "src/app/components/img/img.component";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [ImgComponent],
+  imports: [ImgComponent, TranslateModule],
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.scss']
 })

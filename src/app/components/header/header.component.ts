@@ -1,8 +1,8 @@
-import {Component, inject, Input} from '@angular/core';
+import {Component, inject, Input, OnInit} from '@angular/core';
 import {RouterLink, RouterLinkActive} from "@angular/router";
 import {AsyncPipe, NgClass, NgIf} from "@angular/common";
 import {ViewService} from "src/app/services/view.service";
-import {TranslateModule} from "@ngx-translate/core";
+import {TranslateModule, TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-header',
@@ -15,6 +15,11 @@ export class HeaderComponent {
   @Input({required: true}) geoLink!: string;
   protected readonly mobile$ = inject(ViewService).mobile$;
   protected menuOpen = false;
+  protected readonly translate = inject(TranslateService);
+
+  switchLanguage(lang: 'de' | 'ua'): void {
+    this.translate.use(lang);
+  }
 
   toggleMenu(): void {
     if (!this.menuOpen) {
