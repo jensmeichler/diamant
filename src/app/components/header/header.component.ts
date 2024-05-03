@@ -2,11 +2,12 @@ import {Component, inject, Input} from '@angular/core';
 import {RouterLink, RouterLinkActive} from "@angular/router";
 import {AsyncPipe, NgClass, NgIf} from "@angular/common";
 import {ViewService} from "src/app/services/view.service";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive, NgIf, AsyncPipe, NgClass],
+  imports: [RouterLink, RouterLinkActive, NgIf, AsyncPipe, NgClass, TranslateModule],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
