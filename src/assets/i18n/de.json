@@ -11,6 +11,7 @@
       "PRODUCTS": "Unsere Produkte"
     },
     "HEADER": {
+      "DIAMOND": "Diamant",
       "CALL": "Anrufen",
       "ARRIVE": "Anfahrt",
       "LINK_HOME": "Home",
@@ -70,6 +71,7 @@
       "INDIVIDUAL_TREATMENT_CTA": "Rufen Sie einfach an unter:"
     },
     "CONTACT": {
+      "DIAMOND": "Diamant",
       "TITLE": "Schönheit neu erleben - ihr Kosmetikstudio in Braunschweig",
       "ADDRESS_TITLE": "Hier finden Sie uns:",
       "PHONE": "Telefon",
@@ -79,10 +81,9 @@
     "HOME": {
       "SPECIAL_OFFER_TITLE": "Sonderangebot",
       "SPECIAL_OFFER_TEXT": "Diamant Microdermabrasion (90 Min)",
-      "SPECIAL_OFFER_EXPLANATION_DESKTOP": "Die apparative Reinigung wird Ihre Haut optimal vorbereiten, um die wertvollen Wirkstoffe aufzunehmen! Nach der Augenbrauenkorrektur wird je nach Hauttyp der passende Wirkstoff auf die Haut aufgetragen. Sofort Effekt mit Langzeitwirkung und ein strahlendes Hautbild.<br> Hinzu kommt eine Maske, die sowohl auf das Gesicht als auch auf das Dekolleté einmassiert wird. Ihre Haut bekommt ein jugendliches Erscheinungsbild mit Lifting-Effekt.",
-      "SPECIAL_OFFER_EXPLANATION_MOBILE_SHORT": "Die apparative Reinigung wird Ihre Haut optimal vorbereiten, um die wertvollen Wirkstoffe aufzunehmen! Nach der...",
-      "SPECIAL_OFFER_EXPLANATION_MOBILE_FULL": "Die apparative Reinigung wird Ihre Haut optimal vorbereiten, um die wertvollen Wirkstoffe aufzunehmen! Nach der Augenbrauenkorrektur wird je nach Hauttyp der passende Wirkstoff auf die Haut aufgetragen. Sofort Effekt mit Langzeitwirkung und ein strahlendes Hautbild.<br> Hinzu kommt eine Maske, die sowohl auf das Gesicht als auch auf das Dekolleté einmassiert wird. Ihre Haut bekommt ein jugendliches Erscheinungsbild mit Lifting-Effekt.",
-      "SPECIAL_OFFER_EXPLANATION_MOBILE_CONTINUE": "weiter lesen",
+      "SPECIAL_OFFER_EXPLANATION_SHORT": "Die apparative Reinigung wird Ihre Haut optimal vorbereiten, um die wertvollen Wirkstoffe aufzunehmen! Nach der...",
+      "SPECIAL_OFFER_EXPLANATION_FULL": "Die apparative Reinigung wird Ihre Haut optimal vorbereiten, um die wertvollen Wirkstoffe aufzunehmen! Nach der Augenbrauenkorrektur wird je nach Hauttyp der passende Wirkstoff auf die Haut aufgetragen. Sofort Effekt mit Langzeitwirkung und ein strahlendes Hautbild.<br> Hinzu kommt eine Maske, die sowohl auf das Gesicht als auch auf das Dekolleté einmassiert wird. Ihre Haut bekommt ein jugendliches Erscheinungsbild mit Lifting-Effekt.",
+      "SPECIAL_OFFER_EXPLANATION_CONTINUE": "weiter lesen",
       "TITLE": "Ihr Kosmetikstudio in Braunschweig für professionelle Gesichtspflege",
       "CARDS_ABOUT_ME_TEXT": "Pflegeprodukte und Kosmetik aus der Natur. Erfahrung seit 20 Jahren und seit 10 in Braunschweigs Kosmetikstudio - Schönheit neu erleben!",
       "CARDS_ABOUT_ME_LINK_PRODUCTS": "Unsere Produkte",
@@ -108,6 +109,28 @@
       "TITLE": "Ups.. Ich glaube die Seite die du suchst, habe ich gefressen.",
       "BACK": "Zurück",
       "HOME": "Zur&nbsp;Startseite"
+    },
+    "PRODUCTS": {
+      "TITLE": "Hochwertige Anti-Aging-Wirkstoffe für Ihre Haut",
+      "TEXT_1": "Für unsere professionellen Behandlungen verwenden wir nur hochwertige Beauty- und Naturprodukte, die Ihrer Haut ein frisches Aussehen und Ihrem Wohlbefinden neue Energie schenken.",
+      "TEXT_2": "Ein Zusammenspiel von ARTISTRY und NUTRILITE.",
+      "TEXT_3_COLORED": "Das Artistry Signature Select Basia-Serum besteht aus reinen NUTRILITE Pflanzenstoffen und 100%-igem Phyto-Infused Water<br>Acerola-Kirche, Schwarze Johannisbeere, Grüner Tee, Granatapfel, Spinat",
+      "ANTI_AGING_SERUM_TITLE": "Für Sie ganz persönlich: Anti-Aging-Serum",
+      "ANTI_AGING_SERUM_TEXT": "Erleben Sie die Wirkung von bis zu drei Seren in einem ganz persönlichen<br>ARTISTRY Anti-Aging-Serum, das Ihre individuellen Hautpflegebedürfnisse erfüllt.",
+      "SCIENCE_TITLE": "Die Wissenschaft <strong>jünger aussehender Haut</strong> - Anti-Aging",
+      "SCIENCE_TEXT": "Die Technologie von Artistry ermöglicht es, das Leben der Hautzellen durch Steigerung der Produktion von Jugendproteinen zu verlängern. Die Haut widersetzt sich den Alterungsanzeichen und beginnt schon nach lediglich einer Woche jünger auszusehen. Jeder von uns altert. Doch Gott sei Dank gibt es heutzutage eine Reihe an Möglichkeiten, um das Hautbild jung aussehen zu lassen. Von besonderer Bedeutung ist die richtige Gesichtspflege durch feuchtigkeitsspendende Cremes. Urea ist ein Wirkstoff, welcher trockener Haut entgegenwirkt, wenn sie zu sehr trockener Haut neigen. Außerdem nutze ich Hyaluronsäure unter den Augen, um gegen Augenringe anzukämpfen. Dabei möchte ich jedoch betonen, dass man natürlich auch auf ausreichenden Schlaf achten sollte, da dies eine wichtige Grundvoraussetzung für ein optimales Hautbild darstellt.",
+      "INFO_BOX_TITLE": "IHR PROFI-TIPP: Artistry  bietet eine Vielzahl an hochentwickelten Hautpflegelösungen - von Pflegeprodukten des täglichen Bedarfs bis hin zu schwelgerischem Luxus",
+      "INFO_BOX_TEXT": "welche dabei helfen, das jugendliche Erscheinungsbild der Haut zu bewahren. In nur einer Woche habe ich einen erstaunlichen Unterschied in der Reinheit und eine Reduzierung der feinen Linien erlebt; ein kraftvoller Antrieb für ein jugendliches Aussehen meiner Haut. Einfach fantastisch! (Michelle D'Allaird)",
+      "INFO_BOX_SUB_TEXT": "Natürlich können Sie diese auch für Ihre Pflege zu Hause bei uns erwerben.",
+      "OUR_PRODUCTS_TITLE": "Folgende Produkte verwenden wir bei unseren Behandlungen:",
+      "OUR_PRODUCTS_LI_1": "Artistry-Luxus Kosmetik",
+      "OUR_PRODUCTS_LI_2": "Naturys ECO Bio Kosmetik",
+      "OUR_PRODUCTS_LI_3": "CNC neueste Technologie und Rezepturen",
+      "NICE_TEXT_1": "Das Land im Süden, wo die Sonne lacht und das Klima die Pflanzen prächtig gedeihen lässt, hat eine Biokosmetik hervorgebracht, die nicht nur die Haut, sondern auch die Seele verwöhnt. Seit 1968 wird in Rovigo die hochwertige Naturkosmetik aus wertvollen Substanzen und mit viel Erfahrung produziert. Alle Produkte aus der Kosmetikserie Naturys wurden auf schädliche Metalle getestet und können auch von Allergikern bedenkenlos angewendet werden. Die Biokosmetik ist zertifiziert durch ICEA. Die Naturys Naturkosmetik findet sich jetzt neu in unserem Angebot.",
+      "NICE_TEXT_2": "Wohltuende Anti-Aging Gesichtspflege",
+      "NICE_TEXT_3": "Die Produktlinien von Naturys bieten alles, was die Gesichtshaut braucht. Von der Basis-Pflege über die besonderen Bedürfnisse empfindlicher Haut bis hin zu der Behandlung von Pickeln und Mitessern. Die Haut wird optimal mit Nährstoffen versorgt und wieder in ihr natürliches Gleichgewicht gebracht. Die pflanzlichen Inhaltsstoffe der sanften Naturkosmetik verleihen dem Gesicht ein strahlendes Aussehen, ohne die Haut zu belasten. In der Kosmetikserie finden sich ebenfalls Produkte zur Entfernung von Make-Up und zum Sonnenschutz.",
+      "NICE_TEXT_4": "Anti-Aging auf natürliche Weise",
+      "NICE_TEXT_5": "Für die speziellen Bedürfnisse alternder Haut hat Naturys eine eigene Biokosmetik entwickelt. Die Anti-Aging-Linie bietet Pflege für Gesicht, Augen, Lippen und Hände. Hochkonzentrierte Extrakte aus der Moltebeere in Kombination mit Mineralien und Hyaluron revitalisieren die Haut und wirken der Zellalterung entgegen. Die wertvollen Pflanzenteile geben der Haut Elastizität und verjüngen das Hautbild. Hyaluron glättet die Fältchen und Vitamin C wirkt als Antioxidans. Calcium und Magnesium versorgen die Haut zusätzlich mit wichtigen Nährstoffen. Anti-Aging von Naturys ist die Rundum-Pflege von Gesicht und Händen, die der Haut alles gibt was sie braucht."
     }
   }
 }

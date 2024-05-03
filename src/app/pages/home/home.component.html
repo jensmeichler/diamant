@@ -9,17 +9,17 @@
       </p>
     </div>
     <span class="monthly-offer__body secondary align-center" *ngIf="!view.isMobile; else mobile">
-      <p class="content align-center m" [innerHtml]="'PAGES.HOME.SPECIAL_OFFER_EXPLANATION_DESKTOP' | translate"></p>
+      <p class="content align-center m" [innerHtml]="'PAGES.HOME.SPECIAL_OFFER_EXPLANATION_FULL' | translate"></p>
     </span>
     <ng-template #mobile>
       <span class="monthly-offer__body secondary">
         <p [class.hidden]="readMore" class="m">
-          {{ 'PAGES.HOME.SPECIAL_OFFER_EXPLANATION_MOBILE_SHORT' | translate }}
+          {{ 'PAGES.HOME.SPECIAL_OFFER_EXPLANATION_SHORT' | translate }}
           <button class="low-opacity" (click)="readMore = !readMore">
-            {{ 'PAGES.HOME.SPECIAL_OFFER_EXPLANATION_MOBILE_CONTINUE' | translate }}
+            {{ 'PAGES.HOME.SPECIAL_OFFER_EXPLANATION_CONTINUE' | translate }}
           </button>
         </p>
-        <p [class.hidden]="!readMore" class="m" [innerHtml]="'PAGES.HOME.SPECIAL_OFFER_EXPLANATION_MOBILE_FULL' | translate"></p>
+        <p [class.hidden]="!readMore" class="m" [innerHtml]="'PAGES.HOME.SPECIAL_OFFER_EXPLANATION_FULL' | translate"></p>
       </span>
     </ng-template>
     <div class="monthly-offer__price secondary">
