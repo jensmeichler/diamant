@@ -1,8 +1,15 @@
-import {ApplicationConfig, isDevMode} from '@angular/core';
+import {ApplicationConfig, importProvidersFrom, isDevMode} from '@angular/core';
+import {provideHttpClient, HttpClient} from '@angular/common/http';
 import {provideRouter, withComponentInputBinding} from '@angular/router';
+import {provideServiceWorker} from '@angular/service-worker';
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 
 import {routes} from './app.routes';
-import {provideServiceWorker} from '@angular/service-worker';
+
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -10,6 +17,14 @@ export const appConfig: ApplicationConfig = {
     provideServiceWorker('ngsw-worker.js', {
       enabled: !isDevMode(),
       registrationStrategy: 'registerWhenStable:30000'
-    })
+    }),
+    provideHttpClient(),
+    importProvidersFrom(TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: createTranslateLoader,
+        deps: [HttpClient]
+      }
+    })),
   ]
 };

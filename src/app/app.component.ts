@@ -4,6 +4,7 @@ import {HeaderComponent} from "src/app/components/header/header.component";
 import {FooterComponent} from "src/app/components/footer/footer.component";
 import {ScrollTopButtonComponent} from "src/app/components/scroll-top-button/scroll-top-button.component";
 import {BannerComponent} from "src/app/components/additional-header/banner.component";
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -25,4 +26,11 @@ export class AppComponent {
     (navigator.platform.indexOf("iPod") != -1))
     ? "maps://maps.google.com/maps?daddr=52.261748,10.534947&amp;q=Adolfstraße+65&amp;ll="
     : "https://maps.google.com/maps?daddr=52.261748,10.534947&amp;q=Adolfstraße+65&amp;ll=";
+
+  constructor(public translate: TranslateService) {
+    translate.addLangs(['de', 'ua']);
+    translate.setDefaultLang('de');
+    const browserLang = translate.getBrowserLang();
+    translate.use(browserLang?.match(/de|ua/) ? browserLang : 'de');
+  }
 }
