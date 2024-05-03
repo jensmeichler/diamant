@@ -1,9 +1,9 @@
 <img class="dino" src="assets/img/404/dino.svg" alt="Dino" width="100%" height="100%">
 <h1 class="align-center" style="margin-bottom: 2rem">
-  Ups.. Ich glaube die Seite die du suchst, habe ich gefressen.
+  {{ 'PAGES.NOT_FOUND.TITLE' | translate }}
 </h1>
 <h2 class="four-o-four">404</h2>
 <p class="button-group align-center">
-  <a (click)="back()" class="button">Zurück</a>
-  <a routerLink="/" class="button">Zur&nbsp;Startseite</a>
+  <a (click)="back()" class="button">{{ 'PAGES.NOT_FOUND.BACK' | translate }}</a>
+  <a routerLink="/" class="button" [innerHtml]="'PAGES.NOT_FOUND.HOME' | translate"></a>
 </p>

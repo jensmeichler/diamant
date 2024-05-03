@@ -1,5 +1,5 @@
 <div class="content">
-  <h1 class="align-center">Ihr freundliches Kosmetik & Wellness Studio in Braunschweig</h1>
+  <h1 class="align-center">{{'PAGES.CONSULTING.TITLE' | translate}}</h1>
   <hr>
   <br>
 
@@ -12,21 +12,8 @@
 
   <div class="grid-group">
     <article>
-      <h2>Über mich</h2>
-      <p>
-        Seit 20 Jahren freue ich mich über zufriedene Kunden.
-        <br>
-        Meine Ausbildung und meine Erfahrungen helfen mir, allen Kundenwünschen gerecht zu werden.
-        <br>
-        12 Jahre arbeitete ich am Theater und war 8 Jahre im Außendienst für Kosmetikberatungen tätig.
-        <br>
-        Neben der Basis-, Klassik- und Luxusbehandlung habe ich mich auf die apparative Kosmetik spezialisiert,
-        <br>
-        weil sie auch in Zukunft durch ihre ständige Weiterentwicklung überraschende Ergebnisse bringen wird:
-        Reverse Aging.
-        <br>
-        Bei mir sind Sie in den richtigen Händen und immer auf dem neuesten Stand!
-      </p>
+      <h2>{{ 'PAGES.CONSULTING.ABOUT_ME_TITLE' | translate }}</h2>
+      <p [innerHtml]="'PAGES.CONSULTING.ABOUT_ME_TEXT' | translate"></p>
     </article>
     <app-img class="grid-group__img" src="assets/img/consulting/maryna.webp" [width]="576" [height]="576" alt="Maryna Gruszka"/>
   </div>
@@ -35,54 +22,36 @@
   <hr>
   <br>
 
-  <h2>Wir bieten unter anderem:</h2>
+  <h2>{{ 'PAGES.CONSULTING.WHAT_WE_OFFER_TITLE' | translate }}</h2>
   <ul>
-    <li>Professionelle Hautanalyse</li>
-    <li>Typberatung und individuelle Produkte je nach Hauttyp</li>
-    <li>Beratung für die passenden Produkte ganz individuell nach Ihrer Haut</li>
-    <li>Entspannende Meditationsmusik zu der Behandlung</li>
+    <li>{{ 'PAGES.CONSULTING.WHAT_WE_OFFER_LI_1' | translate }}</li>
+    <li>{{ 'PAGES.CONSULTING.WHAT_WE_OFFER_LI_2' | translate }}</li>
+    <li>{{ 'PAGES.CONSULTING.WHAT_WE_OFFER_LI_3' | translate }}</li>
+    <li>{{ 'PAGES.CONSULTING.WHAT_WE_OFFER_LI_4' | translate }}</li>
   </ul>
 
   <br>
   <hr>
   <br>
 
-  <h2>Reverse Aging Gesichtspflege</h2>
+  <h2>{{ 'PAGES.CONSULTING.REVERSE_AGING_TITLE' | translate }}</h2>
   <br>
-  <p>
-    Wir verwöhnen Sie mit hochwertigen Produkten aus der Natur.
-    <br>
-    <br>
-    Außerdem arbeiten wir mit Diamant-Microdermabrasion
-    (gegen Pigmentflecken, vergrößerte Poren, Altersflecken, müde und gestresste Haut, Fältchen, Akne etc.)
-    und Mesoporation (für Hautverjüngung, -glättung und -straffung).
-    <br>
-    Soft Needling (Sanfte Hautregeneration und Liftingeffekt mit deutlich sichtbaren Ergebnissen bereits nach einer Behandlung)
-    <br>
-    <br>
-    Für alle Behandlungen nehmen wir uns Zeit, um auf Ihre individuellen Wünsche einzugehen.
-    <br>
-    <br>
-    Von der klassischen Schönheitsbehandlung bis zu erholsamen Massagen - unsere Mitarbeiter verwöhnen Sie gerne rundum
-    und lassen jede Behandlung zu einem unvergesslichen Erlebnis werden.
-  </p>
+  <p [innerHtml]="'PAGES.CONSULTING.REVERSE_AGING_TEXT' | translate"></p>
   <ul>
-    <li>Kosmetik Behandlung</li>
-    <li>Apparative Kosmetik</li>
-    <li>Dekorative Kosmetik</li>
-    <li>Produkt Beratung und mehr...</li>
+    <li>{{ 'PAGES.CONSULTING.REVERSE_AGING_LI_1' | translate }}</li>
+    <li>{{ 'PAGES.CONSULTING.REVERSE_AGING_LI_2' | translate }}</li>
+    <li>{{ 'PAGES.CONSULTING.REVERSE_AGING_LI_3' | translate }}</li>
+    <li>{{ 'PAGES.CONSULTING.REVERSE_AGING_LI_4' | translate }}</li>
   </ul>
 
   <br>
   <hr>
   <br>
 
-  <h2>Unser zusätzlicher Service umfasst:</h2>
+  <h2>{{ 'PAGES.CONSULTING.ADDITIONAL_SERVICE_TITLE' | translate }}</h2>
   <br>
   <p>
-    Mehr als nur Kosmetik! Beim Kosmetikstudio Diamant sollen Sie sich rundherum wohlfühlen.
-    Deshalb führen wir unsere üblichen Schönheitsbehandlungen in einer besonders ruhigen und angenehmen Atmosphäre durch,
-    in der Sie entspannt den Alltagsstress vergessen können.
+    {{ 'PAGES.CONSULTING.ADDITIONAL_SERVICE_TEXT' | translate }}
   </p>
 
   <ng-container *ngIf="!showAdvice">
@@ -94,12 +63,15 @@
 </div>
 
 <ng-template #callAdvice>
-  <h2>Sie wünschen eine individuelle Behandlung?</h2>
+  <h2>{{ 'PAGES.CONSULTING.INDIVIDUAL_TREATMENT_TITLE' | translate }}</h2>
   <br>
   <p>
-    Gerne beraten wir Sie persönlich und stellen Ihnen ein individuelles Behandlungspaket zusammen.
+    {{ 'PAGES.CONSULTING.INDIVIDUAL_TREATMENT_TEXT' | translate }}
     <br>
     <br>
-    <span class="phone">Rufen Sie einfach an unter:<a class="phone__link secondary" href="tel: 017676893292">0176&nbsp;76893292</a></span>
+    <span class="phone">
+      {{ 'PAGES.CONSULTING.INDIVIDUAL_TREATMENT_CTA' | translate }}
+      <a class="phone__link secondary" href="tel: 017676893292">0176&nbsp;76893292</a>
+    </span>
   </p>
 </ng-template>

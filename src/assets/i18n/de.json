@@ -1,48 +1,113 @@
 {
-  "FOOTER": {
-    "IMPRINT": "Impressum",
-    "MAIL": "E-Mail",
-    "PHONE": "Tel.",
-    "SITEMAP": "Sitemap"
+  "COMPONENTS": {
+    "FOOTER": {
+      "IMPRINT": "Impressum",
+      "MAIL": "E-Mail",
+      "PHONE": "Tel.",
+      "SITEMAP": "Sitemap"
+    },
+    "GALLERY": {
+      "STUDIO": "Unser Studio",
+      "PRODUCTS": "Unsere Produkte"
+    },
+    "HEADER": {
+      "CALL": "Anrufen",
+      "ARRIVE": "Anfahrt",
+      "LINK_HOME": "Home",
+      "LINK_TREATMENTS": "Behandlungen",
+      "LINK_PRODUCTS": "Produkte",
+      "LINK_CONSULTING": "Beratung",
+      "LINK_CONTACT": "Kontakt"
+    },
+    "INFO_BOX_COUPON": {
+      "NOT_WHAT_YOU_WANT": "Nicht dabei was Sie suchen?",
+      "CALL_AT_1": "Rufen Sie einfach unter",
+      "CALL_AT_2": "an für eine individuelle Beratung.",
+      "OUR_VOUCHER_TITLE": "Unser Gutschein: Verschenken Sie Entspannung!",
+      "OUR_VOUCHER_TEXT": "Selbstverständlich können Sie alle angebotenen Behandlungen bei uns auch in Form von Gutscheinen erwerben."
+    },
+    "RATING": {
+      "TITLE": "Wir schätzen Ihre Meinung!",
+      "TEXT_1": "Wenn Sie mit unserem Service zufrieden waren, würden wir uns freuen, wenn Sie eine Bewertung für unser Kosmetikstudio hinterlassen könnten.",
+      "TEXT_2": "Ihre Erfahrungen helfen nicht nur uns, sondern auch anderen, die nach einem vertrauenswürdigen Studio suchen.",
+      "TEXT_3": "Teilen Sie Ihre Gedanken und unterstützen Sie uns dabei, unsere Dienstleistungen stetig zu verbessern.",
+      "TEXT_4": "Vielen Dank im Voraus!",
+      "RATE_US": "Bewerten Sie uns gerne auf Google"
+    },
+    "TREATMENTS_EXPLANATIONS": {
+      "DIAMOND_MICRODERM_TITLE": "Diamant-Mikrodermabrasion",
+      "DIAMOND_MICRODERM_TEXT": "Diamantmicrodermabrasion ist ein intensives Peeling für alle Hauttypen. Dabei werden die Hautschüppchen und Verhornung abgetragen. Die Haut wird angeregt sich besser zu regenerieren und somit das Hautbild zu verbessern. Narben, Pigmentflecken sowie auch feine Fältchen werden weniger sichtbar.",
+      "MICRO_NEEDLING_TITLE": "Micro Needling",
+      "MICRO_NEEDLING_TEXT": "Eine neue Ära der apparativen Kosmetik.<br><br>Als Revolution unter den Anti-Aging Methoden der neuesten Generation für ein effektives und deutlich sichtbares Ergebnis. Sie sorgt für die Aktivierung der Eigenkollagenproduktion. Ihre Haut ist regeneriert, geglättet, erscheint jugendlicher, gefestigter und deutlich aufgepolsterter.<br><br>Micro Needling ist im Prinzip ganz einfach: Die Wirkstoffe kommen dort an, wo sie Ihre Haut am meisten benötigt und wo sie sich am besten entfalten können. Auch nicht nur an der Hautoberfläche, sondern auch in der Tiefe der Haut.<br><br>Die Micro Needling Behandlung erreicht eine echte Regeneration und Verjüngung der Haut bis in die tiefsten Strukturen. Die Haut bildet neue hauteigene Kollagen, Elastin und Hyaluronsäure. Das Ergebnis bleibt dauerhaft sichtbar.",
+      "LYMPH_DRAINAGE_TITLE": "Lymphdrainage",
+      "LYMPH_DRAINAGE_TEXT": "Ballancer mechanische Lymphmassage: Das innovative Anti-Cellulite-System.<br><br>Um alle Arten von Schwellungen oder Cellulite loszuwerden, bieten wir Ihnen neben unseren Behandlungen zusätzlich die mechanische Lymphdrainage an, die die gleichmäßige Verteilung der Flüssigkeit in den Geweben des Körpers fördert und überschüssige Wasserablagerungen und Schadstoffe aus Ihrem Körper schrittweise herausleitet. Die Pressohmassage Hose hilft den Interzellularraum zu reinigen und aktiviert den Lymphfluss, welcher besonders gut die Stoffwechsel-Balance reguliert.<br><br>Natürlich bitten wir Sie vorher mit Ihrem Hausarzt zu sprechen, um sicher zu gehen, dass Sie keine akuten Entzündungen haben, um die Lymphmassage-Hose in der Kosmetikbehandlung genießen zu können.",
+      "MESOPORATION_TITLE": "Mesoporation",
+      "MESOPORATION_TEXT": "Unter der Mesoporation versteht man eine sehr moderne Anti-Aging Behandlungsmöglichkeit, um Wirkstoffe in tiefere Hautschichten des Gesichts oder des Decolleté zu transportieren. Die Ziele dieser Gesichtspflege bestehen in der Reduktion von Falten und der Verjüngung des Hautbildes - also Anti-Aging. Die Haut soll straff und gesund aussehen. Im Gegensatz zur Mesotherapie bestehen bei der Mesoporation keine Nebenwirkungen wie ein erhöhtes Infektionsrisiko oder das Risiko von Hämatom- oder Quaddelbildung.",
+      "OTHERS_TITLE": "Nicht das richtige dabei?",
+      "OTHERS_TEXT": "<p>Sehen Sie sich <span class=underline>hier</span> unsere Behandlungen an.</p><p>Da ist auf jeden Fall was für Sie dabei!</p>"
+    }
   },
-  "GALLERY": {
-    "STUDIO": "Unser Studio",
-    "PRODUCTS": "Unsere Produkte"
-  },
-  "HEADER": {
-    "CALL": "Anrufen",
-    "ARRIVE": "Anfahrt",
-    "LINK_HOME": "Home",
-    "LINK_TREATMENTS": "Behandlungen",
-    "LINK_PRODUCTS": "Produkte",
-    "LINK_CONSULTING": "Beratung",
-    "LINK_CONTACT": "Kontakt"
-  },
-  "INFO_BOX_COUPON": {
-    "NOT_WHAT_YOU_WANT": "Nicht dabei was Sie suchen?",
-    "CALL_AT_1": "Rufen Sie einfach unter",
-    "CALL_AT_2": "an für eine individuelle Beratung.",
-    "OUR_VOUCHER_TITLE": "Unser Gutschein: Verschenken Sie Entspannung!",
-    "OUR_VOUCHER_TEXT": "Selbstverständlich können Sie alle angebotenen Behandlungen bei uns auch in Form von Gutscheinen erwerben."
-  },
-  "RATING": {
-    "TITLE": "Wir schätzen Ihre Meinung!",
-    "TEXT_1": "Wenn Sie mit unserem Service zufrieden waren, würden wir uns freuen, wenn Sie eine Bewertung für unser Kosmetikstudio hinterlassen könnten.",
-    "TEXT_2": "Ihre Erfahrungen helfen nicht nur uns, sondern auch anderen, die nach einem vertrauenswürdigen Studio suchen.",
-    "TEXT_3": "Teilen Sie Ihre Gedanken und unterstützen Sie uns dabei, unsere Dienstleistungen stetig zu verbessern.",
-    "TEXT_4": "Vielen Dank im Voraus!",
-    "RATE_US": "Bewerten Sie uns gerne auf Google"
-  },
-  "TREATMENTS_EXPLANATIONS": {
-    "DIAMOND_MICRODERM_TITLE": "Diamant-Mikrodermabrasion",
-    "DIAMOND_MICRODERM_TEXT": "Diamantmicrodermabrasion ist ein intensives Peeling für alle Hauttypen. Dabei werden die Hautschüppchen und Verhornung abgetragen. Die Haut wird angeregt sich besser zu regenerieren und somit das Hautbild zu verbessern. Narben, Pigmentflecken sowie auch feine Fältchen werden weniger sichtbar.",
-    "MICRO_NEEDLING_TITLE": "Micro Needling",
-    "MICRO_NEEDLING_TEXT": "Eine neue Ära der apparativen Kosmetik.<br><br>Als Revolution unter den Anti-Aging Methoden der neuesten Generation für ein effektives und deutlich sichtbares Ergebnis. Sie sorgt für die Aktivierung der Eigenkollagenproduktion. Ihre Haut ist regeneriert, geglättet, erscheint jugendlicher, gefestigter und deutlich aufgepolsterter.<br><br>Micro Needling ist im Prinzip ganz einfach: Die Wirkstoffe kommen dort an, wo sie Ihre Haut am meisten benötigt und wo sie sich am besten entfalten können. Auch nicht nur an der Hautoberfläche, sondern auch in der Tiefe der Haut.<br><br>Die Micro Needling Behandlung erreicht eine echte Regeneration und Verjüngung der Haut bis in die tiefsten Strukturen. Die Haut bildet neue hauteigene Kollagen, Elastin und Hyaluronsäure. Das Ergebnis bleibt dauerhaft sichtbar.",
-    "LYMPH_DRAINAGE_TITLE": "Lymphdrainage",
-    "LYMPH_DRAINAGE_TEXT": "Ballancer mechanische Lymphmassage: Das innovative Anti-Cellulite-System.<br><br>Um alle Arten von Schwellungen oder Cellulite loszuwerden, bieten wir Ihnen neben unseren Behandlungen zusätzlich die mechanische Lymphdrainage an, die die gleichmäßige Verteilung der Flüssigkeit in den Geweben des Körpers fördert und überschüssige Wasserablagerungen und Schadstoffe aus Ihrem Körper schrittweise herausleitet. Die Pressohmassage Hose hilft den Interzellularraum zu reinigen und aktiviert den Lymphfluss, welcher besonders gut die Stoffwechsel-Balance reguliert.<br><br>Natürlich bitten wir Sie vorher mit Ihrem Hausarzt zu sprechen, um sicher zu gehen, dass Sie keine akuten Entzündungen haben, um die Lymphmassage-Hose in der Kosmetikbehandlung genießen zu können.",
-    "MESOPORATION_TITLE": "Mesoporation",
-    "MESOPORATION_TEXT": "Unter der Mesoporation versteht man eine sehr moderne Anti-Aging Behandlungsmöglichkeit, um Wirkstoffe in tiefere Hautschichten des Gesichts oder des Decolleté zu transportieren. Die Ziele dieser Gesichtspflege bestehen in der Reduktion von Falten und der Verjüngung des Hautbildes - also Anti-Aging. Die Haut soll straff und gesund aussehen. Im Gegensatz zur Mesotherapie bestehen bei der Mesoporation keine Nebenwirkungen wie ein erhöhtes Infektionsrisiko oder das Risiko von Hämatom- oder Quaddelbildung.",
-    "OTHERS_TITLE": "Nicht das richtige dabei?",
-    "OTHERS_TEXT": "<p>Sehen Sie sich <span class=underline>hier</span> unsere Behandlungen an.</p><p>Da ist auf jeden Fall was für Sie dabei!</p>"
+  "PAGES": {
+    "CONSULTING": {
+      "TITLE": "Ihr freundliches Kosmetik & Wellness Studio in Braunschweig",
+      "ABOUT_ME_TITLE": "Über mich",
+      "ABOUT_ME_TEXT": "Seit 20 Jahren freue ich mich über zufriedene Kunden.<br>Meine Ausbildung und meine Erfahrungen helfen mir, allen Kundenwünschen gerecht zu werden.<br>12 Jahre arbeitete ich am Theater und war 8 Jahre im Außendienst für Kosmetikberatungen tätig.<br>Neben der Basis-, Klassik- und Luxusbehandlung habe ich mich auf die apparative Kosmetik spezialisiert,<br>weil sie auch in Zukunft durch ihre ständige Weiterentwicklung überraschende Ergebnisse bringen wird: Reverse Aging.<br>Bei mir sind Sie in den richtigen Händen und immer auf dem neuesten Stand!",
+      "WHAT_WE_OFFER_TITLE": "Wir bieten unter anderem:",
+      "WHAT_WE_OFFER_LI_1": "Professionelle Hautanalyse",
+      "WHAT_WE_OFFER_LI_2": "Typberatung und individuelle Produkte je nach Hauttyp",
+      "WHAT_WE_OFFER_LI_3": "Beratung für die passenden Produkte ganz individuell nach Ihrer Haut",
+      "WHAT_WE_OFFER_LI_4": "Entspannende Meditationsmusik zu der Behandlung",
+      "REVERSE_AGING_TITLE": "Reverse Aging Gesichtspflege",
+      "REVERSE_AGING_TEXT": "Wir verwöhnen Sie mit hochwertigen Produkten aus der Natur.<br><br>Außerdem arbeiten wir mit Diamant-Microdermabrasion (gegen Pigmentflecken, vergrößerte Poren, Altersflecken, müde und gestresste Haut, Fältchen, Akne etc.) und Mesoporation (für Hautverjüngung, -glättung und -straffung).<br>Soft Needling (Sanfte Hautregeneration und Liftingeffekt mit deutlich sichtbaren Ergebnissen bereits nach einer Behandlung)<br><br>Für alle Behandlungen nehmen wir uns Zeit, um auf Ihre individuellen Wünsche einzugehen.<br><br>Von der klassischen Schönheitsbehandlung bis zu erholsamen Massagen - unsere Mitarbeiter verwöhnen Sie gerne rundum und lassen jede Behandlung zu einem unvergesslichen Erlebnis werden.",
+      "REVERSE_AGING_LI_1": "Kosmetik Behandlung",
+      "REVERSE_AGING_LI_2": "Apparative Kosmetik",
+      "REVERSE_AGING_LI_3": "Dekorative Kosmetik",
+      "REVERSE_AGING_LI_4": "Produkt Beratung und mehr...",
+      "ADDITIONAL_SERVICE_TITLE": "Unser zusätzlicher Service umfasst:",
+      "ADDITIONAL_SERVICE_TEXT": "Mehr als nur Kosmetik! Beim Kosmetikstudio Diamant sollen Sie sich rundherum wohlfühlen. Deshalb führen wir unsere üblichen Schönheitsbehandlungen in einer besonders ruhigen und angenehmen Atmosphäre durch, in der Sie entspannt den Alltagsstress vergessen können.",
+      "INDIVIDUAL_TREATMENT_TITLE": "Sie wünschen eine individuelle Behandlung?",
+      "INDIVIDUAL_TREATMENT_TEXT": "Gerne beraten wir Sie persönlich und stellen Ihnen ein individuelles Behandlungspaket zusammen.",
+      "INDIVIDUAL_TREATMENT_CTA": "Rufen Sie einfach an unter:"
+    },
+    "CONTACT": {
+      "TITLE": "Schönheit neu erleben - ihr Kosmetikstudio in Braunschweig",
+      "ADDRESS_TITLE": "Hier finden Sie uns:",
+      "PHONE": "Telefon",
+      "FEEDBACK_TITLE": "Unser Kundenfeedback: Kosmetik im Kosmetikstudio Braunschweig",
+      "FEEDBACK_TEXT": "Wichtig ist, dass man sich in seinem Kosmetikstudio wohl und gut aufgehoben fühlt. Man sollte abschalten und sich entspannen können und seine kleine Auszeit mit Kosmetik genießen. Ich gehe liebend gerne in mein Kosmetikstudio in Braunschweig und freue mich jedes Mal auf die freundlichen und kompetenten Mitarbeiter dort. Wenn ich aus dem Komsetikstudio rausgehe, fühle ich mich wie neu geboren und wie ein vollkommen neuer Mensch. Das Gefühl, sich super wohl in seiner Haut zu fühlen, ist ein ganz tolles. Da ich jahrelang Akne hatte, bin ich umso glücklicher darüber, dass meine Haut durch die regelmäßigen Besuche im Kosmetikstudio so viel besser geworden ist. Wichtig ist natürlich auch, dass man auf eine gesunde Ernährung achtet. Kosmetik ist nicht alles! Ich esse viel Obst und Gemüse und versuche so gut wie möglich auf Gluten zu verzichten, da sich dadurch meine Haut verschlechtert.<br>Alles in allem liebe ich es in mein Kosmetikstudio Diamant in Braunschweig zu gehen und bin jedes Mal total glücklich mit dem Ergebnis und mag die Begeisterung meiner Kunden. Aus diesem Grund kann ich es nur jedem ans Herz legen, meinem Kosmetikstudio Diamant in Braunschweig einen Besuch abzustatten."
+    },
+    "HOME": {
+      "SPECIAL_OFFER_TITLE": "Sonderangebot",
+      "SPECIAL_OFFER_TEXT": "Diamant Microdermabrasion (90 Min)",
+      "SPECIAL_OFFER_EXPLANATION_DESKTOP": "Die apparative Reinigung wird Ihre Haut optimal vorbereiten, um die wertvollen Wirkstoffe aufzunehmen! Nach der Augenbrauenkorrektur wird je nach Hauttyp der passende Wirkstoff auf die Haut aufgetragen. Sofort Effekt mit Langzeitwirkung und ein strahlendes Hautbild.<br> Hinzu kommt eine Maske, die sowohl auf das Gesicht als auch auf das Dekolleté einmassiert wird. Ihre Haut bekommt ein jugendliches Erscheinungsbild mit Lifting-Effekt.",
+      "SPECIAL_OFFER_EXPLANATION_MOBILE_SHORT": "Die apparative Reinigung wird Ihre Haut optimal vorbereiten, um die wertvollen Wirkstoffe aufzunehmen! Nach der...",
+      "SPECIAL_OFFER_EXPLANATION_MOBILE_FULL": "Die apparative Reinigung wird Ihre Haut optimal vorbereiten, um die wertvollen Wirkstoffe aufzunehmen! Nach der Augenbrauenkorrektur wird je nach Hauttyp der passende Wirkstoff auf die Haut aufgetragen. Sofort Effekt mit Langzeitwirkung und ein strahlendes Hautbild.<br> Hinzu kommt eine Maske, die sowohl auf das Gesicht als auch auf das Dekolleté einmassiert wird. Ihre Haut bekommt ein jugendliches Erscheinungsbild mit Lifting-Effekt.",
+      "SPECIAL_OFFER_EXPLANATION_MOBILE_CONTINUE": "weiter lesen",
+      "TITLE": "Ihr Kosmetikstudio in Braunschweig für professionelle Gesichtspflege",
+      "CARDS_ABOUT_ME_TEXT": "Pflegeprodukte und Kosmetik aus der Natur. Erfahrung seit 20 Jahren und seit 10 in Braunschweigs Kosmetikstudio - Schönheit neu erleben!",
+      "CARDS_ABOUT_ME_LINK_PRODUCTS": "Unsere Produkte",
+      "CARDS_ABOUT_ME_LINK_ABOUT": "Über mich",
+      "CARDS_TREATMENTS_TITLE": "Das Kosmetikgeheimnis der Hollywoodstars:",
+      "CARDS_TREATMENTS_TEXT": "Mesoporation - sensationelle Ergebnisse in kurzer Zeit. Jetzt in Ihrem Kosmetikstudio in Braunschweig.",
+      "CARDS_TREATMENTS_LINK": "Zu unseren Behandlungen",
+      "CARDS_CONSULTING_TITLE": "Beratung:",
+      "CARDS_CONSULTING_TEXT": "Machen Sie sich das Leben leicht: Wir beraten Sie in allen Fragen der Schönheit und empfehlen Ihnen individuell die passende Kosmetik, um Ihr Leben in Braunschweig leichter und angenehmer zu machen.",
+      "CARDS_CONSULTING_LINK": "Unsere Beratungsmöglichkeiten",
+      "FANCY_TEXT_TITLE": "Diamant Kosmetik Ihr anti-aging Kosmetikstudio in Braunschweig",
+      "FANCY_TEXT_BODY_1": "Wollen Sie erfahren, was sich gerade Neues tut in Sachen Schönheit und Kosmetik? Wollen sie wissen, wie die neue Technik die Kosmetikstudios unterstützt und was es Neues für die Haut in Braunschweig gibt? Ihr freundliches Kosmetikstudio zeigt Ihnen einfache Wege. Es ist wirklich easy! Diamant Kosmetik in Braunschweig bringt es auf den Punkt. Gesichtsbehandlung mit Mikrodermabrasion wird in unserem Kosmetikstudio praktiziert - eine effektive Methode, um die richtigen Wirkstoffe in die tiefsten Hautschichten zu transportieren. Mesoporation - das Neueste in der apparativen Hautkosmetik. Diamant Kosmetik - Ihr Kosmetikstudio steht Ihnen mit Rat und Tat zur Verfügung! Probieren Sie es aus und Sie werden begeistert sein.",
+      "FANCY_TEXT_BODY_2": "Natürlich schön sein! Ihr freundliches Kosmetikstudio in Braunschweig hat die Naturprodukte und Kosmetik, die Sie haben wollen. Klicken Sie auf Produkte und wählen Sie das für Sie Passende aus.",
+      "FANCY_TEXT_BODY_3": "Diamant Kosmetik - Schönheit neu erleben, Ihr freundliches Kosmetikstudio in Braunschweig ist auch immer mit den aktuellen Make-up-Trends für Sie präsent. Ob im Job oder am Abend, wir bieten Looks für jede Gelegenheit. Wir haben die aktuellen Nuancen für Sie ausgesucht: Gold und rosa oder pink und rot? Diamant Kosmetik in Braunschweig macht es möglich und Sie fühlen sich wohl in Ihrer Haut!",
+      "FANCY_TEXT_BODY_4": "Nach neuesten Erkenntnissen kann die Umwelt die Haut krank machen. Das bestätigt eine Studie eines bekannten Kosmetikherstellers. Betroffen sind vor allem Städte, weil Feinstaub durch Autos und Industrie entsteht. Diamant Kosmetik, Ihr Kosmetikstudio in Braunschweig, weiß Rat. Wir können Sie beraten. Beauty-News und Beauty-Trends, das bietet Ihnen Ihr Kosmetikstudio in Braunschweig. In der Rubrik Gesichtsbehandlungen finden Sie auf unserer Homepage dekorative Kosmetik, Luxusbehandlungen, Hochzeitsmakeup und vieles mehr. Diamant Kosmetikstudio ist besonders spezialisiert und erfahren in Anti-Aging, für Hautverjüngung, zur Prävention von Hautalterung, Straffung und Aufpolsterung der Haut.",
+      "FANCY_TEXT_BODY_5": "Was die Kunden sagen:",
+      "FANCY_TEXT_BODY_6_QUOTE": "Alles in allem liebe ich es in mein Kosmetikstudio Diamant zu gehen und bin jedes Mal total glücklich mit dem Ergebnis. Aus diesem Grund kann ich es nur jedem ans Herz legen, dem Kosmetikstudio Diamant in Braunschweig einen Besuch abzustatten.",
+      "CONTACT_LINK": "Kommen Sie doch einfach mal vorbei!",
+      "GALLERY_TITLE": "Gallerie",
+      "TREATMENTS_TITLE": "Unsere Spezialitäten"
+    },
+    "NOT_FOUND": {
+      "TITLE": "Ups.. Ich glaube die Seite die du suchst, habe ich gefressen.",
+      "BACK": "Zurück",
+      "HOME": "Zur&nbsp;Startseite"
+    }
   }
 }
