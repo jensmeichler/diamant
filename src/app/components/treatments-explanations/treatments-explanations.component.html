@@ -2,12 +2,8 @@
   <article class="explanations">
     <div class="explanations__item">
       <div class="explanations__item__text">
-        <h3 class="h2" id="diamant-microdermabrasion">Diamantmicrodermabrasion</h3>
-        <p>
-          Diamantmicrodermabrasion ist ein intensives Peeling für alle Hauttypen.
-          Dabei werden die Hautschüppchen und Verhornung abgetragen.
-          Die Haut wird angeregt sich besser zu regenerieren und somit das Hautbild zu verbessern.
-          Narben, Pigmentflecken sowie auch feine Fältchen werden weniger sichtbar.
+        <h3 class="h2" id="diamant-microdermabrasion">{{'TREATMENTS_EXPLANATIONS.DIAMOND_MICRODERM_TITLE' | translate}}</h3>
+        <p [innerHtml]="'TREATMENTS_EXPLANATIONS.DIAMOND_MICRODERM_TEXT' | translate">
         </p>
       </div>
 
@@ -16,24 +12,8 @@
 
     <div class="explanations__item">
       <div class="explanations__item__text">
-        <h3 class="h2" id="micro-needling">Micro Needling</h3>
-        <p>
-          Eine neue Ära der apparativen Kosmetik.
-          <br>
-          <br>
-          Als Revolution unter den Anti-Aging Methoden der neuesten Generation für ein effektives und deutlich sichtbares Ergebnis.
-          Sie sorgt für die Aktivierung der Eigenkollagenproduktion.
-          Ihre Haut ist regeneriert, geglättet, erscheint jugendlicher, gefestigter und deutlich aufgepolsterter.
-          <br>
-          <br>
-          Micro Needling ist im Prinzip ganz einfach:
-          Die Wirkstoffe kommen dort an, wo sie Ihre Haut am meisten benötigt und wo sie sich am besten entfalten können.
-          Auch nicht nur an der Hautoberfläche, sondern auch in der Tiefe der Haut.
-          <br>
-          <br>
-          Die Micro Needling Behandlung erreicht eine echte Regeneration und Verjüngung der Haut bis in die tiefsten Strukturen.
-          Die Haut bildet neue hauteigene Kollagen, Elastin und Hyaluronsäure. Das Ergebnis bleibt dauerhaft sichtbar.
-        </p>
+        <h3 class="h2" id="micro-needling">{{'TREATMENTS_EXPLANATIONS.MICRO_NEEDLING_TITLE' | translate}}</h3>
+        <p [innerHtml]="'TREATMENTS_EXPLANATIONS.MICRO_NEEDLING_TEXT' | translate"></p>
       </div>
 
       <app-img class="explanations__item__img explanations__item__img--tall" src="assets/img/treatments/facial-treatment.webp" [width]="499" [height]="461"/>
@@ -41,21 +21,8 @@
 
     <div class="explanations__item">
       <div class="explanations__item__text">
-        <h3 class="h2" id="lymphdrainage">Lymphdrainage</h3>
-        <p>
-          Ballancer mechanische Lymphmassage: Das innovative Anti-Cellulite-System.
-          <br>
-          <br>
-          Um alle Arten von Schwellungen oder Cellulite loszuwerden, bieten wir Ihnen neben unseren Behandlungen zusätzlich
-          die mechanische Lymphdrainage an, die die gleichmäßige Verteilung der Flüssigkeit in den Geweben des Körpers fördert
-          und überschüssige Wasserablagerungen und Schadstoffe aus Ihrem Körper schrittweise herausleitet.
-          Die Pressohmassage Hose hilft den Interzellularraum zu reinigen und aktiviert den Lymphfluss,
-          welcher besonders gut die Stoffwechsel-Balance reguliert.
-          <br>
-          <br>
-          Natürlich bitten wir Sie vorher mit Ihrem Hausarzt zu sprechen, um sicher zu gehen,
-          dass Sie keine akuten Entzündungen haben, um die Lymphmassage-Hose in der Kosmetikbehandlung genießen zu können.
-        </p>
+        <h3 class="h2" id="lymphdrainage">{{'TREATMENTS_EXPLANATIONS.LYMPH_DRAINAGE_TITLE' | translate}}</h3>
+        <p [innerHtml]="'TREATMENTS_EXPLANATIONS.LYMPH_DRAINAGE_TEXT' | translate"></p>
       </div>
 
       <app-img class="explanations__item__img explanations__item__img--tall" src="assets/img/treatments/wellness.webp" [width]="640" [height]="427"/>
@@ -63,20 +30,13 @@
 
     <div class="explanations__item">
       <div class="explanations__item__text">
-        <h3 class="h2" id="mesoporation">Mesoporation</h3>
-        <p>
-          Unter der Mesoporation versteht man eine sehr moderne Anti-Aging Behandlungsmöglichkeit,
-          um Wirkstoffe in tiefere Hautschichten des Gesichts oder des Decolleté zu transportieren.
-          Die Ziele dieser Gesichtspflege bestehen in der Reduktion von Falten und der Verjüngung des Hautbildes - also Anti-Aging.
-          Die Haut soll straff und gesund aussehen. Im Gegensatz zur Mesotherapie bestehen bei der Mesoporation keine
-          Nebenwirkungen wie ein erhöhtes Infektionsrisiko oder das Risiko von Hämatom- oder Quaddelbildung.
-        </p>
+        <h3 class="h2" id="mesoporation">{{'TREATMENTS_EXPLANATIONS.MESOPORATION_TITLE' | translate}}</h3>
+        <p [innerHtml]="'TREATMENTS_EXPLANATIONS.MESOPORATION_TEXT' | translate"></p>
       </div>
 
       <a class="explanations__item__img explanations__item__img--button align-center" routerLink="/behandlungen">
-        <h3 class="align-center" style="margin-bottom: 1rem">Nicht das richtige dabei?</h3>
-        <p>Sehen Sie sich <span style="text-decoration: underline">hier</span> unsere Behandlungen an.</p>
-        <p>Da ist auf jeden Fall was für Sie dabei!</p>
+        <h3 class="align-center" style="margin-bottom: 1rem">{{'TREATMENTS_EXPLANATIONS.OTHERS_TITLE' | translate}}</h3>
+        <div [innerHtml]="'TREATMENTS_EXPLANATIONS.OTHERS_TEXT' | translate"></div>
       </a>
     </div>
   </article>

@@ -3,12 +3,13 @@ import {ImgComponent} from "src/app/components/img/img.component";
 import {AsyncPipe, NgIf} from "@angular/common";
 import {BehaviorSubject} from "rxjs";
 import {RouterLink} from "@angular/router";
+import {TranslateModule} from "@ngx-translate/core";
 
 type SelectionDirection = 'forward' | 'backward';
 
 interface Image {
   src: string;
-  alt: string;
+  label: string;
   link?: string;
   width: number;
   height: number;
@@ -17,7 +18,7 @@ interface Image {
 @Component({
   selector: 'app-gallery',
   standalone: true,
-  imports: [ImgComponent, NgIf, AsyncPipe, RouterLink],
+  imports: [ImgComponent, NgIf, AsyncPipe, RouterLink, TranslateModule],
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.scss']
 })
@@ -25,28 +26,28 @@ export class GalleryComponent {
   private images: Image[] = [
     {
       src: 'assets/img/contact/studio.webp',
-      alt: 'Unser Studio',
+      label: 'GALLERY.STUDIO',
       link: '/kontakt',
       width: 1599,
       height: 899
     },
     {
       src: 'assets/img/products/products.webp',
-      alt: 'Unsere Produkte',
+      label: 'GALLERY.PRODUCTS',
       link: '/produkte',
       width: 1079,
       height: 801
     },
     {
       src: 'assets/img/gallery/new-studio-2.webp',
-      alt: 'Unser Studio',
+      label: 'GALLERY.STUDIO',
       link: '/kontakt',
       width: 1024,
       height: 768
     },
     {
       src: 'assets/img/gallery/new-studio.webp',
-      alt: 'Unser Studio',
+      label: 'GALLERY.STUDIO',
       link: '/kontakt',
       width: 1024,
       height: 768

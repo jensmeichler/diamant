@@ -12,29 +12,29 @@
       </svg>
     </button>
     <div class="burger-menu burger-menu--open" *ngIf="menuOpen">
-      <a class="burger-menu__item" routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="burger-menu--active">Home</a>
-      <a class="burger-menu__item" routerLink="/behandlungen" routerLinkActive="burger-menu--active">Behandlungen</a>
-      <a class="burger-menu__item" routerLink="/produkte" routerLinkActive="burger-menu--active">Produkte</a>
-      <a class="burger-menu__item" routerLink="/beratung" routerLinkActive="burger-menu--active">Beratung</a>
-      <a class="burger-menu__item" routerLink="/kontakt" routerLinkActive="burger-menu--active">Kontakt</a>
+      <a class="burger-menu__item" routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="burger-menu--active">{{'HEADER.LINK_HOME' | translate}}</a>
+      <a class="burger-menu__item" routerLink="/behandlungen" routerLinkActive="burger-menu--active">{{'HEADER.LINK_TREATMENTS' | translate}}</a>
+      <a class="burger-menu__item" routerLink="/produkte" routerLinkActive="burger-menu--active">{{'HEADER.LINK_PRODUCTS' | translate}}</a>
+      <a class="burger-menu__item" routerLink="/beratung" routerLinkActive="burger-menu--active">{{'HEADER.LINK_CONSULTING' | translate}}</a>
+      <a class="burger-menu__item" routerLink="/kontakt" routerLinkActive="burger-menu--active">{{'HEADER.LINK_CONTACT' | translate}}</a>
 
       <hr class="burger-menu__item--splitter">
 
       <a class="burger-menu__item burger-menu__item--button" href="tel: 017676893292">
         <img src="assets/svg/phone.svg" alt="" height="20" width="20">
-        <span>Anrufen</span>
+        <span>{{'HEADER.CALL' | translate}}</span>
       </a>
       <a class="burger-menu__item burger-menu__item--button" [href]="geoLink" target="_blank">
         <img src="assets/svg/location-dot.svg" alt="" height="27" width="20">
-        <span>Anfahrt</span>
+        <span>{{'HEADER.ARRIVE' | translate}}</span>
       </a>
     </div>
   </ng-container>
   <ng-template #desktop>
-    <a class="nav-bar__item" routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="nav-bar__item--active">Home</a>
-    <a class="nav-bar__item" routerLink="/behandlungen" routerLinkActive="nav-bar__item--active">Behandlungen</a>
-    <a class="nav-bar__item" routerLink="/produkte" routerLinkActive="nav-bar__item--active">Produkte</a>
-    <a class="nav-bar__item" routerLink="/beratung" routerLinkActive="nav-bar__item--active">Beratung</a>
-    <a class="nav-bar__item" routerLink="/kontakt" routerLinkActive="nav-bar__item--active">Kontakt</a>
+    <a class="nav-bar__item" routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="nav-bar__item--active">{{'HEADER.LINK_HOME' | translate}}</a>
+    <a class="nav-bar__item" routerLink="/behandlungen" routerLinkActive="nav-bar__item--active">{{'HEADER.LINK_TREATMENTS' | translate}}</a>
+    <a class="nav-bar__item" routerLink="/produkte" routerLinkActive="nav-bar__item--active">{{'HEADER.LINK_PRODUCTS' | translate}}</a>
+    <a class="nav-bar__item" routerLink="/beratung" routerLinkActive="nav-bar__item--active">{{'HEADER.LINK_CONSULTING' | translate}}</a>
+    <a class="nav-bar__item" routerLink="/kontakt" routerLinkActive="nav-bar__item--active">{{'HEADER.LINK_CONTACT' | translate}}</a>
   </ng-template>
 </nav>
