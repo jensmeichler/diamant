@@ -30,6 +30,25 @@
         <img src="assets/svg/location-dot.svg" alt="" height="27" width="20">
         <span>{{'COMPONENTS.HEADER.ARRIVE' | translate}}</span>
       </a>
+
+      <hr class="burger-menu__item--splitter">
+
+      <a class="burger-menu__item burger-menu__item--button" type="button" (click)="switchLanguage('ua')" *ngIf="translate.currentLang === 'de'">
+        <div class="flag">
+          <div class="flag__stroke" style="background: #0057b8"></div>
+          <div class="flag__stroke" style="background: #ffd700"></div>
+        </div>
+        <span>Змінити мову</span>
+      </a>
+
+      <a class="burger-menu__item burger-menu__item--button" type="button" (click)="switchLanguage('de')" *ngIf="translate.currentLang === 'ua'">
+        <div class="flag">
+          <div class="flag__stroke" style="background: #000"></div>
+          <div class="flag__stroke" style="background: #d00"></div>
+          <div class="flag__stroke" style="background: #ffce00"></div>
+        </div>
+        <span>Sprache wechseln</span>
+      </a>
     </div>
   </ng-container>
   <ng-template #desktop>

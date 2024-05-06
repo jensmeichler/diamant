@@ -131,6 +131,21 @@
       "NICE_TEXT_3": "Die Produktlinien von Naturys bieten alles, was die Gesichtshaut braucht. Von der Basis-Pflege über die besonderen Bedürfnisse empfindlicher Haut bis hin zu der Behandlung von Pickeln und Mitessern. Die Haut wird optimal mit Nährstoffen versorgt und wieder in ihr natürliches Gleichgewicht gebracht. Die pflanzlichen Inhaltsstoffe der sanften Naturkosmetik verleihen dem Gesicht ein strahlendes Aussehen, ohne die Haut zu belasten. In der Kosmetikserie finden sich ebenfalls Produkte zur Entfernung von Make-Up und zum Sonnenschutz.",
       "NICE_TEXT_4": "Anti-Aging auf natürliche Weise",
       "NICE_TEXT_5": "Für die speziellen Bedürfnisse alternder Haut hat Naturys eine eigene Biokosmetik entwickelt. Die Anti-Aging-Linie bietet Pflege für Gesicht, Augen, Lippen und Hände. Hochkonzentrierte Extrakte aus der Moltebeere in Kombination mit Mineralien und Hyaluron revitalisieren die Haut und wirken der Zellalterung entgegen. Die wertvollen Pflanzenteile geben der Haut Elastizität und verjüngen das Hautbild. Hyaluron glättet die Fältchen und Vitamin C wirkt als Antioxidans. Calcium und Magnesium versorgen die Haut zusätzlich mit wichtigen Nährstoffen. Anti-Aging von Naturys ist die Rundum-Pflege von Gesicht und Händen, die der Haut alles gibt was sie braucht."
+    },
+    "TREATMENTS": {
+      "TITLE": "Unsere Anti-Aging Gesichtspflege",
+      "TEXT_SHORT": "Unser Gesicht ist der Spiegel der Seele.<br>Deshalb zielen unsere Behandlungen neben einer intensiven Pflege von Gesicht, Hals und Dekolleté, vor allem auf ...",
+      "TEXT_FULL": "Unser Gesicht ist der Spiegel der Seele.<br>Deshalb zielen unsere Behandlungen neben einer intensiven Pflege von Gesicht, Hals und Dekolleté, vor allem auf Ihr allgemeines Wohlbefinden ab.<br>Vor jeder Behandlung führen wir eine Analyse der Hautbeschaffenheit durch, damit Ihr Gesicht auch genau die Pflege erhält, die es für Anti-Aging benötigt.<br><br>Nach unserer Anti-Aging Behandlung müssen Sie Ihr Gesicht nicht verstecken.<br>Wir entlassen Sie auf Wunsch mit einem gratis Tages-Make-up, sodass Sie unmittelbar im Anschluss mit frischem, strahlenden Teint direkt auf ein Konzert, zu einem geschäftlichen Anlass oder zu einem Abendessen gehen können.",
+      "TEXT_CONTINUE": "weiter lesen",
+      "TREATMENTS_TITLE": "Folgende Behandlungen bieten wir an",
+      "TREATMENTS_LINK_FACE": "Gesichtsbehandlungen",
+      "TREATMENTS_LINK_MASSAGE": "Massage",
+      "TREATMENTS_LINK_WELLNESS": "Wellness",
+      "NICE_TEXT_TITLE": "Anti-Aging durch apparative Kosmetik",
+      "NICE_TEXT_BODY": "Bei der apparativen Kosmetik kommen gezielt Geräte für das Anti-Aging zum Einsatz. Dazu zählen spezielle Anti-Aging Kälte- und Ultraschallgeräte, Kälte- und Hitzehammer zur Gesichtspflege, elektrische Bürsten oder Skin-Scrubber für das Anti-Aging. Ein Vorteil dieser Behandlungsmethoden liegt in dem problemlosen Eindringen der Anti-Aging Wirkstoffe in tiefere Hautschichten.<br>Durch die Anwendung von Kälte und Wärme wird die Durchblutung der Haut gefördert, wodurch sie besonders schön strahlt und den Anti-Aging-Effekt verstärkt. Somit kann ein natürlicher Flow-Effekt für das Anti-Aging erzielt werden.",
+      "INDIVIDUAL_OFFER_TITLE": "Sie wünschen eine individuelle Anti-Aging-Beratung?",
+      "INDIVIDUAL_OFFER_BODY_1": "Rufen Sie einfach unter",
+      "INDIVIDUAL_OFFER_BODY_2": "an und vereinbaren Sie einen Termin."
     }
   }
 }
