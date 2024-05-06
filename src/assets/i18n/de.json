@@ -146,6 +146,19 @@
       "INDIVIDUAL_OFFER_TITLE": "Sie wünschen eine individuelle Anti-Aging-Beratung?",
       "INDIVIDUAL_OFFER_BODY_1": "Rufen Sie einfach unter",
       "INDIVIDUAL_OFFER_BODY_2": "an und vereinbaren Sie einen Termin."
+    },
+    "TREATMENTS_MASSAGE": {
+      "TITLE": "Massagen",
+      "DEFAULT_TITLE": "Arten unserer Massageangebote:",
+      "DEFAULT_TEXT": "Klassische Massage, Anti-Cellulite-Massage, therapeutische Massage, Lymphdrainage, Massage einzelner Körperteile (Hals-Nacken-Zone, Rücken, Bauch, Arme und Beine), allgemeine Massage des ganzen Körpers.",
+      "REASONS_TITLE": "Gründe, eine Massage zu buchen:",
+      "REASONS_LI_1": "fördert die Entspannung des Körpers;",
+      "REASONS_LI_2": "verbessert den Schlaf",
+      "REASONS_LI_3": "lindert Ermüdungserscheinungen",
+      "REASONS_LI_4": "normalisiert die Blutzirkulation und die Lymphbewegung und entfernt Giftstoffe aus dem Körper",
+      "REASONS_LI_5": "beschleunigt den Stoffwechsel",
+      "REASONS_LI_6": "Spot wirkt auf bestimmte biologisch aktive Zonen und verbessert so die Funktion der inneren Organe",
+      "REASONS_LI_7": "stimuliert die natürlichen Funktionen der Haut und verbessert so ihren Zustand"
     }
   }
 }
