@@ -1,4 +1,4 @@
-import {Component, inject, Input, OnInit} from '@angular/core';
+import {Component, inject, Input} from '@angular/core';
 import {RouterLink, RouterLinkActive} from "@angular/router";
 import {AsyncPipe, NgClass, NgIf} from "@angular/common";
 import {ViewService} from "src/app/services/view.service";

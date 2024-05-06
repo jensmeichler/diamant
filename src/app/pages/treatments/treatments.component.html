@@ -1,14 +1,14 @@
 <div class="content">
-  <h1 class="align-center">Unsere Anti-Aging Gesichtspflege</h1>
+  <h1 class="align-center">{{ 'PAGES.TREATMENTS.TITLE' | translate }}</h1>
   <hr>
   <br>
 
   <span *ngIf="mobile$ | async; else full">
     <p *ngIf="!readMore">
-      Unser Gesicht ist der Spiegel der Seele.
-      <br>
-      Deshalb zielen unsere Behandlungen neben einer intensiven Pflege von Gesicht, Hals und Dekolleté, vor allem auf ...
-      <button class="low-opacity" type="button" (click)="readMore = !readMore">weiter lesen</button>
+      <span [innerHtml]="'PAGES.TREATMENTS.TEXT_SHORT' | translate"></span>
+      <button class="low-opacity" type="button" (click)="readMore = !readMore">
+        {{'PAGES.TREATMENTS.TEXT_CONTINUE' | translate}}
+      </button>
     </p>
     <p *ngIf="readMore">
       <ng-container *ngTemplateOutlet="full"/>
@@ -16,36 +16,32 @@
   </span>
 
   <ng-template #full>
-    <p>
-      Unser Gesicht ist der Spiegel der Seele.
-      <br>
-      Deshalb zielen unsere Behandlungen neben einer intensiven Pflege von Gesicht, Hals und Dekolleté, vor allem auf Ihr allgemeines Wohlbefinden ab.
-      <br>
-      Vor jeder Behandlung führen wir eine Analyse der Hautbeschaffenheit durch, damit Ihr Gesicht auch genau die Pflege erhält, die es für Anti-Aging benötigt.
-      <br>
-      <br>
-      Nach unserer Anti-Aging Behandlung müssen Sie Ihr Gesicht nicht verstecken.
-      <br>
-      Wir entlassen Sie auf Wunsch mit einem gratis Tages-Make-up, sodass Sie unmittelbar im Anschluss mit frischem,
-      strahlenden Teint direkt auf ein Konzert, zu einem geschäftlichen Anlass oder zu einem Abendessen gehen können.
-    </p>
+    <p [innerHtml]="'PAGES.TREATMENTS.TEXT_FULL' | translate"></p>
   </ng-template>
 
   <br>
 
-  <h2 class="align-center h1">Folgende Behandlungen bieten wir an</h2>
+  <h2 class="align-center h1">
+    {{ 'PAGES.TREATMENTS.TREATMENTS_TITLE' | translate }}
+  </h2>
   <div class="grid-group grid-group--treatments">
     <a class="grid-group__link" routerLink="/behandlungen/gesichtsbehandlung">
       <app-img class="grid-group__link__img" src="assets/img/treatments/facial-treatment.webp" [width]="499" [height]="461" [hover]="true"/>
-      <span class="grid-group__link__text">Gesichtsbehandlungen</span>
+      <span class="grid-group__link__text">
+        {{ 'PAGES.TREATMENTS.TREATMENTS_LINK_FACE' | translate }}
+      </span>
     </a>
     <a class="grid-group__link" routerLink="/behandlungen/massagen">
       <app-img class="grid-group__link__img" src="assets/img/treatments/massage.webp" [width]="639" [height]="428" [hover]="true"/>
-      <span class="grid-group__link__text">Massage</span>
+      <span class="grid-group__link__text">
+        {{ 'PAGES.TREATMENTS.TREATMENTS_LINK_FACE' | translate }}
+      </span>
     </a>
     <a class="grid-group__link" routerLink="/behandlungen/wellnesspakete">
       <app-img class="grid-group__link__img" src="assets/img/treatments/wellness.webp" [width]="640" [height]="427" [hover]="true"/>
-      <span class="grid-group__link__text">Wellness</span>
+      <span class="grid-group__link__text">
+        {{ 'PAGES.TREATMENTS.TREATMENTS_LINK_WELLNESS' | translate }}
+      </span>
     </a>
   </div>
 
@@ -53,22 +49,18 @@
   <hr>
   <br>
 
-  <h2>Anti-Aging durch apparative Kosmetik</h2>
-  <p>
-    Bei der apparativen Kosmetik kommen gezielt Geräte für das Anti-Aging zum Einsatz.
-    Dazu zählen spezielle Anti-Aging Kälte- und Ultraschallgeräte, Kälte- und Hitzehammer zur Gesichtspflege, elektrische Bürsten oder Skin-Scrubber für das Anti-Aging.
-    Ein Vorteil dieser Behandlungsmethoden liegt in dem problemlosen Eindringen der Anti-Aging Wirkstoffe in tiefere Hautschichten.
-    <br>
-    Durch die Anwendung von Kälte und Wärme wird die Durchblutung der Haut gefördert, wodurch sie besonders schön strahlt und den Anti-Aging-Effekt verstärkt.
-    Somit kann ein natürlicher Flow-Effekt für das Anti-Aging erzielt werden.
+  <h2>{{ 'PAGES.TREATMENTS.NICE_TEXT_TITLE' | translate }}</h2>
+  <p [innerHtml]=" 'PAGES.TREATMENTS.NICE_TEXT_BODY' | translate">
   </p>
 
   <br>
   <hr>
   <br>
 
-  <h2>Sie wünschen eine individuelle Anti-Aging-Beratung?</h2>
+  <h2>{{ 'PAGES.TREATMENTS.INDIVIDUAL_OFFER_TITLE' | translate }}</h2>
   <p>
-    Rufen Sie einfach unter <a style="text-decoration: underline" href="tel: 017676893292">017676893292</a> an und vereinbaren Sie einen Termin.
+    {{ 'PAGES.TREATMENTS.INDIVIDUAL_OFFER_BODY_1' | translate }}
+    <a style="text-decoration: underline" href="tel: 017676893292">017676893292</a>
+    {{ 'PAGES.TREATMENTS.INDIVIDUAL_OFFER_BODY_2' | translate }}
   </p>
 </div>
