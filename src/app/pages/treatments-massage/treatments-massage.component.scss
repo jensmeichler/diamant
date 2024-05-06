@@ -1,0 +1,14 @@
+.badges-wrapper {
+  display: flex;
+  column-gap: .5rem;
+  row-gap: .5rem;
+  flex-wrap: wrap;
+  font-size: .875rem;
+  max-width: 1000px;
+}
+
+.badge {
+  background: var(--color-light);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
