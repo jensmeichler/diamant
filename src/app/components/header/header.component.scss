@@ -118,6 +118,7 @@
 }
 
 .language-switcher {
+  display: flex;
   margin-left: 1rem;
 
   &:hover .flag {
@@ -128,16 +129,7 @@
 }
 
 .flag {
-  width: 2.5rem;
-  height: 1.5rem;
   outline: .125rem solid white;
   border-radius: .5rem;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  &__stroke {
-    flex: 1;
-  }
-
   transition: var(--transition-default-fast);
 }

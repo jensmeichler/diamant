@@ -34,19 +34,12 @@
       <hr class="burger-menu__item--splitter">
 
       <a class="burger-menu__item burger-menu__item--button" type="button" (click)="switchLanguage('ua')" *ngIf="translate.currentLang === 'de'">
-        <div class="flag">
-          <div class="flag__stroke" style="background: #0057b8"></div>
-          <div class="flag__stroke" style="background: #ffd700"></div>
-        </div>
+        <img class="flag" src="assets/flags/ru-ua.svg" height="32" width="48">
         <span>Змінити мову</span>
       </a>
 
       <a class="burger-menu__item burger-menu__item--button" type="button" (click)="switchLanguage('de')" *ngIf="translate.currentLang === 'ua'">
-        <div class="flag">
-          <div class="flag__stroke" style="background: #000"></div>
-          <div class="flag__stroke" style="background: #d00"></div>
-          <div class="flag__stroke" style="background: #ffce00"></div>
-        </div>
+        <img class="flag" src="assets/flags/de.svg" height="32" width="48">
         <span>Sprache wechseln</span>
       </a>
     </div>
@@ -58,17 +51,10 @@
     <a class="nav-bar__item" routerLink="/beratung" routerLinkActive="nav-bar__item--active">{{'COMPONENTS.HEADER.LINK_CONSULTING' | translate}}</a>
     <a class="nav-bar__item" routerLink="/kontakt" routerLinkActive="nav-bar__item--active">{{'COMPONENTS.HEADER.LINK_CONTACT' | translate}}</a>
     <button class="language-switcher" type="button" (click)="switchLanguage('ua')" *ngIf="translate.currentLang === 'de'">
-      <div class="flag">
-        <div class="flag__stroke" style="background: #0057b8"></div>
-        <div class="flag__stroke" style="background: #ffd700"></div>
-      </div>
+      <img class="flag" src="assets/flags/ru-ua.svg" height="32" width="48">
     </button>
     <button class="language-switcher" type="button" (click)="switchLanguage('de')" *ngIf="translate.currentLang === 'ua'">
-      <div class="flag">
-        <div class="flag__stroke" style="background: #000"></div>
-        <div class="flag__stroke" style="background: #d00"></div>
-        <div class="flag__stroke" style="background: #ffce00"></div>
-      </div>
+      <img class="flag" src="assets/flags/de.svg" height="32" width="48">
     </button>
   </ng-template>
 </nav>
