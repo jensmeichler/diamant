@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1714996920127,
+  "timestamp": 1715005189632,
   "index": "https://diamant-kosmetikstudio.de/index.html",
   "assetGroups": [
     {
@@ -22,7 +22,7 @@
         "https://diamant-kosmetikstudio.de/chunk_treatments.443cc2a1ccffaef8.js",
         "https://diamant-kosmetikstudio.de/common.91abd1aa31552ef9.js",
         "https://diamant-kosmetikstudio.de/index.html",
-        "https://diamant-kosmetikstudio.de/main.ea7690c38492d229.js",
+        "https://diamant-kosmetikstudio.de/main.05c70c02176be380.js",
         "https://diamant-kosmetikstudio.de/manifest.webmanifest",
         "https://diamant-kosmetikstudio.de/polyfills.8e92ed086ea0e2c2.js",
         "https://diamant-kosmetikstudio.de/runtime.c0ac2b5df2bf5fd2.js",
@@ -38,6 +38,8 @@
         "ignoreVary": true
       },
       "urls": [
+        "https://diamant-kosmetikstudio.de/assets/flags/de.svg",
+        "https://diamant-kosmetikstudio.de/assets/flags/ru-ua.svg",
         "https://diamant-kosmetikstudio.de/assets/i18n/de.json",
         "https://diamant-kosmetikstudio.de/assets/i18n/ua.json",
         "https://diamant-kosmetikstudio.de/assets/icons/icon-128x128.png",
@@ -81,6 +83,8 @@
   ],
   "dataGroups": [],
   "hashTable": {
+    "https://diamant-kosmetikstudio.de/assets/flags/de.svg": "793d4caa481929e39cc078921873c0216b28355c",
+    "https://diamant-kosmetikstudio.de/assets/flags/ru-ua.svg": "a7e481f80deba7904aca5eeb4b57998564764b73",
     "https://diamant-kosmetikstudio.de/assets/i18n/de.json": "53326a786775543998b5763cae8223aecdf91a36",
     "https://diamant-kosmetikstudio.de/assets/i18n/ua.json": "3cc12f3c74cedd98b977ea070f174492072f21c0",
     "https://diamant-kosmetikstudio.de/assets/icons/icon-128x128.png": "88edc8aa479275b6027db6576348c662920baea9",
@@ -127,8 +131,8 @@
     "https://diamant-kosmetikstudio.de/chunk_treatments.443cc2a1ccffaef8.js": "db4b44559ad324d9ced3f93c18bd8e59402b6b58",
     "https://diamant-kosmetikstudio.de/common.91abd1aa31552ef9.js": "60bf56c5ad209d76a50d5973595b2b1c7739fc9e",
     "https://diamant-kosmetikstudio.de/favicon.svg": "f127273e7d070a1c25a7ae8bd6b3c1a234206229",
-    "https://diamant-kosmetikstudio.de/index.html": "a31bc4477ad11b940f0ff034a4416149d0b277a9",
-    "https://diamant-kosmetikstudio.de/main.ea7690c38492d229.js": "3e44eca06d38be04e7b168723e20d47e9aa7546e",
+    "https://diamant-kosmetikstudio.de/index.html": "265b2f1ac1a782d72a8b3624d60f8fb7dfbd15f2",
+    "https://diamant-kosmetikstudio.de/main.05c70c02176be380.js": "6f06b0a605a70653cd6d734e3e2708a111db2961",
     "https://diamant-kosmetikstudio.de/manifest.webmanifest": "87af5da5e585d45aab9a13104f93a960ba3313b3",
     "https://diamant-kosmetikstudio.de/maps.c24b7f9e45216d97.webp": "60ad9c0f7b2291fdc3259954c06ab9fb85ad8bcc",
     "https://diamant-kosmetikstudio.de/polyfills.8e92ed086ea0e2c2.js": "d884820dc3cf3d82d9b9d26625b31bebbcd0c4d8",
