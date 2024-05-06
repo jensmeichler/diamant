@@ -147,6 +147,34 @@
       "INDIVIDUAL_OFFER_BODY_1": "Rufen Sie einfach unter",
       "INDIVIDUAL_OFFER_BODY_2": "an und vereinbaren Sie einen Termin."
     },
+    "TREATMENTS_FACE": {
+      "TITLE": "Gesichtsbehandlungen",
+      "SKIN_VACATION_TITLE": "Klein-Urlaub für Ihre Haut",
+      "SKIN_VACATION_TEXT": "Nach der Hautanalyse, Hautreinigung + Peeling werden die Unreinheiten leicht ausgereinigt und die Augenbrauen in Form gebracht. Eine feuchtigkeitsspendende Maske ist ein MUSS für jeden Hauttyp! Zum Abschluss der Behandlung wird eine Tagespflege aufgetragen.",
+      "SKIN_VACATION_PRICE": "(ca. 60 Min) 60,00€",
+      "ACNE_TITLE": "Pure Skin (Aknebehandlung)",
+      "ACNE_TEXT": "Akne ist einer der häufigsten Hauterkrankung und unser größter Feind! Es kommt zur vermehrten Talgproduktion, die die Poren der Haut verstopft. Durch die Verhornung auf der Haut kann der Talg nicht normal abfließen.<br><br>Behandlung gegen alle Faktoren der Akne ausgesucht wurden.<br>Bei: entzündlicher Akne, Aknenarben und Hyperpigmentierung.",
+      "ACNE_PRICE_1": "(ca. 60-90 Min) Ab 60,00",
+      "ACNE_PRICE_2": "(Kur 3 Behandlungen) Ab 120,00€",
+      "ADD_ONS_TITLE": "Was Sie zu Ihrer Behandlung dazu buchen können",
+      "ADD_ONS_CLASSIC_TITLE": "Statt klassisches Peeling:",
+      "ADD_ONS_CLASSIC_LI_1":  "Diamant - Microdermabrasion (Intensives Peeling zusätzlich) 15€",
+      "ADD_ONS_AGING_TITLE": "Verjüngerungs-Cocktail:",
+      "ADD_ONS_AGING_LI_1":  "Softneedeling (nur in Paket erhältlich)",
+      "ADD_ONS_WELLNESS_TITLE": "Eine schöne Entspannung:",
+      "ADD_ONS_WELLNESS_LI_1":  "Gesichtsmassage 30,00€",
+      "ADD_ONS_WELLNESS_LI_2": "Lymphdrainage-Hose für 40-60 min ab 30,00€",
+      "ADD_ONS_DEKO_TITLE":  "Dekorative Kosmetik:",
+      "ADD_ONS_DEKO_LI_1": "Tages Make-up 30,00€",
+      "ADD_ONS_DEKO_LI_2":  "Abend Make-up 59,00€",
+      "ADD_ONS_DEKO_LI_3": "Hochzeits Make-up 120,00€",
+      "BEAUTY_RELAX_TITLE": "Beauty Relax",
+      "BEAUTY_RELAX_TEXT": "Durch diese Behandlung schweben Sie wie auf Wolken :)<br>Nach der klassischen Hautreinigung werden Ihre Augenbrauen in Form gebracht und eine feuchtigkeitsspendende Maske aufgetragen.<br>In der Einwirkzeit der Maske werden Ihre Hände massiert und anschließend erwartet Sie eine entspannende Gesichtsmassage. Zum Schluss erhalten Sie eine Abschlusspflege.",
+      "BEAUTY_RELAX_PRICE": "(ca. 75min) 112,00€",
+      "ANTI_AGING_DELUXE_TITLE": "Straffung & Verjüngerung Deluxe",
+      "ANTI_AGING_DELUXE_TEXT": "Die apparative Reinigung (Microdermabrasion) wird Ihre Haut optimal vorbereiten, um die wertvollen Wirkstoffe aufzunehmen! Nach der Augenbrauenkorrektur wird je nach Hauttyp der passende Wirkstoff auf die Haut aufgetragen.<br>Hinzu kommt eine Maske, die sowohl auf das Gesicht als auch auf das Dekolleté  einmassiert wird. Ihre Haut bekommt ein jugendliches Erscheinungsbild mit Lifting-Effekt.",
+      "ANTI_AGING_DELUXE_PRICE": "(ca. 90 min) 139,00€"
+    },
     "TREATMENTS_MASSAGE": {
       "TITLE": "Massagen",
       "TYPES_TITLE": "Arten unserer Massageangebote:",
@@ -164,6 +192,13 @@
       "REASONS_LI_5": "beschleunigt den Stoffwechsel",
       "REASONS_LI_6": "Spot wirkt auf bestimmte biologisch aktive Zonen und verbessert so die Funktion der inneren Organe",
       "REASONS_LI_7": "stimuliert die natürlichen Funktionen der Haut und verbessert so ihren Zustand"
+    },
+    "TREATMENTS_WELLNESS": {
+      "TITLE": "Wellness",
+      "DRAINAGE_TITLE": "Lymphdrainage",
+      "DRAINAGE_TEXT": "Ballancer mechanische Lymphmassage: Das innovative Anti-Cellulite-System.<br>Um alle Arten von Schwellungen oder Cellulite loszuwerden, bieten wir Ihnen neben unseren Behandlungen zusätzlich die mechanische Lymphdrainage an, die die gleichmäßige Verteilung der Flüssigkeit in den Geweben des Körpers fördert und überschüssige Wasserablagerungen und Schadstoffe aus Ihrem Körper schrittweise herausleitet. Die Pressohmassage Hose hilft den Interzellularraum zu reinigen und aktiviert den Lymphfluss, welcher besonders gut die Stoffwechsel-Balance reguliert.<br><br>Natürlich bitten wir Sie vorher mit Ihrem Hausarzt zu sprechen, um sicher zu gehen, dass Sie keine akuten Entzündungen haben, um die Lymphmassage-Hose in der Kosmetikbehandlung genießen zu können.",
+      "DRAINAGE_PRICE_1": "(ab 30 Min) Ab 30,00",
+      "DRAINAGE_PRICE_2": "(Kur 10 Behandlungen) Ab 250,00€"
     }
   }
 }
