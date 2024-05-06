@@ -20,7 +20,7 @@
     min-width: 70vw;
     padding: 1rem;
     background: var(--color-secondary);
-    box-shadow: -5px 5px 15px 0px rgba(0,0,0,0.5);
+    box-shadow: -5px 5px 15px 0px #0000007f;
     animation: burger-menu-animation ease-in-out 160ms;
 
     display: flex;
@@ -121,7 +121,7 @@
   margin-left: 1rem;
 
   &:hover .flag {
-    transform: scale(1.2);
+    border-radius: .375rem;
     outline-width: .25rem;
     filter: brightness(1.05);
   }
@@ -139,5 +139,5 @@
     flex: 1;
   }
 
-  transition: var(--transition-default);
+  transition: var(--transition-default-fast);
 }

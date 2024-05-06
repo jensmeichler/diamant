@@ -16,10 +16,12 @@
 
   --box-shadow-light: 0px 8px 15px #00000019;
   --box-shadow-strong: 0px 8px 15px #00000028;
-  --box-shadow-slim-strong: #0000000f 0px 0px 0.25rem 0px, #0000001e 0px 0.25rem 0.25rem 0px;
+  --box-shadow-slim-strong: #0000000f 0 0 .25rem 0, #0000001e 0 .25rem .25rem 0;
 
-  --transition-default-behaviour: 0.16s ease-in-out;
+  --transition-default-behaviour: .16s ease-in-out;
   --transition-default: all var(--transition-default-behaviour);
+  --transition-default-fast-behaviour: .08s ease-in-out;
+  --transition-default-fast: all var(--transition-default-fast-behaviour);
 
   --dynamic-padding: 1rem;
   @media screen {
