@@ -3,7 +3,7 @@ import {ImgComponent} from "src/app/components/img/img.component";
 import {AsyncPipe, NgIf} from "@angular/common";
 import {BehaviorSubject} from "rxjs";
 import {RouterLink} from "@angular/router";
-import {TranslateModule} from "@ngx-translate/core";
+import {AiTranslatePipe} from "src/app/pipes/ai-translate.pipe";
 
 type SelectionDirection = 'forward' | 'backward';
 
@@ -18,7 +18,7 @@ interface Image {
 @Component({
   selector: 'app-gallery',
   standalone: true,
-  imports: [ImgComponent, NgIf, AsyncPipe, RouterLink, TranslateModule],
+  imports: [ImgComponent, NgIf, AsyncPipe, RouterLink, AiTranslatePipe],
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.scss']
 })

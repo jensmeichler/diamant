@@ -1,18 +1,18 @@
 <div class="content">
   <h1 class="align-center">
-    {{ 'PAGES.PRODUCTS.TITLE' | translate }}
+    {{ 'PAGES.PRODUCTS.TITLE' | aiTranslate | async }}
   </h1>
   <hr>
   <br>
 
   <p>
-    {{ 'PAGES.PRODUCTS.TEXT_1' | translate }}
+    {{ 'PAGES.PRODUCTS.TEXT_1' | aiTranslate | async }}
     <br>
     <br>
-    {{ 'PAGES.PRODUCTS.TEXT_2' | translate }}
+    {{ 'PAGES.PRODUCTS.TEXT_2' | aiTranslate | async }}
     <br>
     <br>
-    <span style="color: var(--color-secondary)" [innerHtml]="'PAGES.PRODUCTS.TEXT_3_COLORED' | translate">
+    <span style="color: var(--color-secondary)" [innerHtml]="'PAGES.PRODUCTS.TEXT_3_COLORED' | aiTranslate | async">
     </span>
   </p>
 
@@ -20,23 +20,23 @@
   <hr>
   <br>
 
-  <h2>{{ 'PAGES.PRODUCTS.ANTI_AGING_SERUM_TITLE' | translate }}</h2>
+  <h2>{{ 'PAGES.PRODUCTS.ANTI_AGING_SERUM_TITLE' | aiTranslate | async }}</h2>
   <br>
-  <p [innerHtml]="'PAGES.PRODUCTS.ANTI_AGING_SERUM_TEXT' | translate">
+  <p [innerHtml]="'PAGES.PRODUCTS.ANTI_AGING_SERUM_TEXT' | aiTranslate | async">
   </p>
   <br>
-  <h3 [innerHtml]="'PAGES.PRODUCTS.SCIENCE_TITLE' | translate">
+  <h3 [innerHtml]="'PAGES.PRODUCTS.SCIENCE_TITLE' | aiTranslate | async">
   </h3>
   <p>
-    {{ 'PAGES.PRODUCTS.SCIENCE_TEXT' | translate }}
+    {{ 'PAGES.PRODUCTS.SCIENCE_TEXT' | aiTranslate | async }}
   </p>
 
   <div class="info-message secondary">
-    <strong>{{ 'PAGES.PRODUCTS.INFO_BOX_TITLE' | translate }}</strong>
-    <span style="margin-left: .125rem"> - {{ 'PAGES.PRODUCTS.INFO_BOX_TEXT' | translate }}</span>
+    <strong>{{ 'PAGES.PRODUCTS.INFO_BOX_TITLE' | aiTranslate | async }}</strong>
+    <span style="margin-left: .125rem"> - {{ 'PAGES.PRODUCTS.INFO_BOX_TEXT' | aiTranslate | async }}</span>
   </div>
   <p>
-    {{ 'PAGES.PRODUCTS.INFO_BOX_SUB_TEXT' | translate }}
+    {{ 'PAGES.PRODUCTS.INFO_BOX_SUB_TEXT' | aiTranslate | async }}
   </p>
 
   <br>
@@ -46,11 +46,11 @@
 
   <div class="grid-group">
     <div>
-      <h2>{{ 'PAGES.PRODUCTS.OUR_PRODUCTS_TITLE' | translate }}</h2>
+      <h2>{{ 'PAGES.PRODUCTS.OUR_PRODUCTS_TITLE' | aiTranslate | async }}</h2>
       <ul>
-        <li>{{ 'PAGES.PRODUCTS.OUR_PRODUCTS_LI_1' | translate }}</li>
-        <li>{{ 'PAGES.PRODUCTS.OUR_PRODUCTS_LI_2' | translate }}</li>
-        <li>{{ 'PAGES.PRODUCTS.OUR_PRODUCTS_LI_3' | translate }}</li>
+        <li>{{ 'PAGES.PRODUCTS.OUR_PRODUCTS_LI_1' | aiTranslate | async }}</li>
+        <li>{{ 'PAGES.PRODUCTS.OUR_PRODUCTS_LI_2' | aiTranslate | async }}</li>
+        <li>{{ 'PAGES.PRODUCTS.OUR_PRODUCTS_LI_3' | aiTranslate | async }}</li>
       </ul>
     </div>
     <app-img class="grid-group__img" src="assets/img/products/products.webp" alt="Produkte" [width]="1079" [height]="801" objectPosition="bottom"/>
@@ -61,18 +61,18 @@
   <br>
 
   <p>
-    {{ 'PAGES.PRODUCTS.NICE_TEXT_1' | translate }}
+    {{ 'PAGES.PRODUCTS.NICE_TEXT_1' | aiTranslate | async }}
     <br>
     <br>
-    {{ 'PAGES.PRODUCTS.NICE_TEXT_2' | translate }}
+    {{ 'PAGES.PRODUCTS.NICE_TEXT_2' | aiTranslate | async }}
     <br>
     <br>
-    {{ 'PAGES.PRODUCTS.NICE_TEXT_3' | translate }}
+    {{ 'PAGES.PRODUCTS.NICE_TEXT_3' | aiTranslate | async }}
     <br>
     <br>
-    {{ 'PAGES.PRODUCTS.NICE_TEXT_4' | translate }}
+    {{ 'PAGES.PRODUCTS.NICE_TEXT_4' | aiTranslate | async }}
     <br>
     <br>
-    {{ 'PAGES.PRODUCTS.NICE_TEXT_5' | translate }}
+    {{ 'PAGES.PRODUCTS.NICE_TEXT_5' | aiTranslate | async }}
   </p>
 </div>

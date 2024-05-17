@@ -1,14 +1,14 @@
 <div class="content align-center">
-  <h3 class="h2 align-center">{{'COMPONENTS.RATING.TITLE' | translate}}</h3>
+  <h3 class="h2 align-center">{{'COMPONENTS.RATING.TITLE' | aiTranslate | async}}</h3>
   <p>
-    {{'COMPONENTS.RATING.TEXT_1' | translate}}
+    {{'COMPONENTS.RATING.TEXT_1' | aiTranslate | async}}
     <br>
-    {{'COMPONENTS.RATING.TEXT_2' | translate}}
+    {{'COMPONENTS.RATING.TEXT_2' | aiTranslate | async}}
     <br>
-    {{'COMPONENTS.RATING.TEXT_3' | translate}}
+    {{'COMPONENTS.RATING.TEXT_3' | aiTranslate | async}}
     <br>
     <br>
-    {{'COMPONENTS.RATING.TEXT_4' | translate}}
+    {{'COMPONENTS.RATING.TEXT_4' | aiTranslate | async}}
   </p>
 </div>
 
@@ -16,7 +16,7 @@
   <a class="rating__button highlight hover" target="_blank" [href]="link$ | async">
     <span class="rating__button__stars">★★★★★</span>
     <span class="rating__button__text">
-      {{'COMPONENTS.RATING.RATE_US' | translate}}
+      {{'COMPONENTS.RATING.RATE_US' | aiTranslate | async}}
     </span>
   </a>
 </div>

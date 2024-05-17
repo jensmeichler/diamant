@@ -8,6 +8,7 @@ import {TreatmentsExplanationsComponent} from "src/app/components/treatments-exp
 import {RatingComponent} from "src/app/components/rating/rating.component";
 import {GalleryComponent} from "src/app/components/gallery/gallery.component";
 import {TranslateModule} from "@ngx-translate/core";
+import {AiTranslatePipe} from "src/app/pipes/ai-translate.pipe";
 
 @Component({
   selector: 'app-home',
@@ -21,7 +22,8 @@ import {TranslateModule} from "@ngx-translate/core";
     TreatmentsExplanationsComponent,
     RatingComponent,
     GalleryComponent,
-    TranslateModule
+    TranslateModule,
+    AiTranslatePipe
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']

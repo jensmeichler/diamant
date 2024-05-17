@@ -1,13 +1,13 @@
 <div class="content">
-  <h1 class="align-center">{{ 'PAGES.TREATMENTS.TITLE' | translate }}</h1>
+  <h1 class="align-center">{{ 'PAGES.TREATMENTS.TITLE' | aiTranslate | async }}</h1>
   <hr>
   <br>
 
   <span *ngIf="mobile$ | async; else full">
     <p *ngIf="!readMore">
-      <span [innerHtml]="'PAGES.TREATMENTS.TEXT_SHORT' | translate"></span>
+      <span [innerHtml]="'PAGES.TREATMENTS.TEXT_SHORT' | aiTranslate | async"></span>
       <button class="low-opacity" type="button" (click)="readMore = !readMore">
-        {{'PAGES.TREATMENTS.TEXT_CONTINUE' | translate}}
+        {{'PAGES.TREATMENTS.TEXT_CONTINUE' | aiTranslate | async}}
       </button>
     </p>
     <p *ngIf="readMore">
@@ -16,31 +16,31 @@
   </span>
 
   <ng-template #full>
-    <p [innerHtml]="'PAGES.TREATMENTS.TEXT_FULL' | translate"></p>
+    <p [innerHtml]="'PAGES.TREATMENTS.TEXT_FULL' | aiTranslate | async"></p>
   </ng-template>
 
   <br>
 
   <h2 class="align-center h1">
-    {{ 'PAGES.TREATMENTS.TREATMENTS_TITLE' | translate }}
+    {{ 'PAGES.TREATMENTS.TREATMENTS_TITLE' | aiTranslate | async }}
   </h2>
   <div class="grid-group grid-group--treatments">
     <a class="grid-group__link" routerLink="/behandlungen/gesichtsbehandlung">
       <app-img class="grid-group__link__img" src="assets/img/treatments/facial-treatment.webp" [width]="499" [height]="461" [hover]="true"/>
       <span class="grid-group__link__text">
-        {{ 'PAGES.TREATMENTS.TREATMENTS_LINK_FACE' | translate }}
+        {{ 'PAGES.TREATMENTS.TREATMENTS_LINK_FACE' | aiTranslate | async }}
       </span>
     </a>
     <a class="grid-group__link" routerLink="/behandlungen/massagen">
       <app-img class="grid-group__link__img" src="assets/img/treatments/massage.webp" [width]="639" [height]="428" [hover]="true"/>
       <span class="grid-group__link__text">
-        {{ 'PAGES.TREATMENTS.TREATMENTS_LINK_MASSAGE' | translate }}
+        {{ 'PAGES.TREATMENTS.TREATMENTS_LINK_MASSAGE' | aiTranslate | async }}
       </span>
     </a>
     <a class="grid-group__link" routerLink="/behandlungen/wellnesspakete">
       <app-img class="grid-group__link__img" src="assets/img/treatments/wellness.webp" [width]="640" [height]="427" [hover]="true"/>
       <span class="grid-group__link__text">
-        {{ 'PAGES.TREATMENTS.TREATMENTS_LINK_WELLNESS' | translate }}
+        {{ 'PAGES.TREATMENTS.TREATMENTS_LINK_WELLNESS' | aiTranslate | async }}
       </span>
     </a>
   </div>
@@ -49,18 +49,18 @@
   <hr>
   <br>
 
-  <h2>{{ 'PAGES.TREATMENTS.NICE_TEXT_TITLE' | translate }}</h2>
-  <p [innerHtml]=" 'PAGES.TREATMENTS.NICE_TEXT_BODY' | translate">
+  <h2>{{ 'PAGES.TREATMENTS.NICE_TEXT_TITLE' | aiTranslate | async }}</h2>
+  <p [innerHtml]=" 'PAGES.TREATMENTS.NICE_TEXT_BODY' | aiTranslate | async">
   </p>
 
   <br>
   <hr>
   <br>
 
-  <h2>{{ 'PAGES.TREATMENTS.INDIVIDUAL_OFFER_TITLE' | translate }}</h2>
+  <h2>{{ 'PAGES.TREATMENTS.INDIVIDUAL_OFFER_TITLE' | aiTranslate | async }}</h2>
   <p>
-    {{ 'PAGES.TREATMENTS.INDIVIDUAL_OFFER_BODY_1' | translate }}
+    {{ 'PAGES.TREATMENTS.INDIVIDUAL_OFFER_BODY_1' | aiTranslate | async }}
     <a style="text-decoration: underline" href="tel: 017676893292">017676893292</a>
-    {{ 'PAGES.TREATMENTS.INDIVIDUAL_OFFER_BODY_2' | translate }}
+    {{ 'PAGES.TREATMENTS.INDIVIDUAL_OFFER_BODY_2' | aiTranslate | async }}
   </p>
 </div>

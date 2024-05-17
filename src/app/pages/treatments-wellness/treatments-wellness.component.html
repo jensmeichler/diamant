@@ -1,15 +1,15 @@
 <div class="content">
-  <h1 class="align-center">{{ 'PAGES.TREATMENTS_WELLNESS.TITLE' | translate }}</h1>
+  <h1 class="align-center">{{ 'PAGES.TREATMENTS_WELLNESS.TITLE' | aiTranslate | async }}</h1>
   <hr>
   <br>
 
-  <h2>{{ 'PAGES.TREATMENTS_WELLNESS.DRAINAGE_TITLE' | translate }}</h2>
+  <h2>{{ 'PAGES.TREATMENTS_WELLNESS.DRAINAGE_TITLE' | aiTranslate | async }}</h2>
   <br>
-  <p style="padding-bottom: 1rem" [innerHtml]="'PAGES.TREATMENTS_WELLNESS.DRAINAGE_TEXT' | translate">
+  <p style="padding-bottom: 1rem" [innerHtml]="'PAGES.TREATMENTS_WELLNESS.DRAINAGE_TEXT' | aiTranslate | async">
   </p>
   <ul>
-    <li>{{ 'PAGES.TREATMENTS_WELLNESS.DRAINAGE_PRICE_1' | translate }}</li>
-    <li>{{ 'PAGES.TREATMENTS_WELLNESS.DRAINAGE_PRICE_2' | translate }}</li>
+    <li>{{ 'PAGES.TREATMENTS_WELLNESS.DRAINAGE_PRICE_1' | aiTranslate | async }}</li>
+    <li>{{ 'PAGES.TREATMENTS_WELLNESS.DRAINAGE_PRICE_2' | aiTranslate | async }}</li>
   </ul>
 </div>
 

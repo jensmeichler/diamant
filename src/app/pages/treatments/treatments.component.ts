@@ -4,12 +4,12 @@ import {SeoService} from "src/app/services/seo.service";
 import {AsyncPipe, NgIf, NgTemplateOutlet} from "@angular/common";
 import {ViewService} from "src/app/services/view.service";
 import {ImgComponent} from "src/app/components/img/img.component";
-import {TranslateModule} from "@ngx-translate/core";
+import {AiTranslatePipe} from "src/app/pipes/ai-translate.pipe";
 
 @Component({
   selector: 'app-treatments',
   standalone: true,
-  imports: [RouterLink, NgIf, AsyncPipe, NgTemplateOutlet, ImgComponent, TranslateModule],
+  imports: [RouterLink, NgIf, AsyncPipe, NgTemplateOutlet, ImgComponent, AiTranslatePipe],
   templateUrl: './treatments.component.html',
   styleUrls: ['./treatments.component.scss']
 })

@@ -1,11 +1,12 @@
 import {Component} from '@angular/core';
 import {RouterLink} from "@angular/router";
-import {TranslateModule} from "@ngx-translate/core";
+import {AiTranslatePipe} from "src/app/pipes/ai-translate.pipe";
+import {AsyncPipe} from "@angular/common";
 
 @Component({
   selector: 'app-not-found',
   standalone: true,
-  imports: [RouterLink, TranslateModule],
+  imports: [RouterLink, AiTranslatePipe, AsyncPipe],
   templateUrl: './not-found.component.html',
   styleUrls: ['./not-found.component.scss']
 })

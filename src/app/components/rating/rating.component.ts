@@ -2,12 +2,12 @@ import {Component, inject} from '@angular/core';
 import {AsyncPipe} from "@angular/common";
 import {ViewService} from "src/app/services/view.service";
 import {map} from "rxjs";
-import {TranslateModule} from "@ngx-translate/core";
+import {AiTranslatePipe} from "src/app/pipes/ai-translate.pipe";
 
 @Component({
   selector: 'app-rating',
   standalone: true,
-  imports: [AsyncPipe, TranslateModule],
+  imports: [AiTranslatePipe, AsyncPipe],
   templateUrl: './rating.component.html',
   styleUrls: ['./rating.component.scss']
 })

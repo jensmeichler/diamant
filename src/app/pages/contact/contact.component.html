@@ -1,15 +1,15 @@
 <div class="content">
-  <h1 class="align-center">{{'PAGES.CONTACT.DIAMOND' | translate}}&nbsp;&nbsp;{{'PAGES.CONTACT.TITLE' | translate}}</h1>
+  <h1 class="align-center">{{'PAGES.CONTACT.DIAMOND' | aiTranslate | async}}&nbsp;&nbsp;{{'PAGES.CONTACT.TITLE' | aiTranslate | async}}</h1>
   <hr>
   <br>
 
   <div class="grid-group">
     <div>
-      <h2>{{'PAGES.CONTACT.ADDRESS_TITLE' | translate}}</h2>
+      <h2>{{'PAGES.CONTACT.ADDRESS_TITLE' | aiTranslate | async}}</h2>
       <p>Adolfstraße 65</p>
       <p>38102 Braunschweig</p>
       <br>
-      <p class="phone">{{'PAGES.CONTACT.PHONE' | translate}}:<a class="phone__link" href="tel: 017676893292">0176&nbsp;76893292</a></p>
+      <p class="phone">{{'PAGES.CONTACT.PHONE' | aiTranslate | async}}:<a class="phone__link" href="tel: 017676893292">0176&nbsp;76893292</a></p>
     </div>
 
     <app-map/>
@@ -23,9 +23,9 @@
     <app-img class="photo" src="assets/img/contact/studio.webp" alt="Studio" [width]="1599" [height]="899"/>
 
     <h2>
-      {{ 'PAGES.CONTACT.FEEDBACK_TITLE' | translate }}
+      {{ 'PAGES.CONTACT.FEEDBACK_TITLE' | aiTranslate | async }}
     </h2>
-    <p [innerHtml]="'PAGES.CONTACT.FEEDBACK_TEXT' | translate"></p>
+    <p [innerHtml]="'PAGES.CONTACT.FEEDBACK_TEXT' | aiTranslate | async"></p>
   </section>
 
   <br>

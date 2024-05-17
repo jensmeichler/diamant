@@ -2,12 +2,13 @@ import {Component, inject, Input} from '@angular/core';
 import {RouterLink, RouterLinkActive} from "@angular/router";
 import {AsyncPipe, NgClass, NgIf} from "@angular/common";
 import {ViewService} from "src/app/services/view.service";
-import {TranslateModule, TranslateService} from "@ngx-translate/core";
+import {AiTranslatePipe} from "src/app/pipes/ai-translate.pipe";
+import {AiTranslateService} from "src/app/services/ai-translate.service";
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive, NgIf, AsyncPipe, NgClass, TranslateModule],
+  imports: [RouterLink, RouterLinkActive, NgIf, AsyncPipe, NgClass, AiTranslatePipe],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
@@ -15,10 +16,10 @@ export class HeaderComponent {
   @Input({required: true}) geoLink!: string;
   protected readonly mobile$ = inject(ViewService).mobile$;
   protected menuOpen = false;
-  protected readonly translate = inject(TranslateService);
+  protected readonly aiTranslate = inject(AiTranslateService);
 
   switchLanguage(lang: 'de' | 'ua'): void {
-    this.translate.use(lang);
+    this.aiTranslate.use(lang);
   }
 
   toggleMenu(): void {

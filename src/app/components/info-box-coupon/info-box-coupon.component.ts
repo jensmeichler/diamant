@@ -1,12 +1,11 @@
 import {Component} from '@angular/core';
-import {TranslateModule} from "@ngx-translate/core";
+import {AiTranslatePipe} from "src/app/pipes/ai-translate.pipe";
+import {AsyncPipe} from "@angular/common";
 
 @Component({
   selector: 'app-info-box-coupon',
   standalone: true,
-  imports: [
-    TranslateModule
-  ],
+  imports: [AiTranslatePipe, AsyncPipe],
   templateUrl: './info-box-coupon.component.html',
   styleUrls: ['./info-box-coupon.component.scss']
 })

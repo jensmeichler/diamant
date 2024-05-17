@@ -3,23 +3,23 @@
     <app-img (click)="treatments.scrollTo('diamant-microdermabrasion')" class="monthly-offer__img" src="assets/img/home/aqua-splash.webp" [width]="830" [height]="580" alt="Angebot" [hover]="true" [priority]="1"/>
     <div (click)="treatments.scrollTo('diamant-microdermabrasion')" class="monthly-offer__title secondary hover">
       <p class="m">
-        <strong>{{ 'PAGES.HOME.SPECIAL_OFFER_TITLE' | translate }}:</strong>
+        <strong>{{ 'PAGES.HOME.SPECIAL_OFFER_TITLE' | aiTranslate | async }}:</strong>
         <br>
-        {{ 'PAGES.HOME.SPECIAL_OFFER_TEXT' | translate }}
+        {{ 'PAGES.HOME.SPECIAL_OFFER_TEXT' | aiTranslate | async }}
       </p>
     </div>
     <span class="monthly-offer__body secondary align-center" *ngIf="!view.isMobile; else mobile">
-      <p class="content align-center m" [innerHtml]="'PAGES.HOME.SPECIAL_OFFER_EXPLANATION_FULL' | translate"></p>
+      <p class="content align-center m" [innerHtml]="'PAGES.HOME.SPECIAL_OFFER_EXPLANATION_FULL' | aiTranslate | async"></p>
     </span>
     <ng-template #mobile>
       <span class="monthly-offer__body secondary">
         <p [class.hidden]="readMore" class="m">
-          {{ 'PAGES.HOME.SPECIAL_OFFER_EXPLANATION_SHORT' | translate }}
+          {{ 'PAGES.HOME.SPECIAL_OFFER_EXPLANATION_SHORT' | aiTranslate | async }}
           <button class="low-opacity" (click)="readMore = !readMore">
-            {{ 'PAGES.HOME.SPECIAL_OFFER_EXPLANATION_CONTINUE' | translate }}
+            {{ 'PAGES.HOME.SPECIAL_OFFER_EXPLANATION_CONTINUE' | aiTranslate | async }}
           </button>
         </p>
-        <p [class.hidden]="!readMore" class="m" [innerHtml]="'PAGES.HOME.SPECIAL_OFFER_EXPLANATION_FULL' | translate"></p>
+        <p [class.hidden]="!readMore" class="m" [innerHtml]="'PAGES.HOME.SPECIAL_OFFER_EXPLANATION_FULL' | aiTranslate | async"></p>
       </span>
     </ng-template>
     <div class="monthly-offer__price secondary">
@@ -29,20 +29,20 @@
 
   <div class="content">
     <h1 class="home-title align-center">
-      {{ 'PAGES.HOME.TITLE' | translate }}
+      {{ 'PAGES.HOME.TITLE' | aiTranslate | async }}
     </h1>
     <div class="grid-group">
       <div class="card">
         <app-img routerLink="/beratung" class="card__img" src="assets/img/home/maryna.webp" [width]="399" [height]="300" alt="Maryna Gruszka" [hover]="true" [priority]="2"/>
         <p class="card__text">
-          {{ 'PAGES.HOME.CARDS_ABOUT_ME_TEXT' | translate }}
+          {{ 'PAGES.HOME.CARDS_ABOUT_ME_TEXT' | aiTranslate | async }}
         </p>
         <div class="card__link-group">
           <a routerLink="/produkte" class="card__link-group__link secondary hover">
-            {{ 'PAGES.HOME.CARDS_ABOUT_ME_LINK_PRODUCTS' | translate }}
+            {{ 'PAGES.HOME.CARDS_ABOUT_ME_LINK_PRODUCTS' | aiTranslate | async }}
           </a>
           <a routerLink="/beratung" class="card__link-group__link secondary hover">
-            {{ 'PAGES.HOME.CARDS_ABOUT_ME_LINK_ABOUT' | translate }}
+            {{ 'PAGES.HOME.CARDS_ABOUT_ME_LINK_ABOUT' | aiTranslate | async }}
           </a>
         </div>
       </div>
@@ -50,13 +50,13 @@
       <div class="card">
         <app-img routerLink="/behandlungen" class="card__img" src="assets/img/home/facial-treatments.webp" [width]="399" [height]="300" alt="Mesoporation" [hover]="true"/>
         <p class="card__text">
-          {{ 'PAGES.HOME.CARDS_TREATMENTS_TITLE' | translate }}
+          {{ 'PAGES.HOME.CARDS_TREATMENTS_TITLE' | aiTranslate | async }}
           <br>
-          {{ 'PAGES.HOME.CARDS_TREATMENTS_TEXT' | translate }}
+          {{ 'PAGES.HOME.CARDS_TREATMENTS_TEXT' | aiTranslate | async }}
         </p>
         <div class="card__link-group">
           <a routerLink="/behandlungen" class="card__link-group__link secondary hover">
-            {{ 'PAGES.HOME.CARDS_TREATMENTS_LINK' | translate }}
+            {{ 'PAGES.HOME.CARDS_TREATMENTS_LINK' | aiTranslate | async }}
           </a>
         </div>
       </div>
@@ -64,13 +64,13 @@
       <a class="card card--link" routerLink="/beratung" [queryParams]="{showAdvice: true}">
         <app-img class="card__img" src="assets/img/home/consulting.webp" [width]="399" [height]="300" alt="Beratung" [hover]="true"/>
         <p class="card__text">
-          <strong>{{ 'PAGES.HOME.CARDS_CONSULTING_TITLE' | translate }}</strong>
+          <strong>{{ 'PAGES.HOME.CARDS_CONSULTING_TITLE' | aiTranslate | async }}</strong>
           <br>
-          {{ 'PAGES.HOME.CARDS_CONSULTING_TEXT' | translate }}
+          {{ 'PAGES.HOME.CARDS_CONSULTING_TEXT' | aiTranslate | async }}
         </p>
         <div *ngIf="view.isMobile" class="card__link-group">
           <p class="card__link-group__link secondary hover">
-            {{ 'PAGES.HOME.CARDS_CONSULTING_LINK' | translate }}
+            {{ 'PAGES.HOME.CARDS_CONSULTING_LINK' | aiTranslate | async }}
           </p>
         </div>
       </a>
@@ -78,29 +78,29 @@
   </div>
 
   <article class="content fancy-text">
-    <h2>{{ 'PAGES.HOME.FANCY_TEXT_TITLE' | translate }}</h2>
-    <p>{{ 'PAGES.HOME.FANCY_TEXT_BODY_1' | translate }}</p>
-    <p>{{ 'PAGES.HOME.FANCY_TEXT_BODY_2' | translate }}</p>
-    <p>{{ 'PAGES.HOME.FANCY_TEXT_BODY_3' | translate }}</p>
-    <p>{{ 'PAGES.HOME.FANCY_TEXT_BODY_4' | translate }}</p>
-    <p>{{ 'PAGES.HOME.FANCY_TEXT_BODY_5' | translate }}</p>
-    <p><em>"{{ 'PAGES.HOME.FANCY_TEXT_BODY_6_QUOTE' | translate }}"</em></p>
+    <h2>{{ 'PAGES.HOME.FANCY_TEXT_TITLE' | aiTranslate | async }}</h2>
+    <p>{{ 'PAGES.HOME.FANCY_TEXT_BODY_1' | aiTranslate | async }}</p>
+    <p>{{ 'PAGES.HOME.FANCY_TEXT_BODY_2' | aiTranslate | async }}</p>
+    <p>{{ 'PAGES.HOME.FANCY_TEXT_BODY_3' | aiTranslate | async }}</p>
+    <p>{{ 'PAGES.HOME.FANCY_TEXT_BODY_4' | aiTranslate | async }}</p>
+    <p>{{ 'PAGES.HOME.FANCY_TEXT_BODY_5' | aiTranslate | async }}</p>
+    <p><em>"{{ 'PAGES.HOME.FANCY_TEXT_BODY_6_QUOTE' | aiTranslate | async }}"</em></p>
   </article>
 
   <div class="content">
     <section class="grid-group">
       <a routerLink="/kontakt" class="contact-link align-center secondary hover" [class.contact-link--mobile]="view.isMobile">
-        {{ 'PAGES.HOME.CONTACT_LINK' | translate }}
+        {{ 'PAGES.HOME.CONTACT_LINK' | aiTranslate | async }}
       </a>
     </section>
   </div>
 
   <br>
 
-  <h2 class="h1 align-center headline">{{ 'PAGES.HOME.GALLERY_TITLE' | translate }}</h2>
+  <h2 class="h1 align-center headline">{{ 'PAGES.HOME.GALLERY_TITLE' | aiTranslate | async }}</h2>
   <app-gallery/>
 
-  <h2 class="h1 align-center headline">{{ 'PAGES.HOME.TREATMENTS_TITLE' | translate }}</h2>
+  <h2 class="h1 align-center headline">{{ 'PAGES.HOME.TREATMENTS_TITLE' | aiTranslate | async }}</h2>
   <br>
 
   <app-treatments-explanations #treatments/>

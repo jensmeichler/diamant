@@ -8,7 +8,7 @@
       class="gallery__carousel__img"
       [borderRadiusRem]="0"
       [src]="selection.src"
-      [alt]="selection.label | translate"
+      [alt]="(selection.label | aiTranslate | async) ?? ''"
       [width]="selection.width"
       [height]="selection.height"
       [class.gallery__carousel__img--reverse]="reverse$ | async"
@@ -21,11 +21,11 @@
 
 <ng-container *ngIf="selection$ | async as selection">
   <a *ngIf="selection.link; else p" class="image-title align-center" [routerLink]="selection.link">
-    {{ selection.label | translate }}
+    {{ selection.label | aiTranslate | async }}
   </a>
   <ng-template #p>
     <p class="image-title align-center">
-      {{ selection.label | translate }}
+      {{ selection.label | aiTranslate | async }}
     </p>
   </ng-template>
 </ng-container>

@@ -6,12 +6,12 @@ import {RatingComponent} from "src/app/components/rating/rating.component";
 import {TreatmentsExplanationsComponent} from "src/app/components/treatments-explanations/treatments-explanations.component";
 import {AsyncPipe, NgIf} from "@angular/common";
 import {ViewService} from "src/app/services/view.service";
-import {TranslateModule} from "@ngx-translate/core";
+import {AiTranslatePipe} from "src/app/pipes/ai-translate.pipe";
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [MapComponent, ImgComponent, RatingComponent, TreatmentsExplanationsComponent, AsyncPipe, NgIf, TranslateModule],
+  imports: [MapComponent, ImgComponent, RatingComponent, TreatmentsExplanationsComponent, AsyncPipe, NgIf, AiTranslatePipe],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })

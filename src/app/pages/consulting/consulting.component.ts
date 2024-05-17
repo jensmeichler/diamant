@@ -2,12 +2,12 @@ import {Component, inject, Input, OnInit} from '@angular/core';
 import {SeoService} from "src/app/services/seo.service";
 import {AsyncPipe, NgIf, NgTemplateOutlet} from "@angular/common";
 import {ImgComponent} from "src/app/components/img/img.component";
-import {TranslateModule} from "@ngx-translate/core";
+import {AiTranslatePipe} from "src/app/pipes/ai-translate.pipe";
 
 @Component({
   selector: 'app-consulting',
   standalone: true,
-  imports: [NgIf, AsyncPipe, NgTemplateOutlet, ImgComponent, TranslateModule],
+  imports: [NgIf, AsyncPipe, NgTemplateOutlet, ImgComponent, AiTranslatePipe],
   templateUrl: './consulting.component.html',
   styleUrls: ['./consulting.component.scss']
 })

@@ -1,5 +1,5 @@
 <div class="content">
-  <h1 class="align-center">{{'PAGES.CONSULTING.TITLE' | translate}}</h1>
+  <h1 class="align-center">{{'PAGES.CONSULTING.TITLE' | aiTranslate | async}}</h1>
   <hr>
   <br>
 
@@ -12,8 +12,8 @@
 
   <div class="grid-group">
     <article>
-      <h2>{{ 'PAGES.CONSULTING.ABOUT_ME_TITLE' | translate }}</h2>
-      <p [innerHtml]="'PAGES.CONSULTING.ABOUT_ME_TEXT' | translate"></p>
+      <h2>{{ 'PAGES.CONSULTING.ABOUT_ME_TITLE' | aiTranslate | async }}</h2>
+      <p [innerHtml]="'PAGES.CONSULTING.ABOUT_ME_TEXT' | aiTranslate | async"></p>
     </article>
     <app-img class="grid-group__img" src="assets/img/consulting/maryna.webp" [width]="576" [height]="576" alt="Maryna Gruszka"/>
   </div>
@@ -22,36 +22,36 @@
   <hr>
   <br>
 
-  <h2>{{ 'PAGES.CONSULTING.WHAT_WE_OFFER_TITLE' | translate }}</h2>
+  <h2>{{ 'PAGES.CONSULTING.WHAT_WE_OFFER_TITLE' | aiTranslate | async }}</h2>
   <ul>
-    <li>{{ 'PAGES.CONSULTING.WHAT_WE_OFFER_LI_1' | translate }}</li>
-    <li>{{ 'PAGES.CONSULTING.WHAT_WE_OFFER_LI_2' | translate }}</li>
-    <li>{{ 'PAGES.CONSULTING.WHAT_WE_OFFER_LI_3' | translate }}</li>
-    <li>{{ 'PAGES.CONSULTING.WHAT_WE_OFFER_LI_4' | translate }}</li>
+    <li>{{ 'PAGES.CONSULTING.WHAT_WE_OFFER_LI_1' | aiTranslate | async }}</li>
+    <li>{{ 'PAGES.CONSULTING.WHAT_WE_OFFER_LI_2' | aiTranslate | async }}</li>
+    <li>{{ 'PAGES.CONSULTING.WHAT_WE_OFFER_LI_3' | aiTranslate | async }}</li>
+    <li>{{ 'PAGES.CONSULTING.WHAT_WE_OFFER_LI_4' | aiTranslate | async }}</li>
   </ul>
 
   <br>
   <hr>
   <br>
 
-  <h2>{{ 'PAGES.CONSULTING.REVERSE_AGING_TITLE' | translate }}</h2>
+  <h2>{{ 'PAGES.CONSULTING.REVERSE_AGING_TITLE' | aiTranslate | async }}</h2>
   <br>
-  <p [innerHtml]="'PAGES.CONSULTING.REVERSE_AGING_TEXT' | translate"></p>
+  <p [innerHtml]="'PAGES.CONSULTING.REVERSE_AGING_TEXT' | aiTranslate | async"></p>
   <ul>
-    <li>{{ 'PAGES.CONSULTING.REVERSE_AGING_LI_1' | translate }}</li>
-    <li>{{ 'PAGES.CONSULTING.REVERSE_AGING_LI_2' | translate }}</li>
-    <li>{{ 'PAGES.CONSULTING.REVERSE_AGING_LI_3' | translate }}</li>
-    <li>{{ 'PAGES.CONSULTING.REVERSE_AGING_LI_4' | translate }}</li>
+    <li>{{ 'PAGES.CONSULTING.REVERSE_AGING_LI_1' | aiTranslate | async }}</li>
+    <li>{{ 'PAGES.CONSULTING.REVERSE_AGING_LI_2' | aiTranslate | async }}</li>
+    <li>{{ 'PAGES.CONSULTING.REVERSE_AGING_LI_3' | aiTranslate | async }}</li>
+    <li>{{ 'PAGES.CONSULTING.REVERSE_AGING_LI_4' | aiTranslate | async }}</li>
   </ul>
 
   <br>
   <hr>
   <br>
 
-  <h2>{{ 'PAGES.CONSULTING.ADDITIONAL_SERVICE_TITLE' | translate }}</h2>
+  <h2>{{ 'PAGES.CONSULTING.ADDITIONAL_SERVICE_TITLE' | aiTranslate | async }}</h2>
   <br>
   <p>
-    {{ 'PAGES.CONSULTING.ADDITIONAL_SERVICE_TEXT' | translate }}
+    {{ 'PAGES.CONSULTING.ADDITIONAL_SERVICE_TEXT' | aiTranslate | async }}
   </p>
 
   <ng-container *ngIf="!showAdvice">
@@ -63,14 +63,14 @@
 </div>
 
 <ng-template #callAdvice>
-  <h2>{{ 'PAGES.CONSULTING.INDIVIDUAL_TREATMENT_TITLE' | translate }}</h2>
+  <h2>{{ 'PAGES.CONSULTING.INDIVIDUAL_TREATMENT_TITLE' | aiTranslate | async }}</h2>
   <br>
   <p>
-    {{ 'PAGES.CONSULTING.INDIVIDUAL_TREATMENT_TEXT' | translate }}
+    {{ 'PAGES.CONSULTING.INDIVIDUAL_TREATMENT_TEXT' | aiTranslate | async }}
     <br>
     <br>
     <span class="phone">
-      {{ 'PAGES.CONSULTING.INDIVIDUAL_TREATMENT_CTA' | translate }}
+      {{ 'PAGES.CONSULTING.INDIVIDUAL_TREATMENT_CTA' | aiTranslate | async }}
       <a class="phone__link secondary" href="tel: 017676893292">0176&nbsp;76893292</a>
     </span>
   </p>
