@@ -1,7 +1,7 @@
 <ng-container *ngIf="{isMobile: mobile$ | async} as view">
   <div class="monthly-offer align-center">
-    <app-img (click)="treatments.scrollTo('diamant-microdermabrasion')" class="monthly-offer__img" src="assets/img/home/aqua-splash.webp" [width]="830" [height]="580" alt="Angebot" [hover]="true" [priority]="1"/>
-    <div (click)="treatments.scrollTo('diamant-microdermabrasion')" class="monthly-offer__title secondary hover">
+    <app-img (click)="treatments.scrollTo('micro-needling')" class="monthly-offer__img" src="assets/img/treatments/facial-treatment.webp" [width]="830" [height]="580" alt="Angebot" [hover]="true" [priority]="1"/>
+    <div (click)="treatments.scrollTo('micro-needling')" class="monthly-offer__title secondary hover">
       <p class="m">
         <strong>{{ 'PAGES.HOME.SPECIAL_OFFER_TITLE' | translate }}:</strong>
         <br>
@@ -23,7 +23,7 @@
       </span>
     </ng-template>
     <div class="monthly-offer__price secondary">
-      <p class="m">75,00 €</p>
+      <p class="m">119,99 €</p>
     </div>
   </div>
 
