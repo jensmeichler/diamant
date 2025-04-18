@@ -79,10 +79,10 @@
       "FEEDBACK_TEXT": "Wichtig ist, dass man sich in seinem Kosmetikstudio wohl und gut aufgehoben fühlt. Man sollte abschalten und sich entspannen können und seine kleine Auszeit mit Kosmetik genießen. Ich gehe liebend gerne in mein Kosmetikstudio in Braunschweig und freue mich jedes Mal auf die freundlichen und kompetenten Mitarbeiter dort. Wenn ich aus dem Komsetikstudio rausgehe, fühle ich mich wie neu geboren und wie ein vollkommen neuer Mensch. Das Gefühl, sich super wohl in seiner Haut zu fühlen, ist ein ganz tolles. Da ich jahrelang Akne hatte, bin ich umso glücklicher darüber, dass meine Haut durch die regelmäßigen Besuche im Kosmetikstudio so viel besser geworden ist. Wichtig ist natürlich auch, dass man auf eine gesunde Ernährung achtet. Kosmetik ist nicht alles! Ich esse viel Obst und Gemüse und versuche so gut wie möglich auf Gluten zu verzichten, da sich dadurch meine Haut verschlechtert.<br>Alles in allem liebe ich es in mein Kosmetikstudio Diamant in Braunschweig zu gehen und bin jedes Mal total glücklich mit dem Ergebnis und mag die Begeisterung meiner Kunden. Aus diesem Grund kann ich es nur jedem ans Herz legen, meinem Kosmetikstudio Diamant in Braunschweig einen Besuch abzustatten."
     },
     "HOME": {
-      "SPECIAL_OFFER_TITLE": "Sonderangebot",
-      "SPECIAL_OFFER_TEXT": "Diamant Microdermabrasion (90 Min)",
-      "SPECIAL_OFFER_EXPLANATION_SHORT": "Die apparative Reinigung wird Ihre Haut optimal vorbereiten, um die wertvollen Wirkstoffe aufzunehmen! Nach der...",
-      "SPECIAL_OFFER_EXPLANATION_FULL": "Die apparative Reinigung wird Ihre Haut optimal vorbereiten, um die wertvollen Wirkstoffe aufzunehmen! Nach der Augenbrauenkorrektur wird je nach Hauttyp der passende Wirkstoff auf die Haut aufgetragen. Sofort Effekt mit Langzeitwirkung und ein strahlendes Hautbild.<br> Hinzu kommt eine Maske, die sowohl auf das Gesicht als auch auf das Dekolleté einmassiert wird. Ihre Haut bekommt ein jugendliches Erscheinungsbild mit Lifting-Effekt.",
+      "SPECIAL_OFFER_TITLE": "Herbstangebot",
+      "SPECIAL_OFFER_TEXT": "Micro Needling Pro",
+      "SPECIAL_OFFER_EXPLANATION_SHORT": "Mirco Needling PRO ist ein System mit drei Behandlungsmethoden und ein erfolgreiches Verfahren im Bereich Anti Aging und...",
+      "SPECIAL_OFFER_EXPLANATION_FULL": "Mirco Needling PRO ist ein System mit drei Behandlungsmethoden und ein erfolgreiches Verfahren im Bereich Anti Aging und Problemhaut-Behandlung. Die nicht-ablative Hautver-jüngungs-Technik ermöglicht es, die Haut an Gesicht, Augen, Lippen, Hals, Dekolleté, Körper und Händen zu verbessern und zu festigen. Ebenso können Narben kosmetisch verfeinert, Pigmentstörungen und Dehnungsstreifen erfolgreich reduziert werden.",
       "SPECIAL_OFFER_EXPLANATION_CONTINUE": "weiter lesen",
       "TITLE": "Ihr Kosmetikstudio in Braunschweig für professionelle Gesichtspflege",
       "CARDS_ABOUT_ME_TEXT": "Pflegeprodukte und Kosmetik aus der Natur. Erfahrung seit 20 Jahren und seit 10 in Braunschweigs Kosmetikstudio - Schönheit neu erleben!",
@@ -158,7 +158,7 @@
       "ACNE_PRICE_2": "(Kur 3 Behandlungen) Ab 120,00€",
       "ADD_ONS_TITLE": "Was Sie zu Ihrer Behandlung dazu buchen können",
       "ADD_ONS_CLASSIC_TITLE": "Statt klassisches Peeling:",
-      "ADD_ONS_CLASSIC_LI_1":  "Diamant - Microdermabrasion (Intensives Peeling zusätzlich) 15€",
+      "ADD_ONS_CLASSIC_LI_1":  "Diamant - Microdermabrasion (Intensives Peeling zusätzlich)",
       "ADD_ONS_AGING_TITLE": "Verjüngerungs-Cocktail:",
       "ADD_ONS_AGING_LI_1":  "Softneedeling (nur in Paket erhältlich)",
       "ADD_ONS_WELLNESS_TITLE": "Eine schöne Entspannung:",
@@ -168,12 +168,15 @@
       "ADD_ONS_DEKO_LI_1": "Tages Make-up 30,00€",
       "ADD_ONS_DEKO_LI_2":  "Abend Make-up 59,00€",
       "ADD_ONS_DEKO_LI_3": "Hochzeits Make-up 120,00€",
-      "BEAUTY_RELAX_TITLE": "Beauty Relax",
-      "BEAUTY_RELAX_TEXT": "Durch diese Behandlung schweben Sie wie auf Wolken :)<br>Nach der klassischen Hautreinigung werden Ihre Augenbrauen in Form gebracht und eine feuchtigkeitsspendende Maske aufgetragen.<br>In der Einwirkzeit der Maske werden Ihre Hände massiert und anschließend erwartet Sie eine entspannende Gesichtsmassage. Zum Schluss erhalten Sie eine Abschlusspflege.",
-      "BEAUTY_RELAX_PRICE": "(ca. 75min) 112,00€",
+      "MICRODERM_ABRASION_TITLE": "Diamant-Mikrodermabrasion",
+      "MICRODERM_ABRASION_TEXT": "Diamantmicrodermabrasion ist ein intensives Peeling für alle Hauttypen. Dabei werden die Hautschüppchen und Verhornung abgetragen. Die Haut wird angeregt sich besser zu regenerieren und somit das Hautbild zu verbessern. Narben, Pigmentflecken sowie auch feine Fältchen werden weniger sichtbar.",
+      "MICRODERM_ABRASION_PRICE": "80,00€",
+      "MICRONEEDLING_ABRASION_TITLE": "Micro Needling",
+      "MICRONEEDLING_ABRASION_TEXT": "Die Wirkstoffe kommen dort an, wo sie Ihre Haut am meisten benötigt und wo sie sich am besten entfalten können. Auch nicht nur an der Hautoberfläche, sondern auch in der Tiefe der Haut.\n\nDie Micro Needling Behandlung erreicht eine echte Regeneration und Verjüngung der Haut bis in die tiefsten Strukturen. Die Haut bildet neue hauteigene Kollagen, Elastin und Hyaluronsäure. Das Ergebnis bleibt dauerhaft sichtbar.",
+      "MICRONEEDLING_ABRASION_PRICE": "130,00€",
       "ANTI_AGING_DELUXE_TITLE": "Straffung & Verjüngerung Deluxe",
       "ANTI_AGING_DELUXE_TEXT": "Die apparative Reinigung (Microdermabrasion) wird Ihre Haut optimal vorbereiten, um die wertvollen Wirkstoffe aufzunehmen! Nach der Augenbrauenkorrektur wird je nach Hauttyp der passende Wirkstoff auf die Haut aufgetragen.<br>Hinzu kommt eine Maske, die sowohl auf das Gesicht als auch auf das Dekolleté  einmassiert wird. Ihre Haut bekommt ein jugendliches Erscheinungsbild mit Lifting-Effekt.",
-      "ANTI_AGING_DELUXE_PRICE": "(ca. 90 min) 139,00€"
+      "ANTI_AGING_DELUXE_PRICE": "(ca. 90 min) 165,00€"
     },
     "TREATMENTS_MASSAGE": {
       "TITLE": "Massagen",
