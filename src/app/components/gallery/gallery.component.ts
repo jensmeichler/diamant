@@ -25,13 +25,6 @@ interface Image {
 export class GalleryComponent {
   private images: Image[] = [
     {
-      src: 'assets/img/contact/studio.webp',
-      label: 'COMPONENTS.GALLERY.STUDIO',
-      link: '/kontakt',
-      width: 1599,
-      height: 899
-    },
-    {
       src: 'assets/img/products/products.webp',
       label: 'COMPONENTS.GALLERY.PRODUCTS',
       link: '/produkte',
@@ -39,19 +32,26 @@ export class GalleryComponent {
       height: 801
     },
     {
-      src: 'assets/img/gallery/new-studio-2.webp',
+      src: 'assets/img/gallery/studio-outside.webp',
       label: 'COMPONENTS.GALLERY.STUDIO',
       link: '/kontakt',
-      width: 1024,
-      height: 768
+      width: 2000,
+      height: 1500
     },
     {
-      src: 'assets/img/gallery/new-studio.webp',
+      src: 'assets/img/gallery/waiting-room.webp',
       label: 'COMPONENTS.GALLERY.STUDIO',
       link: '/kontakt',
-      width: 1024,
-      height: 768
-    }
+      width: 2000,
+      height: 1500
+    },
+    {
+      src: 'assets/img/contact/studio.webp',
+      label: 'COMPONENTS.GALLERY.STUDIO',
+      link: '/kontakt',
+      width: 1599,
+      height: 899
+    },
   ];
 
   protected touched = false;
