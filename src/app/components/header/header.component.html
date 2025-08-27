@@ -33,12 +33,12 @@
 
       <hr class="burger-menu__item--splitter">
 
-      <a class="burger-menu__item burger-menu__item--button" type="button" (click)="switchLanguage('ua')" *ngIf="translate.currentLang === 'de'">
+      <a class="burger-menu__item burger-menu__item--button" type="button" (click)="switchLanguage('ru')" *ngIf="translate.currentLang === 'de'">
         <img class="flag" src="assets/flags/ru-ua.svg" height="32" width="48">
-        <span>Змінити мову</span>
+        <span>Изменить язык</span>
       </a>
 
-      <a class="burger-menu__item burger-menu__item--button" type="button" (click)="switchLanguage('de')" *ngIf="translate.currentLang === 'ua'">
+      <a class="burger-menu__item burger-menu__item--button" type="button" (click)="switchLanguage('de')" *ngIf="translate.currentLang === 'ru'">
         <img class="flag" src="assets/flags/de.svg" height="32" width="48">
         <span>Sprache wechseln</span>
       </a>
@@ -50,10 +50,10 @@
     <a class="nav-bar__item" routerLink="/produkte" routerLinkActive="nav-bar__item--active">{{'COMPONENTS.HEADER.LINK_PRODUCTS' | translate}}</a>
     <a class="nav-bar__item" routerLink="/beratung" routerLinkActive="nav-bar__item--active">{{'COMPONENTS.HEADER.LINK_CONSULTING' | translate}}</a>
     <a class="nav-bar__item" routerLink="/kontakt" routerLinkActive="nav-bar__item--active">{{'COMPONENTS.HEADER.LINK_CONTACT' | translate}}</a>
-    <button class="language-switcher" type="button" (click)="switchLanguage('ua')" *ngIf="translate.currentLang === 'de'">
+    <button class="language-switcher" type="button" (click)="switchLanguage('ru')" *ngIf="translate.currentLang === 'de'">
       <img class="flag" src="assets/flags/ru-ua.svg" height="32" width="48">
     </button>
-    <button class="language-switcher" type="button" (click)="switchLanguage('de')" *ngIf="translate.currentLang === 'ua'">
+    <button class="language-switcher" type="button" (click)="switchLanguage('de')" *ngIf="translate.currentLang === 'ru'">
       <img class="flag" src="assets/flags/de.svg" height="32" width="48">
     </button>
   </ng-template>
