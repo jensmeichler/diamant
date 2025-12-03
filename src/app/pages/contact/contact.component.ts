@@ -23,7 +23,7 @@ export class ContactComponent implements OnInit {
     window.scroll({top: 0, behavior: 'instant'});
     this.seo.updateMeta({
       title: 'Kontakt',
-      description: 'Kosmetikstudio Diamant, Braunschweig, Petritorwall 10, Terminvereinbarung: 017676893292',
+      description: 'Kosmetikstudio Diamant, Kuhtrift 2 38116 Braunschweig, Terminvereinbarung: 017676893292',
     });
   }
 }

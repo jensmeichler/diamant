@@ -24,8 +24,8 @@ export class AppComponent {
   protected readonly geoLink = ((navigator.platform.indexOf("iPhone") != -1) ||
     (navigator.platform.indexOf("iPad") != -1) ||
     (navigator.platform.indexOf("iPod") != -1))
-    ? "maps://maps.google.com/maps?daddr=52.2665045,10.5127931,19z&amp;q=Petritorwall+10&amp;ll="
-    : "https://maps.app.goo.gl/wHLqBfCcum3mhKJs7";
+    ? "maps://maps.google.com/maps?daddr=52.268585,10.456814,19z&amp;q=Kuhtrift+2&amp;ll="
+    : "https://maps.app.goo.gl/d3J5UjqgrGeL3zia8";
 
   constructor(public translate: TranslateService) {
     translate.addLangs(['de', 'ru']);
