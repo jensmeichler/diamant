@@ -17,7 +17,7 @@ export class HeaderComponent {
   protected menuOpen = false;
   protected readonly translate = inject(TranslateService);
 
-  switchLanguage(lang: 'de' | 'ua'): void {
+  switchLanguage(lang: 'de' | 'ru'): void {
     this.translate.use(lang);
   }
 

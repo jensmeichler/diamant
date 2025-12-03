@@ -28,9 +28,9 @@ export class AppComponent {
     : "https://maps.app.goo.gl/wHLqBfCcum3mhKJs7";
 
   constructor(public translate: TranslateService) {
-    translate.addLangs(['de', 'ua']);
+    translate.addLangs(['de', 'ru']);
     translate.setDefaultLang('de');
     const browserLang = translate.getBrowserLang();
-    translate.use(browserLang?.match(/ru|ua/) ? 'ua' : 'de');
+    translate.use(browserLang?.match(/ru|ua/) ? 'ru' : 'de');
   }
 }
