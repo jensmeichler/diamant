@@ -21,11 +21,9 @@ import {TranslateService} from '@ngx-translate/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  protected readonly geoLink = ((navigator.platform.indexOf("iPhone") != -1) ||
-    (navigator.platform.indexOf("iPad") != -1) ||
-    (navigator.platform.indexOf("iPod") != -1))
-    ? "maps://maps.google.com/maps?daddr=52.268585,10.456814,19z&amp;q=Kuhtrift+2&amp;ll="
-    : "https://maps.app.goo.gl/d3J5UjqgrGeL3zia8";
+  protected readonly geoLink = /iPhone|iPad|iPod/i.test(navigator.userAgent)
+    ? "https://maps.apple.com/?daddr=Kuhtrift+2,+38116+Braunschweig"
+    : "https://www.google.com/maps/dir/?api=1&destination=Kuhtrift+2,+38116+Braunschweig";
 
   constructor(public translate: TranslateService) {
     translate.addLangs(['de', 'ru']);
