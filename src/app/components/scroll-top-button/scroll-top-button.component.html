@@ -1,7 +1,8 @@
-<a
-  *ngIf="scrollPossible$ | async"
-  (click)="scrollToTop()"
-  class="scroll-button"
->
-  ↑
-</a>
+@if (scrollPossible$ | async) {
+  <a
+    (click)="scrollToTop()"
+    class="scroll-button"
+  >
+    ↑
+  </a>
+}

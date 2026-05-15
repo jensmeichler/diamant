@@ -3,29 +3,31 @@
     <button type="button" class="gallery__carousel__button low-opacity align-center" (click)="prev()">
       <img src="assets/svg/circle-chevron-left.svg" alt="Zurück" width="48" height="48"/>
     </button>
-    <app-img
-      *ngIf="selection$ | async as selection"
-      class="gallery__carousel__img"
-      [borderRadiusRem]="0"
-      [src]="selection.src"
-      [alt]="selection.label | translate"
-      [width]="selection.width"
-      [height]="selection.height"
-      [class.gallery__carousel__img--reverse]="reverse$ | async"
-    />
+    @if (selection$ | async; as selection) {
+      <app-img
+        class="gallery__carousel__img"
+        [borderRadiusRem]="0"
+        [src]="selection.src"
+        [alt]="selection.label | translate"
+        [width]="selection.width"
+        [height]="selection.height"
+        [class.gallery__carousel__img--reverse]="reverse$ | async"
+      ></app-img>
+    }
     <button type="button" class="gallery__carousel__button low-opacity align-center" (click)="next()">
       <img src="assets/svg/circle-chevron-right.svg" alt="Weiter" width="48" height="48"/>
     </button>
   </div>
 </section>
 
-<ng-container *ngIf="selection$ | async as selection">
-  <a *ngIf="selection.link; else p" class="image-title align-center" [routerLink]="selection.link">
-    {{ selection.label | translate }}
-  </a>
-  <ng-template #p>
+@if (selection$ | async; as selection) {
+  @if (selection.link) {
+    <a class="image-title align-center" [routerLink]="selection.link">
+      {{ selection.label | translate }}
+    </a>
+  } @else {
     <p class="image-title align-center">
       {{ selection.label | translate }}
     </p>
-  </ng-template>
-</ng-container>
+  }
+}

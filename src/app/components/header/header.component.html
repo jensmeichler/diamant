@@ -1,60 +1,95 @@
-<nav class="nav-bar" [class.nav-bar--mobile]="opt.mobile" *ngIf="{mobile: mobile$ | async} as opt">
-  <a class="nav-bar__item nav-bar__item--home" routerLink="/">
-    <img src="favicon.svg" width="29" height="24" alt="Kosmetik">
-    <span class="nav-bar__item__logo">
-      {{'COMPONENTS.HEADER.DIAMOND' | translate}}
-    </span>
-  </a>
-  <ng-container *ngIf="opt.mobile; else desktop">
-    <button type="button" class="nav-bar__item nav-bar__item--menu ##" aria-label="Menü öffnen" [class.nav-bar__item--menu--open]="menuOpen" (click)="toggleMenu()">
-      <svg width="24" height="24" viewBox="0 0 448 383" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect class="nav-bar__item--menu__svg-line nav-bar__item--menu__svg-line--top" width="448" height="63" rx="30" fill="#fff"/>
-        <rect class="nav-bar__item--menu__svg-line nav-bar__item--menu__svg-line--middle" width="448" height="63" rx="30" fill="#fff" y="160"/>
-        <rect class="nav-bar__item--menu__svg-line nav-bar__item--menu__svg-line--bottom" width="448" height="63" rx="30" fill="#fff" y="320"/>
-      </svg>
-    </button>
-    <div class="burger-menu burger-menu--open" *ngIf="menuOpen">
-      <a class="burger-menu__item" routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="burger-menu--active">{{'COMPONENTS.HEADER.LINK_HOME' | translate}}</a>
-      <a class="burger-menu__item" routerLink="/behandlungen" routerLinkActive="burger-menu--active">{{'COMPONENTS.HEADER.LINK_TREATMENTS' | translate}}</a>
-      <a class="burger-menu__item" routerLink="/produkte" routerLinkActive="burger-menu--active">{{'COMPONENTS.HEADER.LINK_PRODUCTS' | translate}}</a>
-      <a class="burger-menu__item" routerLink="/beratung" routerLinkActive="burger-menu--active">{{'COMPONENTS.HEADER.LINK_CONSULTING' | translate}}</a>
-      <a class="burger-menu__item" routerLink="/kontakt" routerLinkActive="burger-menu--active">{{'COMPONENTS.HEADER.LINK_CONTACT' | translate}}</a>
-
-      <hr class="burger-menu__item--splitter">
-
-      <a class="burger-menu__item burger-menu__item--button" href="tel: 017676893292">
-        <img src="assets/svg/phone.svg" alt="" height="20" width="20">
-        <span>{{'COMPONENTS.HEADER.CALL' | translate}}</span>
+@if ({mobile: mobile$ | async}; as opt) {
+  <nav class="nav-bar" [class.nav-bar--mobile]="opt.mobile">
+    <a class="nav-bar__item nav-bar__item--home" routerLink="/">
+      <img src="favicon.svg" width="29" height="24" alt="Kosmetik">
+      <span class="nav-bar__item__logo">
+        {{ 'COMPONENTS.HEADER.DIAMOND' | translate }}
+      </span>
+    </a>
+    @if (opt.mobile) {
+      <button
+        type="button"
+        class="nav-bar__item nav-bar__item--menu"
+        aria-label="Menü öffnen"
+        [class.nav-bar__item--menu--open]="menuOpen"
+        (click)="toggleMenu()"
+      >
+        <svg width="24" height="24" viewBox="0 0 448 383" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect class="nav-bar__item--menu__svg-line nav-bar__item--menu__svg-line--top" width="448" height="63" rx="30"
+                fill="#fff"/>
+          <rect class="nav-bar__item--menu__svg-line nav-bar__item--menu__svg-line--middle" width="448" height="63"
+                rx="30" fill="#fff" y="160"/>
+          <rect class="nav-bar__item--menu__svg-line nav-bar__item--menu__svg-line--bottom" width="448" height="63"
+                rx="30" fill="#fff" y="320"/>
+        </svg>
+      </button>
+      @if (menuOpen) {
+        <div class="burger-menu burger-menu--open">
+          <a class="burger-menu__item" routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="burger-menu--active">
+            {{ 'COMPONENTS.HEADER.LINK_HOME' | translate }}
+          </a>
+          <a class="burger-menu__item" routerLink="/behandlungen" routerLinkActive="burger-menu--active">
+            {{ 'COMPONENTS.HEADER.LINK_TREATMENTS' | translate }}
+          </a>
+          <a class="burger-menu__item" routerLink="/produkte" routerLinkActive="burger-menu--active">
+            {{ 'COMPONENTS.HEADER.LINK_PRODUCTS' | translate }}
+          </a>
+          <a class="burger-menu__item" routerLink="/beratung" routerLinkActive="burger-menu--active">
+            {{ 'COMPONENTS.HEADER.LINK_CONSULTING' | translate }}
+          </a>
+          <a class="burger-menu__item" routerLink="/kontakt" routerLinkActive="burger-menu--active">
+            {{ 'COMPONENTS.HEADER.LINK_CONTACT' | translate }}
+          </a>
+          <hr class="burger-menu__item--splitter">
+          <a class="burger-menu__item burger-menu__item--button" href="tel: 017676893292">
+            <img src="assets/svg/phone.svg" alt="" height="20" width="20">
+            <span>{{ 'COMPONENTS.HEADER.CALL' | translate }}</span>
+          </a>
+          <a class="burger-menu__item burger-menu__item--button" [href]="geoLink" target="_blank">
+            <img src="assets/svg/location-dot.svg" alt="" height="27" width="20">
+            <span>{{ 'COMPONENTS.HEADER.ARRIVE' | translate }}</span>
+          </a>
+          <hr class="burger-menu__item--splitter">
+          @if (translate.getCurrentLang() === 'de') {
+            <a class="burger-menu__item burger-menu__item--button" type="button" (click)="switchLanguage('ru')">
+              <img class="flag" src="assets/flags/ru-ua.svg" height="32" width="48">
+              <span>Изменить язык</span>
+            </a>
+          }
+          @if (translate.getCurrentLang() === 'ru') {
+            <a class="burger-menu__item burger-menu__item--button" type="button" (click)="switchLanguage('de')">
+              <img class="flag" src="assets/flags/de.svg" height="32" width="48">
+              <span>Sprache wechseln</span>
+            </a>
+          }
+        </div>
+      }
+    } @else {
+      <a class="nav-bar__item" routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="nav-bar__item--active">
+        {{ 'COMPONENTS.HEADER.LINK_HOME' | translate }}
       </a>
-      <a class="burger-menu__item burger-menu__item--button" [href]="geoLink" target="_blank">
-        <img src="assets/svg/location-dot.svg" alt="" height="27" width="20">
-        <span>{{'COMPONENTS.HEADER.ARRIVE' | translate}}</span>
+      <a class="nav-bar__item" routerLink="/behandlungen" routerLinkActive="nav-bar__item--active">
+        {{ 'COMPONENTS.HEADER.LINK_TREATMENTS' | translate }}
       </a>
-
-      <hr class="burger-menu__item--splitter">
-
-      <a class="burger-menu__item burger-menu__item--button" type="button" (click)="switchLanguage('ru')" *ngIf="translate.currentLang === 'de'">
-        <img class="flag" src="assets/flags/ru-ua.svg" height="32" width="48">
-        <span>Изменить язык</span>
+      <a class="nav-bar__item" routerLink="/produkte" routerLinkActive="nav-bar__item--active">
+        {{ 'COMPONENTS.HEADER.LINK_PRODUCTS' | translate }}
       </a>
-
-      <a class="burger-menu__item burger-menu__item--button" type="button" (click)="switchLanguage('de')" *ngIf="translate.currentLang === 'ru'">
-        <img class="flag" src="assets/flags/de.svg" height="32" width="48">
-        <span>Sprache wechseln</span>
+      <a class="nav-bar__item" routerLink="/beratung" routerLinkActive="nav-bar__item--active">
+        {{ 'COMPONENTS.HEADER.LINK_CONSULTING' | translate }}
       </a>
-    </div>
-  </ng-container>
-  <ng-template #desktop>
-    <a class="nav-bar__item" routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="nav-bar__item--active">{{'COMPONENTS.HEADER.LINK_HOME' | translate}}</a>
-    <a class="nav-bar__item" routerLink="/behandlungen" routerLinkActive="nav-bar__item--active">{{'COMPONENTS.HEADER.LINK_TREATMENTS' | translate}}</a>
-    <a class="nav-bar__item" routerLink="/produkte" routerLinkActive="nav-bar__item--active">{{'COMPONENTS.HEADER.LINK_PRODUCTS' | translate}}</a>
-    <a class="nav-bar__item" routerLink="/beratung" routerLinkActive="nav-bar__item--active">{{'COMPONENTS.HEADER.LINK_CONSULTING' | translate}}</a>
-    <a class="nav-bar__item" routerLink="/kontakt" routerLinkActive="nav-bar__item--active">{{'COMPONENTS.HEADER.LINK_CONTACT' | translate}}</a>
-    <button class="language-switcher" type="button" (click)="switchLanguage('ru')" *ngIf="translate.currentLang === 'de'">
-      <img class="flag" src="assets/flags/ru-ua.svg" height="32" width="48">
-    </button>
-    <button class="language-switcher" type="button" (click)="switchLanguage('de')" *ngIf="translate.currentLang === 'ru'">
-      <img class="flag" src="assets/flags/de.svg" height="32" width="48">
-    </button>
-  </ng-template>
-</nav>
+      <a class="nav-bar__item" routerLink="/kontakt" routerLinkActive="nav-bar__item--active">
+        {{ 'COMPONENTS.HEADER.LINK_CONTACT' | translate }}
+      </a>
+      @if (translate.getCurrentLang() === 'de') {
+        <button class="language-switcher" type="button" (click)="switchLanguage('ru')">
+          <img class="flag" src="assets/flags/ru-ua.svg" height="32" width="48">
+        </button>
+      }
+      @if (translate.getCurrentLang() === 'ru') {
+        <button class="language-switcher" type="button" (click)="switchLanguage('de')">
+          <img class="flag" src="assets/flags/de.svg" height="32" width="48">
+        </button>
+      }
+    }
+  </nav>
+}

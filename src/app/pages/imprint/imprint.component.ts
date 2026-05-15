@@ -3,7 +3,6 @@ import {SeoService} from "src/app/services/seo.service";
 
 @Component({
   selector: 'app-imprint',
-  standalone: true,
   imports: [],
   templateUrl: './imprint.component.html',
   styleUrls: ['./imprint.component.scss']

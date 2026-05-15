@@ -1,21 +1,27 @@
 <div class="content">
-  <h1 class="align-center">{{'PAGES.CONSULTING.TITLE' | translate}}</h1>
+  <h1 class="align-center">{{ 'PAGES.CONSULTING.TITLE' | translate }}</h1>
   <hr>
   <br>
 
-  <ng-container *ngIf="showAdvice">
+  @if (showAdvice) {
     <div class="advice secondary">
       <ng-container *ngTemplateOutlet="callAdvice"/>
     </div>
     <br>
-  </ng-container>
+  }
 
   <div class="grid-group">
     <article>
       <h2>{{ 'PAGES.CONSULTING.ABOUT_ME_TITLE' | translate }}</h2>
       <p [innerHtml]="'PAGES.CONSULTING.ABOUT_ME_TEXT' | translate"></p>
     </article>
-    <app-img class="grid-group__img" src="assets/img/consulting/maryna.webp" [width]="576" [height]="576" alt="Maryna Gruszka"/>
+    <app-img
+      class="grid-group__img"
+      src="assets/img/consulting/maryna.webp"
+      [width]="576"
+      [height]="576"
+      alt="Maryna Gruszka"
+    ></app-img>
   </div>
 
   <br>
@@ -54,12 +60,12 @@
     {{ 'PAGES.CONSULTING.ADDITIONAL_SERVICE_TEXT' | translate }}
   </p>
 
-  <ng-container *ngIf="!showAdvice">
+  @if (!showAdvice) {
     <br>
     <hr>
     <br>
     <ng-container *ngTemplateOutlet="callAdvice"/>
-  </ng-container>
+  }
 </div>
 
 <ng-template #callAdvice>

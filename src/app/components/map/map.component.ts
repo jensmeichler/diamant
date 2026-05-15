@@ -1,10 +1,9 @@
 import {Component} from '@angular/core';
-import {NgIf} from "@angular/common";
+
 
 @Component({
   selector: 'app-map',
-  standalone: true,
-  imports: [NgIf],
+  imports: [],
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.scss']
 })
