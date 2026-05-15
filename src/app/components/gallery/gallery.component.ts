@@ -32,25 +32,25 @@ export class GalleryComponent {
       height: 801
     },
     {
-      src: 'assets/img/gallery/studio-outside.webp',
-      label: 'COMPONENTS.GALLERY.STUDIO',
-      link: '/kontakt',
-      width: 2000,
-      height: 1500
-    },
-    {
-      src: 'assets/img/gallery/waiting-room.webp',
-      label: 'COMPONENTS.GALLERY.STUDIO',
-      link: '/kontakt',
-      width: 2000,
-      height: 1500
-    },
-    {
       src: 'assets/img/contact/studio.webp',
       label: 'COMPONENTS.GALLERY.STUDIO',
       link: '/kontakt',
-      width: 1599,
-      height: 899
+      width: 1600,
+      height: 1200
+    },
+    {
+      src: 'assets/img/gallery/studio-2.webp',
+      label: 'COMPONENTS.GALLERY.STUDIO',
+      link: '/kontakt',
+      width: 1600,
+      height: 1200
+    },
+    {
+      src: 'assets/img/gallery/products-2.webp',
+      label: 'COMPONENTS.GALLERY.PRODUCTS',
+      link: '/produkte',
+      width: 1600,
+      height: 1200
     },
   ];
 
