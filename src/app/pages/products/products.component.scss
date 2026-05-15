@@ -21,5 +21,15 @@
   margin-top: 1rem;
   margin-bottom: 1.5rem;
   padding: 10px;
-  border-radius: .5rem;
+  border-radius: var(--radius-xs);
+}
+
+.products {
+  &__highlight {
+    color: var(--color-secondary);
+  }
+
+  &__info-suffix {
+    margin-left: .125rem;
+  }
 }

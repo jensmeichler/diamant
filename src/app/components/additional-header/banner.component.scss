@@ -17,7 +17,7 @@
     transition: text-decoration-color var(--transition-default-behaviour);
     text-decoration-color: transparent;
     &:hover {
-      text-decoration-color: black;
+      text-decoration-color: var(--color-highlight-contrast);
     }
 
     &__text {

@@ -1,24 +1,59 @@
 :root {
   --color-background: #ffffff;
-  --color-primary: #1a3a56;
+  --color-primary: #6b5b8a;
   --color-primary-contrast: #ffffff;
-  --color-primary-active: #2b4f6e;
+  --color-primary-active: #796893;
   --color-primary-active-contrast: #ffffff;
-  --color-secondary: #5e9ea3;
-  --color-secondary-contrast: #000000;
-  --color-secondary-active: #74b2b7;
-  --color-secondary-active-contrast: black;
-  --color-highlight: #ffba3d;
+  --color-secondary: #c8b8e0;
+  --color-secondary-contrast: #2d2440;
+  --color-secondary-active: #d4c6e8;
+  --color-secondary-active-contrast: #2d2440;
+  --color-highlight: #e8c170;
   --color-highlight-contrast: #000000;
-  --color-highlight-active: #ffaf38;
-  --color-highlight-active-contrast: black;
-  --color-light: #f2f2f2;
+  --color-highlight-active: #efcb84;
+  --color-highlight-active-contrast: #000000;
+  --color-light: #f8f5fc;
 
-  --box-shadow-light: 0px 8px 15px #00000019;
-  --box-shadow-strong: 0px 8px 15px #00000028;
-  --box-shadow-slim-strong: #0000000f 0 0 .25rem 0, #0000001e 0 .25rem .25rem 0;
+  --color-whatsapp: #24d366;
+  --color-whatsapp-contrast: #ffffff;
 
-  --transition-default-behaviour: .16s ease-in-out;
+  --color-surface: #ffffff;
+  --color-overlay-dark: #00000044;
+  --color-overlay-darker: #1d1a26;
+  --color-overlay-shadow: #0000007f;
+  --color-image-title-bg: #ffffff;
+  --color-rating-hover-bg: #4a4256;
+
+  --radius-xs: .375rem;
+  --radius-sm: .75rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-xl: 2rem;
+  --radius-pill: 999px;
+
+  --box-shadow-light:
+    0 1px 2px rgba(45, 36, 64, 0.04),
+    0 2px 8px rgba(45, 36, 64, 0.06);
+  --box-shadow-strong:
+    0 2px 4px rgba(45, 36, 64, 0.06),
+    0 8px 24px rgba(45, 36, 64, 0.10),
+    0 16px 48px rgba(45, 36, 64, 0.08);
+  --box-shadow-slim-strong:
+    0 1px 2px rgba(45, 36, 64, 0.08),
+    0 2px 6px rgba(45, 36, 64, 0.12);
+  --box-shadow-focus: 0 0 0 3px rgba(107, 91, 138, 0.35);
+
+  --glass-bg: rgba(255, 255, 255, 0.55);
+  --glass-border: rgba(255, 255, 255, 0.6);
+  --glass-blur: blur(14px) saturate(140%);
+
+  --gradient-primary: linear-gradient(135deg, #6b5b8a 0%, #796893 100%);
+  --gradient-primary-hover: linear-gradient(135deg, #796893 0%, #8a7aa8 100%);
+  --gradient-hero: linear-gradient(160deg, #f8f5fc 0%, #ffffff 60%, #ede6f5 100%);
+  --gradient-surface: linear-gradient(180deg, #ffffff 0%, #f8f5fc 100%);
+
+  --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-default-behaviour: .2s var(--ease-out-soft);
   --transition-default: all var(--transition-default-behaviour);
   --transition-default-fast-behaviour: .08s ease-in-out;
   --transition-default-fast: all var(--transition-default-fast-behaviour);

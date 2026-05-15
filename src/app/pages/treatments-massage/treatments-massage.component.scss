@@ -5,10 +5,14 @@
   flex-wrap: wrap;
   font-size: .875rem;
   max-width: 1000px;
+
+  &--padded {
+    padding-bottom: 1rem;
+  }
 }
 
 .badge {
   background: var(--color-light);
   padding: 0.5rem 1rem;
-  border-radius: 1rem;
+  border-radius: var(--radius-md);
 }

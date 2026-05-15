@@ -1,0 +1,20 @@
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  &__link {
+    font-size: 1.25em;
+    background: var(--color-secondary);
+    color: var(--color-secondary-contrast);
+    padding: .25em .5em;
+    border-radius: var(--radius-sm);
+    transition: var(--transition-default);
+
+    &:hover {
+      background: var(--color-secondary-active);
+      color: var(--color-secondary-active-contrast);
+      box-shadow: var(--box-shadow-light);
+    }
+  }
+}

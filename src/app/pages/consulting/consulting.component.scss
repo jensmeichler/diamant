@@ -1,5 +1,5 @@
 .advice {
-  border-radius: 1rem;
+  border-radius: var(--radius-lg);
   padding: 1rem;
   text-align: center;
 
@@ -12,25 +12,6 @@
   .phone__link {
     background: var(--color-primary);
     color: var(--color-primary-contrast);
-  }
-}
-
-.phone {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-
-  &__link {
-    font-size: 1.25em;
-    padding: .25em .5em;
-    border-radius: .75rem;
-    transition: var(--transition-default);
-
-    &:hover {
-      background: var(--color-secondary-active);
-      color: var(--color-secondary-active-contrast);
-      box-shadow: var(--box-shadow-light);
-    }
   }
 }
 

@@ -4,14 +4,16 @@
 
 .iframe {
   width: 100%;
-  border-radius: 1rem;
+  border-radius: var(--radius-md);
   background: var(--color-light);
 }
 
 .give-consent-dialog {
-  border-radius: 2rem;
-  outline: 1rem solid white;
-  backdrop-filter: brightness(.86);
+  border-radius: var(--radius-xl);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
   height: 300px;
 
   display: flex;
@@ -19,7 +21,7 @@
   justify-content: space-between;
 
   &::before {
-    border-radius: 2rem;
+    border-radius: var(--radius-xl);
 
     content: "";
     position: fixed;
@@ -56,8 +58,13 @@
     justify-content: center;
   }
 
+  &__hr {
+    border-color: var(--color-surface);
+    margin: 0;
+  }
+
   &__button {
     padding: 1rem 2rem;
-    border-radius: 1rem;
+    border-radius: var(--radius-md);
   }
 }

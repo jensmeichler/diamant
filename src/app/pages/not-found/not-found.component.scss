@@ -35,6 +35,10 @@
     background: var(--color-secondary);
     color: var(--color-secondary-contrast);
     padding: .5em 1em;
-    border-radius: .5rem;
+    border-radius: var(--radius-pill);
+  }
+
+  .not-found__title {
+    margin-bottom: 2rem;
   }
 }
