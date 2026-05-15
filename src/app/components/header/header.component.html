@@ -52,13 +52,13 @@
           <hr class="burger-menu__item--splitter">
           @if (translate.getCurrentLang() === 'de') {
             <a class="burger-menu__item burger-menu__item--button" type="button" (click)="switchLanguage('ru')">
-              <img class="flag" src="assets/flags/ru-ua.svg" height="32" width="48">
+              <img class="flag" src="assets/flags/ru-ua.svg" height="32" width="48" alt="">
               <span>Изменить язык</span>
             </a>
           }
           @if (translate.getCurrentLang() === 'ru') {
             <a class="burger-menu__item burger-menu__item--button" type="button" (click)="switchLanguage('de')">
-              <img class="flag" src="assets/flags/de.svg" height="32" width="48">
+              <img class="flag" src="assets/flags/de.svg" height="32" width="48" alt="">
               <span>Sprache wechseln</span>
             </a>
           }
@@ -82,12 +82,12 @@
       </a>
       @if (translate.getCurrentLang() === 'de') {
         <button class="language-switcher" type="button" (click)="switchLanguage('ru')">
-          <img class="flag" src="assets/flags/ru-ua.svg" height="32" width="48">
+          <img class="flag" src="assets/flags/ru-ua.svg" height="32" width="48" alt="Sprache wechseln">
         </button>
       }
       @if (translate.getCurrentLang() === 'ru') {
         <button class="language-switcher" type="button" (click)="switchLanguage('de')">
-          <img class="flag" src="assets/flags/de.svg" height="32" width="48">
+          <img class="flag" src="assets/flags/de.svg" height="32" width="48" alt="Изменить язык">
         </button>
       }
     }
