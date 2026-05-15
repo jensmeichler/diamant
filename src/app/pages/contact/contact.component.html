@@ -1,15 +1,19 @@
 <div class="content">
-  <h1 class="align-center">{{'PAGES.CONTACT.DIAMOND' | translate}}&nbsp;&nbsp;{{'PAGES.CONTACT.TITLE' | translate}}</h1>
+  <h1 class="align-center">
+    {{ 'PAGES.CONTACT.DIAMOND' | translate }}&nbsp;&nbsp;{{ 'PAGES.CONTACT.TITLE' | translate }}
+  </h1>
   <hr>
   <br>
 
   <div class="grid-group">
     <div>
-      <h2>{{'PAGES.CONTACT.ADDRESS_TITLE' | translate}}</h2>
+      <h2>{{ 'PAGES.CONTACT.ADDRESS_TITLE' | translate }}</h2>
       <p>Kuhtrift 2</p>
       <p>38116 Braunschweig</p>
       <br>
-      <p class="phone">{{'PAGES.CONTACT.PHONE' | translate}}:<a class="phone__link" href="tel: 017676893292">0176&nbsp;76893292</a></p>
+      <p class="phone">
+        {{ 'PAGES.CONTACT.PHONE' | translate }}:<a class="phone__link" href="tel: 017676893292">0176&nbsp;76893292</a>
+      </p>
     </div>
 
     <app-map/>
@@ -36,6 +40,8 @@
   <app-rating/>
 </div>
 
-<a *ngIf="mobile$ | async" class="floating-whatsapp-button" href="https://wa.me/17676893292" target="_blank" rel="nofollow">
-  <img src="assets/svg/whatsapp.svg" width="32" height="32" alt="Chat on Whatsapp">
-</a>
+@if (mobile$ | async) {
+  <a class="floating-whatsapp-button" href="https://wa.me/17676893292" target="_blank" rel="nofollow">
+    <img src="assets/svg/whatsapp.svg" width="32" height="32" alt="Chat on Whatsapp">
+  </a>
+}

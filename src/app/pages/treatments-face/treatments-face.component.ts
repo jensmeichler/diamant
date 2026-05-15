@@ -5,7 +5,6 @@ import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-treatments-face',
-  standalone: true,
   imports: [InfoBoxCouponComponent, ImgComponent, TranslateModule],
   templateUrl: './treatments-face.component.html',
   styleUrls: ['./treatments-face.component.scss']

@@ -4,7 +4,6 @@ import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-treatments-massage',
-  standalone: true,
   imports: [InfoBoxCouponComponent, TranslateModule],
   templateUrl: './treatments-massage.component.html',
   styleUrls: ['./treatments-massage.component.scss']

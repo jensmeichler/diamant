@@ -1,11 +1,10 @@
 import {Component} from '@angular/core';
 import {fromEvent, map, startWith} from "rxjs";
-import {AsyncPipe, NgIf} from "@angular/common";
+import {AsyncPipe} from "@angular/common";
 
 @Component({
   selector: 'app-scroll-top-button',
-  standalone: true,
-  imports: [AsyncPipe, NgIf],
+  imports: [AsyncPipe],
   templateUrl: './scroll-top-button.component.html',
   styleUrls: ['./scroll-top-button.component.scss']
 })

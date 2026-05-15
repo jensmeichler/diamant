@@ -6,7 +6,6 @@ import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-rating',
-  standalone: true,
   imports: [AsyncPipe, TranslateModule],
   templateUrl: './rating.component.html',
   styleUrls: ['./rating.component.scss']

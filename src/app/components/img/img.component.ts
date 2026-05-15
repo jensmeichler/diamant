@@ -1,10 +1,9 @@
 import {Component, HostBinding, Input} from '@angular/core';
-import {NgClass, NgIf, NgOptimizedImage} from "@angular/common";
+import {NgClass, NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-img',
-  standalone: true,
-  imports: [NgOptimizedImage, NgClass, NgIf],
+  imports: [NgOptimizedImage, NgClass],
   templateUrl: './img.component.html',
   styleUrls: ['./img.component.scss']
 })

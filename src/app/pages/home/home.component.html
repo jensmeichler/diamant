@@ -1,6 +1,15 @@
-<ng-container *ngIf="{isMobile: mobile$ | async} as view">
+@if ({isMobile: mobile$ | async}; as view) {
   <div class="monthly-offer align-center">
-    <app-img (click)="treatments.scrollTo('micro-needling')" class="monthly-offer__img" src="assets/img/treatments/facial-treatment.webp" [width]="830" [height]="580" alt="Angebot" [hover]="true" [priority]="1"/>
+    <app-img
+      (click)="treatments.scrollTo('micro-needling')"
+      class="monthly-offer__img"
+      src="assets/img/treatments/facial-treatment.webp"
+      [width]="830"
+      [height]="580"
+      alt="Angebot"
+      [hover]="true"
+      [priority]="1"
+    ></app-img>
     <div (click)="treatments.scrollTo('micro-needling')" class="monthly-offer__title secondary hover">
       <p class="m">
         <strong>{{ 'PAGES.HOME.SPECIAL_OFFER_TITLE' | translate }}:</strong>
@@ -8,20 +17,22 @@
         {{ 'PAGES.HOME.SPECIAL_OFFER_TEXT' | translate }}
       </p>
     </div>
-    <span class="monthly-offer__body secondary align-center" *ngIf="!view.isMobile; else mobile">
-      <p class="content align-center m" [innerHtml]="'PAGES.HOME.SPECIAL_OFFER_EXPLANATION_FULL' | translate"></p>
-    </span>
-    <ng-template #mobile>
+    @if (!view.isMobile) {
+      <span class="monthly-offer__body secondary align-center">
+          <p class="content align-center m" [innerHtml]="'PAGES.HOME.SPECIAL_OFFER_EXPLANATION_FULL' | translate"></p>
+        </span>
+    } @else {
       <span class="monthly-offer__body secondary">
-        <p [class.hidden]="readMore" class="m">
-          {{ 'PAGES.HOME.SPECIAL_OFFER_EXPLANATION_SHORT' | translate }}
-          <button class="low-opacity" (click)="readMore = !readMore">
-            {{ 'PAGES.HOME.SPECIAL_OFFER_EXPLANATION_CONTINUE' | translate }}
-          </button>
-        </p>
-        <p [class.hidden]="!readMore" class="m" [innerHtml]="'PAGES.HOME.SPECIAL_OFFER_EXPLANATION_FULL' | translate"></p>
-      </span>
-    </ng-template>
+          <p [class.hidden]="readMore" class="m">
+            {{ 'PAGES.HOME.SPECIAL_OFFER_EXPLANATION_SHORT' | translate }}
+            <button class="low-opacity" (click)="readMore = !readMore">
+              {{ 'PAGES.HOME.SPECIAL_OFFER_EXPLANATION_CONTINUE' | translate }}
+            </button>
+          </p>
+          <p [class.hidden]="!readMore" class="m"
+             [innerHtml]="'PAGES.HOME.SPECIAL_OFFER_EXPLANATION_FULL' | translate"></p>
+        </span>
+    }
     <div class="monthly-offer__price secondary">
       <p class="m">119,99 €</p>
     </div>
@@ -33,7 +44,16 @@
     </h1>
     <div class="grid-group">
       <div class="card">
-        <app-img routerLink="/beratung" class="card__img" src="assets/img/home/maryna.webp" [width]="399" [height]="300" alt="Maryna Gruszka" [hover]="true" [priority]="2"/>
+        <app-img
+          routerLink="/beratung"
+          class="card__img"
+          src="assets/img/home/maryna.webp"
+          [width]="399"
+          [height]="300"
+          alt="Maryna Gruszka"
+          [hover]="true"
+          [priority]="2"
+        ></app-img>
         <p class="card__text">
           {{ 'PAGES.HOME.CARDS_ABOUT_ME_TEXT' | translate }}
         </p>
@@ -48,7 +68,15 @@
       </div>
 
       <div class="card">
-        <app-img routerLink="/behandlungen" class="card__img" src="assets/img/home/facial-treatments.webp" [width]="399" [height]="300" alt="Mesoporation" [hover]="true"/>
+        <app-img
+          routerLink="/behandlungen"
+          class="card__img"
+          src="assets/img/home/facial-treatments.webp"
+          [width]="399"
+          [height]="300"
+          alt="Mesoporation"
+          [hover]="true"
+        ></app-img>
         <p class="card__text">
           {{ 'PAGES.HOME.CARDS_TREATMENTS_TITLE' | translate }}
           <br>
@@ -62,17 +90,26 @@
       </div>
 
       <a class="card card--link" routerLink="/beratung" [queryParams]="{showAdvice: true}">
-        <app-img class="card__img" src="assets/img/home/consulting.webp" [width]="399" [height]="300" alt="Beratung" [hover]="true"/>
+        <app-img
+          class="card__img"
+          src="assets/img/home/consulting.webp"
+          [width]="399"
+          [height]="300"
+          alt="Beratung"
+          [hover]="true"
+        ></app-img>
         <p class="card__text">
           <strong>{{ 'PAGES.HOME.CARDS_CONSULTING_TITLE' | translate }}</strong>
           <br>
           {{ 'PAGES.HOME.CARDS_CONSULTING_TEXT' | translate }}
         </p>
-        <div *ngIf="view.isMobile" class="card__link-group">
-          <p class="card__link-group__link secondary hover">
-            {{ 'PAGES.HOME.CARDS_CONSULTING_LINK' | translate }}
-          </p>
-        </div>
+        @if (view.isMobile) {
+          <div class="card__link-group">
+            <p class="card__link-group__link secondary hover">
+              {{ 'PAGES.HOME.CARDS_CONSULTING_LINK' | translate }}
+            </p>
+          </div>
+        }
       </a>
     </div>
   </div>
@@ -89,7 +126,11 @@
 
   <div class="content">
     <section class="grid-group">
-      <a routerLink="/kontakt" class="contact-link align-center secondary hover" [class.contact-link--mobile]="view.isMobile">
+      <a
+        routerLink="/kontakt"
+        class="contact-link align-center secondary hover"
+        [class.contact-link--mobile]="view.isMobile"
+      >
         {{ 'PAGES.HOME.CONTACT_LINK' | translate }}
       </a>
     </section>
@@ -112,4 +153,4 @@
   <br>
 
   <app-rating/>
-</ng-container>
+}

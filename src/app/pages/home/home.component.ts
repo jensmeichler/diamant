@@ -1,6 +1,6 @@
 import {Component, inject, OnInit} from '@angular/core';
 import {RouterLink} from "@angular/router";
-import {AsyncPipe, NgClass, NgIf} from "@angular/common";
+import {AsyncPipe} from "@angular/common";
 import {SeoService} from "src/app/services/seo.service";
 import {ViewService} from "src/app/services/view.service";
 import {ImgComponent} from "src/app/components/img/img.component";
@@ -11,12 +11,9 @@ import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-home',
-  standalone: true,
   imports: [
     RouterLink,
-    NgIf,
     AsyncPipe,
-    NgClass,
     ImgComponent,
     TreatmentsExplanationsComponent,
     RatingComponent,

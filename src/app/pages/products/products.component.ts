@@ -5,7 +5,6 @@ import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-products',
-  standalone: true,
   imports: [ImgComponent, TranslateModule],
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.scss']

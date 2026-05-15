@@ -4,7 +4,6 @@ import {SeoService} from "src/app/services/seo.service";
 
 @Component({
   selector: 'app-sitemap',
-  standalone: true,
   imports: [RouterLink],
   templateUrl: './sitemap.component.html',
   styleUrls: ['./sitemap.component.scss']

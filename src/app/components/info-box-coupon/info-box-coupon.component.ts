@@ -3,10 +3,7 @@ import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-info-box-coupon',
-  standalone: true,
-  imports: [
-    TranslateModule
-  ],
+  imports: [TranslateModule],
   templateUrl: './info-box-coupon.component.html',
   styleUrls: ['./info-box-coupon.component.scss']
 })
