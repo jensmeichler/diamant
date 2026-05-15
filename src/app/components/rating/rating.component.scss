@@ -4,7 +4,7 @@
   &__button {
     width: fit-content;
     padding: 1rem 2rem;
-    border-radius: 2rem;
+    border-radius: var(--radius-xl);
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -18,9 +18,9 @@
       transition: color var(--transition-default-behaviour);
     }
     &:hover {
-      background: #555;
+      background: var(--color-rating-hover-bg);
       .rating__button__text {
-        color: white;
+        color: var(--color-surface);
       }
       .rating__button__stars {
         color: var(--color-highlight-active);

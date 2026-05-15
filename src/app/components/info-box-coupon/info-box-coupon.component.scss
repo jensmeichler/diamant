@@ -4,13 +4,13 @@
   margin-top: 5rem;
   margin-bottom: -16rem;
   content: " ";
-  background: var(--color-primary);
+  background: var(--gradient-primary);
 }
 
 .info-message {
   transform: translateY(5rem);
   padding: 1rem;
-  border-radius: 1rem;
+  border-radius: var(--radius-md);
 
   * {
     color: var(--color-secondary-contrast);

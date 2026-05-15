@@ -12,7 +12,7 @@
     {{ 'PAGES.PRODUCTS.TEXT_2' | translate }}
     <br>
     <br>
-    <span style="color: var(--color-secondary)" [innerHtml]="'PAGES.PRODUCTS.TEXT_3_COLORED' | translate">
+    <span class="products__highlight" [innerHtml]="'PAGES.PRODUCTS.TEXT_3_COLORED' | translate">
     </span>
   </p>
 
@@ -33,7 +33,7 @@
 
   <div class="info-message secondary">
     <strong>{{ 'PAGES.PRODUCTS.INFO_BOX_TITLE' | translate }}</strong>
-    <span style="margin-left: .125rem"> - {{ 'PAGES.PRODUCTS.INFO_BOX_TEXT' | translate }}</span>
+    <span class="products__info-suffix"> - {{ 'PAGES.PRODUCTS.INFO_BOX_TEXT' | translate }}</span>
   </div>
   <p>
     {{ 'PAGES.PRODUCTS.INFO_BOX_SUB_TEXT' | translate }}

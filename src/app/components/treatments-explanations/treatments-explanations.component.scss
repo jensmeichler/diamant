@@ -4,6 +4,10 @@
   gap: 4rem;
   padding-top: 3rem;
 
+  &__others-title {
+    margin-bottom: 1rem;
+  }
+
   &__item {
     &__img {
       height: 300px;
@@ -13,7 +17,7 @@
 
       &--button {
         background: var(--color-light);
-        border-radius: 2rem;
+        border-radius: var(--radius-xl);
         padding: 2rem 1rem;
 
         @media screen {
@@ -26,9 +30,10 @@
         flex-direction: column;
         justify-content: center;
 
-        transition: box-shadow var(--transition-default-behaviour);
+        transition: box-shadow var(--transition-default-behaviour), transform var(--transition-default-behaviour);
         &:hover {
           box-shadow: var(--box-shadow-strong);
+          transform: translateY(-2px);
         }
       }
     }
@@ -75,7 +80,7 @@
 .grid-group {
   .button {
     padding: 1.5rem 2rem;
-    border-radius: 1rem;
+    border-radius: var(--radius-md);
     grid-column: 2;
     font-size: large;
   }

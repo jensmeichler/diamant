@@ -33,10 +33,10 @@
   }
 
   &__badge {
-    background: var(--color-primary-active);
+    background: var(--gradient-primary);
     color: var(--color-primary-active-contrast);
     padding: .5rem 1rem;
-    border-radius: 2rem;
+    border-radius: var(--radius-pill);
 
     transition:
       box-shadow var(--transition-default-behaviour),
